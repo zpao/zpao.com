@@ -1,6 +1,6 @@
 auto: true
 permalink: /posts/:title
-url: http://jekyll.zpao.com
+url: http://zpao.com
 # lsi: true
 exclude:
   - Rakefile

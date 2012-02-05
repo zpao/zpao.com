@@ -5,5 +5,5 @@ end
 
 desc "put it up"
 task :deploy do
-  system("rsync -avze ssh --delete _site/ zpao.com:jekyll.zpao.com/")
+  system("rsync -avze ssh --delete _site/ zpao.com:zpao.com/")
 end
