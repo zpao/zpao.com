@@ -1,0 +1,108 @@
+@color1: #ED4541;
+@color2: #059FD6;
+@color3: #8088CA;
+@color4: #94A634;
+
+/* A rudimentary "reset" */
+* { margin: 0; padding: 0; border: none; }
+
+/* Make HTML 5 elements block level */
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+html {
+  background: #f6f6f6;
+  font-family: georgia;
+  font-family: "ff-tisa-web-pro",serif;
+  height: 100%;
+}
+pre, code {
+  font-family: inconsolata, fixed;
+  background: #ddd;
+  padding: .25em;
+}
+
+
+header#top-dog {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  position: fixed;
+  top: 60px;
+  left: 60px;
+
+  h1, h2 {
+    font-family: futura-pt, futura, sans-serif;
+    line-height: 1em;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  h1 {
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: -.17em;
+    margin: 0 0 -15px -10px;
+  }
+
+  h2 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  /*h3 {*/
+  /*  font-family: georgia;*/
+  /*  font-weight: normal;*/
+  /*  color: #666;*/
+  /*}*/
+  nav a {
+    color: #666;
+    text-decoration: none;
+  }
+}
+
+
+section#content {
+  width: 600px;
+  margin: 70px 0 50px 300px;
+}
+
+article {
+  h1, h2, h3, h4 {
+    font-family: futura-pt, futura, sans-serif;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-bottom: .5em;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  header h3 {
+    color: #999;
+  }
+  p, ul {
+    margin-bottom: 1em;
+  }
+  p + h2, p + h3, p + h4,
+  ul + h2, ul + h3, ul + h4 {
+    margin-top: 1em;
+  }
+  blockquote {
+    padding-left: 30px;
+    border-left: 15px solid #ccc;
+    margin-left: 10px;
+  }
+}
+

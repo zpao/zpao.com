@@ -1,0 +1,27 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+   <title>Paul O’Shannessy - blah. blah. blah.</title>
+   <link href="http://zpao.com/feeds/site.xml" rel="self" />
+   <link href="http://zpao.com/" />
+   <updated>{{ site.time | date_to_xmlschema }}</updated>
+   <id>http://zpao.com</id>
+   <author>
+     <name>Paul O’Shannessy</name>
+   </author>
+
+{% for post in site.posts %}
+{% if post.tags contains "Mozilla" or post.tags contains "mozilla" %}
+  <entry>
+    <title>{{ post.title | xml_escape }}</title>
+    <link href="http://zpao.com{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>http://zpao.com{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+{% endif %}
+{% endfor %}
+
+</feed>

@@ -1,0 +1,6 @@
+auto: true
+permalink: /posts/:title
+url: http://jekyll.zpao.com
+# lsi: true
+exclude:
+  - Rakefile
