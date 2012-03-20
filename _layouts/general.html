@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Paul O’Shannessy - {{ page.title }}</title>
+  <title>Paul O’Shannessy - {{ page.title | markdownify2 }}</title>
   <meta charset="utf-8" />
 
   <link href="http://static.zpao.com/favicon.png" rel="shortcut icon" type="image/png">
@@ -49,9 +49,9 @@
   <section id="content">
     <article>
       <header>
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.title | markdownify2 }}</h1>
         {% if page.blurb %}
-          <h2>{{ page.blurb }}</h2>
+          <h2>{{ page.blurb | markdownify2 }}</h2>
         {% endif %}
         {% if page.date %}
           <h3>{{ page.date | date: "%B %e, %Y" }}</h3>

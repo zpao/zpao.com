@@ -15,7 +15,7 @@
 {% for post in site.posts %}
 {% if post.tags contains "Mozilla" or post.tags contains "mozilla" %}
   <entry>
-    <title>{{ post.title | xml_escape }}</title>
+    <title>{{ post.title | markdownify2 | xml_escape }}</title>
     <link href="http://zpao.com{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>http://zpao.com{{ post.id }}</id>
