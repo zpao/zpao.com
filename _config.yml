@@ -4,3 +4,6 @@ url: http://zpao.com
 # lsi: true
 exclude:
   - Rakefile
+markdown: rdiscount
+rdiscount:
+  extensions: [smart, autolink]
