@@ -17,12 +17,11 @@ section {
 }
 html {
   background: #f6f6f6;
-  font-family: georgia;
-  font-family: "ff-tisa-web-pro", serif;
+  font-family: "ff-tisa-web-pro", georgia, serif;
   height: 100%;
 }
 pre, code {
-  font-family: inconsolata, fixed;
+  font-family: anonymous-pro, menlo, monaco, consolas, fixed;
   background: #ddd;
   padding: .25em;
 }
@@ -95,7 +94,7 @@ article h3 {
 article header h3 {
   color: #999;
 }
-article p, article ul {
+article p, article ul, article ol {
   margin-bottom: 1em;
 }
 article p + h2,

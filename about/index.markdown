@@ -30,7 +30,7 @@ I am not a designer, but sometimes I like to pretend I am. I'm using Typekit her
 
 * [Futura PT](https://typekit.com/fonts/futura-pt)
 * [FF Tisa Web Pro](https://typekit.com/fonts/ff-tisa-web-pro)
-* [Inconsolata](https://typekit.com/fonts/inconsolata)
+* [Anonymous Pro](https://typekit.com/fonts/anonymous-pro)
 
 
 
