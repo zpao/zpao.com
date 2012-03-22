@@ -6,7 +6,7 @@ tags:
   - stupid defaults
 layout: post
 type: link
-url: "http://mercurial.selenic.com/wiki/PagerExtension"
+source_url: "http://mercurial.selenic.com/wiki/PagerExtension"
 tumblr_permalink: post/2749865516/use-a-pager-with-mercurial
 ---
 

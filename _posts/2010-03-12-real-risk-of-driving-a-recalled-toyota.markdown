@@ -6,7 +6,7 @@ tags:
   - link
 layout: post
 type: link
-url: "http://www.cmu.edu/news/archive/2010/February/feb25_toyotarisk.shtml"
+source_url: "http://www.cmu.edu/news/archive/2010/February/feb25_toyotarisk.shtml"
 tumblr_permalink: post/443965779/carnegie-mellon-professor-calculates-real-risk-of
 ---
 

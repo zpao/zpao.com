@@ -6,7 +6,7 @@ tags:
   - privacy
 layout: post
 type: link
-url: "http://mattmckeon.com/facebook-privacy/"
+source_url: "http://mattmckeon.com/facebook-privacy/"
 tumblr_permalink: post/579734911/the-evolution-of-privacy-on-facebook
 ---
 
