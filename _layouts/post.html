@@ -3,3 +3,9 @@ layout: general
 ---
 
 {{ content }}
+
+{% if (page.type == "link") %}
+<p>
+  <a href="{{ page.source_url }}">view original &rarr;</a>
+</p>
+{% endif %}
