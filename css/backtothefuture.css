@@ -110,3 +110,11 @@ article blockquote {
   border-left: 15px solid #ccc;
   margin-left: 10px;
 }
+article .post-footer {
+  background: #ddd;
+  margin-top: 30px;
+  padding: 10px;
+}
+article .post-footer p {
+  margin: 0;
+}
