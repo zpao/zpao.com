@@ -4,6 +4,10 @@ url: http://zpao.com
 # lsi: true
 exclude:
   - Rakefile
+include:
+  - .htaccess
+  - .tumblr_htaccess
+
 markdown: rdiscount
 rdiscount:
   extensions: [smart, autolink]
