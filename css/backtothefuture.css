@@ -20,13 +20,18 @@ html {
   font-family: "ff-tisa-web-pro", georgia, serif;
   height: 100%;
 }
-pre, code {
+pre,
+code {
   font-family: anonymous-pro, menlo, monaco, consolas, fixed;
   background: #ddd;
   padding: .25em;
 }
-ul, ol {
+ul,
+ol {
   padding-left: 25px;
+}
+abbr {
+  border-bottom: 1px dotted #000;
 }
 header#top-dog {
   width: 200px;
@@ -46,15 +51,18 @@ header#top-dog {
   /*}*/
 
 }
-header#top-dog h1, header#top-dog h2 {
+header#top-dog h1,
+header#top-dog h2 {
   font-family: futura-pt, futura, sans-serif;
   line-height: 1em;
 }
-header#top-dog h1 a, header#top-dog h2 a {
+header#top-dog h1 a,
+header#top-dog h2 a {
   color: #000;
   text-decoration: none;
 }
-header#top-dog h1 a:hover, header#top-dog h2 a:hover {
+header#top-dog h1 a:hover,
+header#top-dog h2 a:hover {
   color: #000;
 }
 header#top-dog h1 {
@@ -97,7 +105,9 @@ article h3 {
 article header h3 {
   color: #999;
 }
-article p, article ul, article ol {
+article p,
+article ul,
+article ol {
   margin-bottom: 1em;
 }
 article p + h2,
