@@ -75,6 +75,7 @@ header#top-dog h2 {
   font-size: 21px;
   text-transform: uppercase;
   font-weight: 300;
+  margin-bottom: 25px;
 }
 header#top-dog nav a {
   color: #666;
