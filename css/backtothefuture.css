@@ -132,3 +132,17 @@ article .post-footer {
 article .post-footer p {
   margin: 0;
 }
+#post-list {
+  width: 100%;
+}
+#post-list tr td {
+  padding: 5px 0;
+}
+#post-list tr:hover {
+  background: #eee;
+}
+#post-list .date {
+  text-align: right;
+  color: #999;
+  font-size: 12px;
+}
