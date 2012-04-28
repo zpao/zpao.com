@@ -10,7 +10,7 @@ layout: post
 tumblr_permalink: post/6636815982/simple-tab-stats-script
 ---
 
-My Firefox usage has always been a bit excessive. I used to open windows to group my different tasks. Then Panorama came along and I started using groups. Then I had too many groups so I started opening new windows. Luckily I set `max_concurrent_tabs` to 0 so I avoid loading all of those pages at startup ([it's that BarTab-like thing](http://blog.zpao.com/post/1140456188/cascaded-session-restore-a-hidden-bonus)).
+My Firefox usage has always been a bit excessive. I used to open windows to group my different tasks. Then Panorama came along and I started using groups. Then I had too many groups so I started opening new windows. Luckily I set `max_concurrent_tabs` to 0 so I avoid loading all of those pages at startup ([it's that BarTab-like thing](/posts/cascaded-session-restore-a-hidden-bonus)).
 
 ![](/img/posts/simple-tab-stats.png)
 

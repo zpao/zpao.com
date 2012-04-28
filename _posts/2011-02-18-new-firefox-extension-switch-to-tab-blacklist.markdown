@@ -10,7 +10,7 @@ layout: post
 tumblr_permalink: post/3372227196/new-firefox-extension-switch-to-tab-blacklist
 ---
 
-Switch To Tab is a pretty cool feature that will be a part of Firefox 4. I didn't work much on it, but I contributed a bit to it last year (see [this post](http://blog.zpao.com/post/702614651/switch-to-tab-closing-empty-tabs) for one example).
+Switch To Tab is a pretty cool feature that will be a part of Firefox 4. I didn't work much on it, but I contributed a bit to it last year (see [this post](/posts/switch-to-tab-closing-empty-tabs) for one example).
 
 For the most part, I really like this new feature. It's saved me much tab duplication over the past several month. However there are some sites that it doesn't play well with, namely some JavaScript "applications" and pages with frames. I've quietly dealt with it and worked around the issues.
 

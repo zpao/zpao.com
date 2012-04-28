@@ -12,9 +12,9 @@ tumblr_permalink: post/3453055056/updated-firefox-extension-always-ask-2-0pre
 
 ![](/img/posts/always-ask-2.0pre.png "The dialog that Always Ask shows when it has determined Firefox will quit without prompting")
 
-Around the endgame for Firefox 3.6, [I wrote an extension called Always Ask](http://zpao.com/articles/26-just_released_always_ask) to make sure I always got a prompt when quitting. I used it for a while and then forgot about it when it was no longer compatible as Firefox 3.7 (now 4) moved forward.
+Around the endgame for Firefox 3.6, [I wrote an extension called Always Ask](/posts/just-released-always-ask) to make sure I always got a prompt when quitting. I used it for a while and then forgot about it when it was no longer compatible as Firefox 3.7 (now 4) moved forward.
 
-Now that we're at the endgame for Firefox 4, and especially with all the changes surrounding the quit dialog, I figured it should be updated. So I'm releasing v2.0pre today which updates the extension to work with component registration changes and [quit dialog](http://blog.zpao.com/post/2854700249/just-quit-it) [changes](http://blog.zpao.com/post/3174360617/about-that-quit-dialog) in Firefox 4. This also includes the translations that were submitted via Babelzilla (most of them over a year ago). Thanks to all of you who took the time to translate those strings.
+Now that we're at the endgame for Firefox 4, and especially with all the changes surrounding the quit dialog, I figured it should be updated. So I'm releasing v2.0pre today which updates the extension to work with component registration changes and [quit dialog](/posts/just-quit-it) [changes](/posts/about-that-quit-dialog) in Firefox 4. This also includes the translations that were submitted via Babelzilla (most of them over a year ago). Thanks to all of you who took the time to translate those strings.
 
 **[Get it now](https://addons.mozilla.org/en-US/firefox/addon/always-ask/)**. Or [look at the code](https://github.com/zpao/alwaysAsk).
 

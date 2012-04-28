@@ -41,6 +41,6 @@ Bullshit.
 
 There are people out there who just want to make boatloads of cash and get out. Who wouldn't mind boatloads of cash, especially in the bay area where shit is expensive. But you don't actually want those people to work for your company. If they aren't passionate about what they're making, they'll make a quick buck & be gone fast, probably responding to another email like this. Hell, it might even be you recruiting them away.
 
-I know there's a hiring frenzy in the SF area and in the tech industry as a whole. That's all the more reason to be good at recruiting and not make me call out your shenanigans. There are recruiters out there who I've said more than "No" to because they make a proper attempt and are polite to me ([I don't like rude recruiters](http://blog.zpao.com/post/509894580/on-rude-recruiters)).
+I know there's a hiring frenzy in the SF area and in the tech industry as a whole. That's all the more reason to be good at recruiting and not make me call out your shenanigans. There are recruiters out there who I've said more than "No" to because they make a proper attempt and are polite to me ([I don't like rude recruiters](/posts/on-rude-recruiters)).
 
 That's all I'll say. That and I'm not looking for a new job.

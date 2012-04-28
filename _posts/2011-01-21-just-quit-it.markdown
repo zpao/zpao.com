@@ -22,8 +22,8 @@ If you're interested, this was done in [bug 592822](https://bugzilla.mozilla.org
 
 ## Dude, Where's My Session?
 
-I know it's been a while since [I wrote about it](http://blog.zpao.com/post/1099464627/restore-previous-session), but it's now possible to restore your session on demand after startup. There is work underway to make that feature more visible, namely [bug 593421](https://bugzilla.mozilla.org/show_bug.cgi?id=593421) (to add a button on the start page) and [bug 589665](https://bugzilla.mozilla.org/show_bug.cgi?id=589665) (to add a button in Panorama).
+I know it's been a while since [I wrote about it](/posts/restore-previous-session), but it's now possible to restore your session on demand after startup. There is work underway to make that feature more visible, namely [bug 593421](https://bugzilla.mozilla.org/show_bug.cgi?id=593421) (to add a button on the start page) and [bug 589665](https://bugzilla.mozilla.org/show_bug.cgi?id=589665) (to add a button in Panorama).
 
 - - -
 
-**Update (Feb. 7, 2011):** We had to make some further changes. We kept the dialog turned off by default but had to do some work with preferences. Setting `browser.warnOnQuit` is no longer good enough to show the quit dialog. [Read more](http://blog.zpao.com/post/3174360617/about-that-quit-dialog)
+**Update (Feb. 7, 2011):** We had to make some further changes. We kept the dialog turned off by default but had to do some work with preferences. Setting `browser.warnOnQuit` is no longer good enough to show the quit dialog. [Read more](/posts/about-that-quit-dialog)

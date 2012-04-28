@@ -14,7 +14,7 @@ old_permalink: "articles/11-passwordmgr_storage_faster"
 
 When I first wrote the new storage module for the Password Manager, I took a few "shortcuts," trying to keep my code DRY. Partially this was because of the first patch by Mrinal Kant, but mostly it was because I like to reuse code. This bit us just a bit.
 
-I mentioned in my "first post about this change":http://zpao.com/articles/10-passwordmgr_storage that we were initially considerably slower in the critical <code>countLogins</code> method. While it got improved before being checked in, it was still marginally slower (milliseconds on an abnormally large dataset).
+I mentioned in my "first post about this change":/posts/passwordmgr-storage that we were initially considerably slower in the critical <code>countLogins</code> method. While it got improved before being checked in, it was still marginally slower (milliseconds on an abnormally large dataset).
 
 As I said before, this was most likely since we were doing a <code>SELECT *</code> on the <code>moz_logins</code> table, and looping over the results and counting. This allowed me to reuse more code. Loops are a kind of slow, and since this was so important, I decided to speed it up.
 

@@ -9,7 +9,7 @@ layout: post
 tumblr_permalink: post/681362149/now-using-json-parse-in-session-restore
 ---
 
-Back in March, [I partially dropped support for sessions from Firefox 2.0 & 3.0](http://blog.zpao.com/post/450728650/partially-dropping-support-for-firefox-2-0-3-0). For Firefox 4.0, we'll be dropping backwards compatibility of sessions for Firefox 2.0 & 3.0. That means that sessions created with nightlies starting tomorrow, will no longer be loadable by versions of Firefox prior to 3.5. With [bug 387859](https://bugzilla.mozilla.org/show_bug.cgi?id=387859), Session Restore will now use `JSON.parse` instead of `evalInSandbox`.
+Back in March, [I partially dropped support for sessions from Firefox 2.0 & 3.0](/posts/partially-dropping-support-for-firefox-2-0-3-0). For Firefox 4.0, we'll be dropping backwards compatibility of sessions for Firefox 2.0 & 3.0. That means that sessions created with nightlies starting tomorrow, will no longer be loadable by versions of Firefox prior to 3.5. With [bug 387859](https://bugzilla.mozilla.org/show_bug.cgi?id=387859), Session Restore will now use `JSON.parse` instead of `evalInSandbox`.
 
 ## So why use `JSON.parse`?
 

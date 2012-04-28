@@ -9,7 +9,7 @@ layout: post
 tumblr_permalink: post/3174360617/about-that-quit-dialog
 ---
 
-Remember when we [turned it off a couple weeks ago](http://blog.zpao.com/post/2854700249/just-quit-it)? We did that by just flipping the `browser.warnOnQuit` preference to `false`. I mentioned that you could get old behavior back by flipping that preference back to `true`. That's not going to work anymore.
+Remember when we [turned it off a couple weeks ago](/posts/just-quit-it)? We did that by just flipping the `browser.warnOnQuit` preference to `false`. I mentioned that you could get old behavior back by flipping that preference back to `true`. That's not going to work anymore.
 
 I just landed [bug 629485](https://bugzilla.mozilla.org/show_bug.cgi?id=629485) to change things again, so pay attention. When we turned off the quit dialog, we took away any way of stopping the last window from closing without any warning, even if you explicitly set the visible pref `browser.tabs.warnOnClose` which would show the window closing warning (when you have multiple tabs). That wasn't so cool. So we played around with the logic and made that possible. But in order to do so, we had to change the default value of `browser.warnOnQuit` to `true` and create a new preference which controls the quit dialog (`browser.showQuitDialog`). I know this sounds a bit inane, but there really wasn't a better way to do it and maintain `browser.warnOnQuit == false` as an override.
 
