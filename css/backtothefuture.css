@@ -26,6 +26,10 @@ code {
   background: #ddd;
   padding: .25em;
 }
+pre > code {
+  background: transparent;
+  padding: 0em;
+}
 ul,
 ol {
   padding-left: 25px;
