@@ -11,8 +11,8 @@ layout: general
 {% endif %}
 
 <div class="post-footer">
-  <p>
-    If you have questions or comments about this post, feel free to <a href="mailto:paul@zpao.com?Subject={{ page.title }}&body=I have a comment about {{ site.url }}{{ page.url }}%0A%0A">send me an email</a>.
-  </p>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title | markdownify2 }}" data-via="zpao">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <iframe src="//www.facebook.com/plugins/like.php?href={{ site.url }}{{ page.url }}&amp;send=false&amp;layout=button_count&amp;width=91&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:91px; height:21px;" allowTransparency="true"></iframe>
 </div>
 
