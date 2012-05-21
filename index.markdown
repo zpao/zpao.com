@@ -3,17 +3,8 @@ title: blah. blah. blah.
 layout: general
 ---
 
-I'm still in the process of cleaning things up (slowly), so please excuse the mess as I consolidate & redesign.
-Things may not look super hot before I'm done. If you want to see something super hot, [click here](http://facebook.com/profile.php).
+Hi! In case you didn't catch it on the side, I'm Paul O&rsquo;Shannessy. This is where I live on the Internet.
 
-## Pages on this Site:
+I'm a software developer living in San Francisco. By day I write code for Firefox. By night I write code for the web and move furniture. [Read more about me & this site...](/about)
 
-* [About](/about/)
-
-## Things I've written:
-
-<ul>
-{% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%B %e, %Y" }})</li>
-{% endfor %}
-</ul>
+At this point, I primarily use this site for writing. The last thing I wrote was titled {% for post in site.posts limit:1 %}*[{{ post.title | markdownify2 }}]({{ post.url }})*{% endfor %}.
