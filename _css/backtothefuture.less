@@ -72,9 +72,27 @@ header#top-dog {
   /*  font-weight: normal;*/
   /*  color: #666;*/
   /*}*/
-  nav a {
-    color: #666;
-    text-decoration: none;
+  nav {
+    font-family: futura-pt, futura, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    ul {
+      list-style: none;
+      margin: 0 0 25px 0;
+      padding: 0;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+
+      &:hover {
+        color: #333;
+      }
+    }
   }
 }
 
