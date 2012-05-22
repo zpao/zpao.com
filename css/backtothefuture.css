@@ -126,7 +126,8 @@ article header h3 {
 }
 article p,
 article ul,
-article ol {
+article ol,
+article pre {
   margin-bottom: 1em;
 }
 article p + h2,
