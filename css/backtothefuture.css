@@ -36,7 +36,7 @@ ol {
 abbr {
   border-bottom: 1px dotted #000;
 }
-header#top-dog {
+#top-dog {
   width: 200px;
   text-align: center;
   margin: auto;
@@ -54,52 +54,52 @@ header#top-dog {
   /*}*/
 
 }
-header#top-dog h1,
-header#top-dog h2 {
+#top-dog h1,
+#top-dog h2 {
   font-family: futura-pt, futura, sans-serif;
   line-height: 1em;
 }
-header#top-dog h1 a,
-header#top-dog h2 a {
+#top-dog h1 a,
+#top-dog h2 a {
   color: #000;
   text-decoration: none;
 }
-header#top-dog h1 a:hover,
-header#top-dog h2 a:hover {
+#top-dog h1 a:hover,
+#top-dog h2 a:hover {
   color: #000;
 }
-header#top-dog h1 {
+#top-dog h1 {
   font-size: 90px;
   font-weight: 700;
   letter-spacing: -0.17em;
   margin: 0 0 -15px -10px;
 }
-header#top-dog h2 {
+#top-dog h2 {
   font-size: 21px;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 25px;
 }
-header#top-dog nav {
+#top-dog nav {
   font-family: futura-pt, futura, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 1px;
 }
-header#top-dog nav ul {
+#top-dog nav ul {
   list-style: none;
   margin: 0 0 25px 0;
   padding: 0;
 }
-header#top-dog nav a {
+#top-dog nav a {
   color: #999;
   text-decoration: none;
 }
-header#top-dog nav a:hover {
+#top-dog nav a:hover {
   color: #333;
 }
-section#content {
+#content {
   width: 640px;
   margin: 70px 0 50px 300px;
 }
