@@ -31,7 +31,7 @@ Starting with Firefox 15, [we've broken that up a bit further](https://bugzilla.
       }
     }
 
-This was a part of making some of Session Restore more usable to other components. In this case it was something originally thought up for Sync to be able to reuse code when syncing tabs between devices. We've maintained compatability with the old form
+This was a part of making some of Session Restore more usable to other components. In this case it was something originally thought up for Sync to be able to reuse code when syncing tabs between devices.
 
 
 ## Better Restoration of `<select>` Elements
