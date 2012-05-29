@@ -135,7 +135,10 @@ article p + h3,
 article p + h4,
 article ul + h2,
 article ul + h3,
-article ul + h4 {
+article ul + h4,
+article pre + h2,
+article pre + h3,
+article pre + h4 {
   margin-top: 1em;
 }
 article blockquote {
