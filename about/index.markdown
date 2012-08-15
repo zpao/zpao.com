@@ -15,7 +15,7 @@ Bullet points are easier to write than a proper paragraph, so I'm going to be la
 * I grew up outside Philadelphia, lived in Pittsburgh for a couple years, and currently live in San Francisco.
 * I graduated from [Carnegie Mellon University](http://cmu.edu) twice in 2008.
   First with a BS in Information Systems and then later with a MS in Information Systems Management.
-* I'm social on [Twitter](https://twitter.com/zpao) & [Facebook](https://facebook.com/pauloshannessy).
+* I'm social on [Twitter](https://twitter.com/zpao) & [Facebook](https://www.facebook.com/zpao).
 * I put code on [Github](https://github.com/zpao).
 * I listen to music on [Rdio](http://www.rdio.com/people/zpao/) & track that with [last.fm](http://last.fm/user/zpao).
 * When I remember, I put photos on [Flickr](http://flickr.com/photos/zpao).
