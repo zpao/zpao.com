@@ -8,8 +8,9 @@ layout: general
 Bullet points are easier to write than a proper paragraph, so I'm going to be lazy.
 
 * I'm married to a [pretty cool lady](http://twitter.com/otlvintage).
-* I've been getting paid to work on [Firefox at Mozilla](http://firefox.com) since 2009.
-* I haven't been getting paid to work at [my wife's company](http://onetruelovevintage.com) since 2011.
+* I currently work at [Facebook](https://www.facebook.com).
+* I used to work on [Firefox at Mozilla](http://firefox.com) (and still *try* to contribute when I can).
+* I write code & move furniture for [my wife's company](http://onetruelovevintage.com).
 * I have a [puppy](http://instagr.am/p/lPn7w/)!
 * I grew up outside Philadelphia, lived in Pittsburgh for a couple years, and currently live in San Francisco.
 * I graduated from [Carnegie Mellon University](http://cmu.edu) twice in 2008.
