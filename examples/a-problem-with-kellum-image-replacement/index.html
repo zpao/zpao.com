@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>Example: A Problem with Kellum Image Replacement</title>
+  <style>
+    h1 {
+      text-indent: 100%;
+      overflow: hidden;
+      height: 100px;
+      width: 300px;
+      background: url('logo.png');
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Company Logo</h1>
+  <p>
+    Many browsers change the specified <code>text-indent</code> value when finding
+    text, but only when the text-indent value is positive.
+  </p>
+  <p>
+    For example, search for "company" in this page. Webkit browsers (Chrome, Safari)
+    will cause the text that was "hidden" to become visible. Opera behaves the
+    same way. Firefox does not cause the text to become visible.
+  </p>
+</body>
+</html>
