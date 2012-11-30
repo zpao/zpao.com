@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Safari 6 and a Bug with getBoundingClientRect</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    #fixed {
+      background: #000;
+      color: white;
+      height: 40px;
+      position: fixed;
+      top: 50px;
+      width: 100%;
+    }
+
+    #spacer {
+      background: #ccc;
+      height: 2000px;
+    }
+
+    .transform {
+      -o-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+    }
+  </style>
+</head>
+<body>
+  <div id="fixed">
+    <button id="toggle">enable transform</button>
+    <button id="focusme">focus me</button>
+    top (via <code>getBoundingClientRect</code>): <span id="top"></span>,
+    offsetTop: <span id="offsetTop"></span>
+  </div>
+  <div id="spacer">
+    What's happening here?
+    <a href="/posts/safari-6-and-a-bug-with-getboundingclientrect">Check out my blog post for details.</a>
+  </div>
+
+  <script>
+    var hasTransform = false;
+    var fixedEl = document.getElementById("fixed");
+    var topEl = document.getElementById("top");
+    var offsetTopEl = document.getElementById("offsetTop");
+    var toggleEl = document.getElementById("toggle");
+    var focusEl = document.getElementById("focusme");
+
+    function showPosition() {
+      topEl.innerHTML = fixedEl.getBoundingClientRect().top;
+      offsetTopEl.innerHTML = fixedEl.offsetTop;
+    }
+
+    function toggleTransform() {
+      fixedEl.className = hasTransform ? "" : "transform";
+      hasTransform = !hasTransform;
+      toggleEl.innerHTML = (hasTransform ? "disable" : "enable") + " transform";
+      showPosition();
+    }
+
+    function focusButton() {
+      focusEl.focus();
+    }
+
+    showPosition();
+    window.addEventListener("scroll", showPosition);
+    toggleEl.addEventListener("click", toggleTransform);
+    focusEl.addEventListener("click", focusButton);
+  </script>
+</body>
+</html>
