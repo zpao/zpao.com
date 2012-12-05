@@ -3,6 +3,13 @@
 @color3: #8088CA;
 @color4: #94A634;
 
+.transition(@property, @duration, @fn) {
+  -webkit-transition: @property @duration @fn;
+     -moz-transition: @property @duration @fn;
+       -o-transition: @property @duration @fn;
+          transition: @property @duration @fn;
+}
+
 /* A rudimentary "reset" */
 * { margin: 0; padding: 0; border: none; }
 
@@ -12,7 +19,8 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 html {
-  background: #f6f6f6;
+  background: -webkit-radial-gradient(50% 0%, circle farthest-corner, rgba(232, 232, 232, 0.8) 10%, rgba(248, 248, 248, 0.5)) fixed, url(/img/debut_light.png), #f8f8f8;
+  background: radial-gradient(circle farthest-corner at 50% 0% , rgba(232, 232, 232, 0.8) 10%, rgba(248, 248, 248, 0.5)) fixed, url(/img/debut_light.png), #f8f8f8;
   font-family: "ff-tisa-web-pro", georgia, serif;
 }
 pre, code {
@@ -88,6 +96,7 @@ abbr {
     a {
       color: #999;
       text-decoration: none;
+      .transition(all, .15s, ease);
 
       &:hover {
         color: #333;

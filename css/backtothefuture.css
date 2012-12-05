@@ -16,7 +16,8 @@ section {
   display: block;
 }
 html {
-  background: #f6f6f6;
+  background: -webkit-radial-gradient(50% 0%, circle farthest-corner, rgba(232, 232, 232, 0.8) 10%, rgba(248, 248, 248, 0.5)) fixed, url(/img/debut_light.png), #f8f8f8;
+  background: radial-gradient(circle farthest-corner at 50% 0%, rgba(232, 232, 232, 0.8) 10%, rgba(248, 248, 248, 0.5)) fixed, url(/img/debut_light.png), #f8f8f8;
   font-family: "ff-tisa-web-pro", georgia, serif;
 }
 pre,
@@ -95,6 +96,10 @@ abbr {
 #top-dog nav a {
   color: #999;
   text-decoration: none;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 #top-dog nav a:hover {
   color: #333;
