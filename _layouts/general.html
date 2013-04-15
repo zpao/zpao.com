@@ -4,6 +4,13 @@
   <title>Paul O’Shannessy - {{ page.title | markdownify2 }}</title>
   <meta charset="utf-8" />
 
+  <!-- Twitter cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.content | truncate: 200 }}">
+  <meta name="twitter:site" content="@zpao">
+  <meta name="twitter:creator" content="@zpao">
+
   <link href="http://static.zpao.com/favicon.png" rel="shortcut icon" type="image/png">
   <link rel="stylesheet" href="/css/backtothefuture.css">
   <link rel="stylesheet" href="/css/highlight.css">
