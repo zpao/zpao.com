@@ -8,6 +8,6 @@ include:
   - .htaccess
   - .tumblr_htaccess
 
-markdown: rdiscount
-rdiscount:
-  extensions: [smart, autolink]
+markdown: redcarpet
+redcarpet:
+  extensions: [smart, autolink, fenced_code_blocks, no_intra_emphasis, prettify]
