@@ -3,6 +3,7 @@
 <head>
   <title>Paul O’Shannessy - {{ page.title | markdownify2 }}</title>
   <meta charset="utf-8" />
+  {% if page.opengraph %}{{ page.opengraph }}{% endif %}
   {% if page.twitter_card %}{{ page.twitter_card }}{% endif %}
 
   <link href="http://static.zpao.com/favicon.png" rel="shortcut icon" type="image/png">

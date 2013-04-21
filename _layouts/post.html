@@ -2,6 +2,12 @@
 layout: general
 ---
 
+{% opengraph %}
+  <!-- OpenGraph -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.content | markdownify | strip_html | xml_escape | truncate: 200 }}">
+  <meta property="og:type" content="article">
+{% endopengraph %}
 {% twitter_card %}
   <!-- Twitter cards -->
   <meta name="twitter:card" content="summary">

@@ -15,6 +15,20 @@ module Jekyll
       ''
     end
   end
+
+  class OpenGraph < Liquid::Block
+    alias :super_render :render
+
+    def initialize(tag_name, identifier, tokens)
+      super
+    end
+
+    def render(context)
+      context.environments.first["page"]["opengraph"] = super_render(context)
+      ''
+    end
+  end
 end
 
 Liquid::Template.register_tag('twitter_card', Jekyll::TwitterCard)
+Liquid::Template.register_tag('opengraph', Jekyll::OpenGraph)
