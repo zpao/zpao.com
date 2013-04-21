@@ -93,7 +93,8 @@ abbr {
   margin: 0 0 25px 0;
   padding: 0;
 }
-#top-dog nav a {
+#top-dog nav a,
+#top-dog .social-links a {
   color: #999;
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
@@ -101,8 +102,12 @@ abbr {
   -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-#top-dog nav a:hover {
+#top-dog nav a:hover,
+#top-dog .social-links a:hover {
   color: #333;
+}
+#top-dog .social-links a {
+  padding: 4px;
 }
 #content {
   width: 640px;
