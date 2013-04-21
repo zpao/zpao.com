@@ -1,13 +1,16 @@
+server: true
 auto: true
 permalink: /posts/:title
 url: http://zpao.com
 # lsi: true
 exclude:
   - Rakefile
+  - Gemfile
+  - Gemfile.lock
 include:
   - .htaccess
   - .tumblr_htaccess
 
 markdown: redcarpet
 redcarpet:
-  extensions: [smart, autolink, fenced_code_blocks, no_intra_emphasis, prettify]
+  extensions: [smart, autolink, fenced_code_blocks, no_intra_emphasis, prettify, superscript]
