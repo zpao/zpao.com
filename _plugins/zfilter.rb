@@ -8,7 +8,7 @@ module Jekyll
     # Returns the HTML formatted String.
     def markdownify2(input)
       site = @context.registers[:site]
-      converter = site.getConverterImpl(Jekyll::MarkdownConverter)
+      converter = site.getConverterImpl(Jekyll::Converters::Markdown)
       converter.convert(input).gsub(/<\/?p>/, '').chomp
     end
   end
