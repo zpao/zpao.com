@@ -1,5 +1,3 @@
-server: true
-auto: true
 permalink: /posts/:title
 url: http://zpao.com
 # lsi: true

@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'jekyll'
+gem 'jekyll', "~>1.0"
 
 # markdown
 gem 'redcarpet'
