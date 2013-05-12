@@ -3,6 +3,7 @@
 <head>
   <title>Paul O’Shannessy - {{ page.title | markdownify2 }}</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=680">
   {% if page.opengraph %}{{ page.opengraph }}{% endif %}
   {% if page.twitter_card %}{{ page.twitter_card }}{% endif %}
 
@@ -38,19 +39,27 @@
 <body>
 
   <header id="top-dog">
-    <h1><a href="/">ZPAO</a></h1>
-    <h2><a href="/">Paul O&rsquo;Shannessy</a></h2>
-    <nav>
-      <ul>
-        <li><a href="/about">About + Contact</a></li>
-        <li><a href="/posts">Archive</a></li>
-      </ul>
-    </nav>
-    <p class="social-links">
-      <a href="https://www.facebook.com/zpao" class="icon-facebook"></a>
-      <a href="https://twitter.com/zpao" class="icon-twitter"></a>
-      <a href="https://github.com/zpao" class="icon-github"></a>
-    </p>
+    <div class="wrap">
+      <div class="left">
+        <h1><a href="/">ZPAO</a></h1>
+        <h2><a href="/">Paul O&rsquo;Shannessy</a></h2>
+      </div>
+      <div class="right top-puppy">
+        <nav>
+          <ul>
+            <li><a href="/about">About + Contact</a></li>
+            <li><a href="/posts">Archive</a></li>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <ul>
+            <li><a href="https://www.facebook.com/zpao" class="icon-facebook"></a></li>
+            <li><a href="https://twitter.com/zpao" class="icon-twitter"></a></li>
+            <li><a href="https://github.com/zpao" class="icon-github"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
 
   <section id="content">
