@@ -1,14 +1,4 @@
-@color1: #ED4541;
-@color2: #059FD6;
-@color3: #8088CA;
-@color4: #94A634;
-
-.transition(@property, @duration, @fn) {
-  -webkit-transition: @property @duration @fn;
-     -moz-transition: @property @duration @fn;
-       -o-transition: @property @duration @fn;
-          transition: @property @duration @fn;
-}
+@import 'bourbon/bourbon';
 
 /* A rudimentary "reset" */
 * { margin: 0; padding: 0; border: none; }
@@ -19,15 +9,21 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 html {
-  background: -webkit-radial-gradient(50% 0%, circle farthest-corner, rgba(232, 232, 232, 0.8) 10%, rgba(248, 248, 248, 0.5)) fixed, url(/img/debut_light.png), #f8f8f8;
-  background: radial-gradient(circle farthest-corner at 50% 0% , rgba(232, 232, 232, 0.8) 10%, rgba(248, 248, 248, 0.5)) fixed, url(/img/debut_light.png), #f8f8f8;
+  background-color: #f8f8f8;
+  @include background(
+    radial-gradient(circle farthest-corner at 50% 0%, rgba(232, 232, 232, 0.8) 10%, rgba(248, 248, 248, 0.5)) fixed,
+    url(/img/debut_light.png),
+    #f8f8f8
+  );
   font-family: "ff-tisa-web-pro", georgia, serif;
 }
+
 pre, code {
   font-family: anonymous-pro, menlo, monaco, consolas, fixed;
   background: #ddd;
   padding: .25em;
 }
+
 // Fix <pre><code> blocks
 pre > code {
   background: transparent;
@@ -99,7 +95,7 @@ abbr {
     a {
       color: #999;
       text-decoration: none;
-      .transition(all, .15s, ease);
+      @include transition(all, .15s, ease);
 
       &:hover {
         color: #333;
@@ -185,3 +181,4 @@ article {
     width: 125px;
   }
 }
+
