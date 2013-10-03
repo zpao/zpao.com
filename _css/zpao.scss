@@ -1,0 +1,175 @@
+$page_color: #f1f1f1;
+$font_color: #424242;
+$link_color: #f14242;
+$header_color: #919191;
+$border_color: #d1d1d1;
+
+/* A rudimentary "reset" */
+* { margin: 0; padding: 0; border: none; box-sizing: border-box; }
+
+/* Make HTML 5 elements block level */
+article, aside, figure, footer, header, hgroup, nav, section, time {
+  display: block;
+}
+
+html {
+  background: $page_color;
+  color: $font_color;
+  font-family: anonymouspro, monospace;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+#container {
+  width: 800px;
+  margin: auto;
+}
+
+// general stuff
+
+a {
+  color: $link_color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-size: 133%;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 111%;
+}
+
+code {
+  background: #fff;
+  padding: 2px 4px;
+}
+
+blockquote {
+  border-left: 8px solid $border_color;
+  padding: 0 24px;
+  font-style: italic;
+
+  ul, ol {
+    list-style-position: inside;
+  }
+}
+
+////////////////
+
+#bananaphone {
+  margin: 24px 0;
+
+  h1,
+  nav,
+  ul,
+  li {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  nav {
+    &:before {
+      content: '|';
+      color: $header_color;
+    }
+  }
+  a {
+    color: $header_color;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  li {
+    margin-left: 12px;
+    list-style: none;
+  }
+
+  h1 {
+    font-size: 111%;
+    span {
+      color: $font_color;
+      font-size: 133%;
+    }
+  }
+}
+
+#content {
+  p,
+  ul,
+  pre {
+    margin-bottom: 1em;
+  }
+}
+
+#post-list {
+  .date {
+    width: 128px;
+  }
+}
+
+time {
+  color: $header_color;
+}
+
+footer {
+  margin: 24px auto;
+  text-align: center;
+}
+
+.social-links {
+  margin: auto;
+  display: inline-block;
+  font-size: 24px;
+
+  a {
+    color: $header_color;
+
+    &:hover {
+      color: $font_color;
+      text-decoration: none;
+    }
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+}
+
+.post-footer {
+  text-align: center;
+}
+
+// because the code is too big
+.gist {
+  font-size: 75%;
+}
+
+
+@media screen and (max-width: 800px) {
+  #container {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  ul, ol {
+    list-style-position: inside;
+  }
+  #bananphone {
+    nav {
+      display: block;
+    }
+  }
+}

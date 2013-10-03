@@ -3,12 +3,12 @@
 <head>
   <title>Paul O’Shannessy - {{ page.title | markdownify2 }}</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=680">
+  <meta name="viewport" content="width=device-width">
   {% if page.opengraph %}{{ page.opengraph }}{% endif %}
   {% if page.twitter_card %}{{ page.twitter_card }}{% endif %}
 
   <link href="http://static.zpao.com/favicon.png" rel="shortcut icon" type="image/png">
-  <link rel="stylesheet" href="/css/backtothefuture.css">
+  <link rel="stylesheet" href="/css/zpao.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/highlight.css">
 
@@ -38,46 +38,45 @@
 </head>
 <body>
 
-  <header id="top-dog">
-    <div class="wrap">
-      <div class="left">
-        <h1><a href="/">ZPAO</a></h1>
-        <h2><a href="/">Paul O&rsquo;Shannessy</a></h2>
-      </div>
-      <div class="right top-puppy">
-        <nav>
-          <ul>
-            <li><a href="/about">About + Contact</a></li>
-            <li><a href="/posts">Archive</a></li>
-          </ul>
-        </nav>
-        <div class="social-links">
-          <ul>
-            <li><a href="https://www.facebook.com/zpao" class="icon-facebook"></a></li>
-            <li><a href="https://twitter.com/zpao" class="icon-twitter"></a></li>
-            <li><a href="https://github.com/zpao" class="icon-github"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
+  <div id="container">
 
-  <section id="content">
-    <article>
-      <header>
-        <h1>{{ page.title | markdownify2 }}</h1>
-        {% if page.blurb %}
-          <h2>{{ page.blurb | markdownify2 }}</h2>
-        {% endif %}
-        {% if page.date %}
-          <h3>{{ page.date | date: "%B %e, %Y" }}</h3>
-        {% endif %}
-      </header>
-      <div class="post-content">
-        {{ content }}
-      </div>
-    </article>
-  </section>
+    <header id="bananaphone">
+      <h1><a href="/"><span>ZPAO</span> is Paul O&rsquo;Shannessy</a></h1>
+      <nav>
+        <ul>
+          <li><a href="/about">About + Contact</a></li>
+          <li><a href="/posts">Archive</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="content">
+      <article>
+        <header>
+          {% if page.date %}
+            <time datetime="{{ page.date | date: "%F" }}">
+              {{ page.date | date: "%F" }}
+            </time>
+          {% endif %}
+          <h1>{{ page.title | markdownify2 }}</h1>
+          {% if page.blurb %}
+            <h2>{{ page.blurb | markdownify2 }}</h2>
+          {% endif %}
+        </header>
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/zpao" class="icon-facebook"></a></li>
+        <li><a href="https://twitter.com/zpao" class="icon-twitter"></a></li>
+        <li><a href="https://github.com/zpao" class="icon-github"></a></li>
+      </ul>
+    </footer>
+  </div>
 
   <script src='http://mint.zpao.com/?js' type='text/javascript'></script>
 </body>

@@ -9,7 +9,7 @@ Bullet points are easier to write than a proper paragraph, so I'm going to be la
 
 * I'm married to a [pretty cool lady](http://twitter.com/otlvintage).
 * I currently work at [Facebook](https://www.facebook.com).
-* I used to work on [Firefox at Mozilla](http://firefox.com) (and still *try* to contribute when I can).
+* I used to work on [Firefox at Mozilla](http://firefox.com).
 * I write code & move furniture for [my wife's company](http://onetruelovevintage.com).
 * I have a [puppy](http://instagr.am/p/lPn7w/)!
 * I grew up outside Philadelphia, lived in Pittsburgh for a couple years, and currently live in San Francisco.
@@ -29,7 +29,7 @@ Bullet points are easier to write than a proper paragraph, so I'm going to be la
 
 This site has gone through many iterations. It was on the web with a couple "free to host" providers and free domains (`.tk` anyone?). Then in 2004 [Matt Claypotch](http://potch.me/) & I decided to go dutch on hosting with [Dreamhost](http://www.dreamhost.com/r.cgi?98611 "Yea,  that's a referral link for cash money") and this (along with many other sites) have been there since. For a long time I had a Wordpress site here, then I was using Tumblr, then I wrote my own blogging software, then I was using Tumblr again, then I started using Jekyll. I'm sticking with that for the foreseeable future. There's been a blog here for a long time. I've kept a lot of those posts around but let's be honest, they weren't all in the greatest taste.
 
-I've always done my best to bring a bit of design here. I'm by no stretch of the word a "designer" but I have my opinions. Mostly my opinion is "grey and red are cool; use those". Also, I'm unnaturally drawn to typography so I play with that a lot. If I could use Trade Gothic & Futura for everything, I would die a happy man. Currently, I'm making use of [Futura PT](https://typekit.com/fonts/futura-pt), [FF Tisa Web Pro](https://typekit.com/fonts/ff-tisa-web-pro), and [Anonymous Pro](https://typekit.com/fonts/anonymous-pro).
+The current design was probably inspired by [iA Writer](http://www.iawriter.com/mac/). I've been using it a lot over the past year to do most of my writing and I really enjoy the simplicity of it. As much as I would like, I can't use their custom typeface here, so I'm using [Anonymous Pro](https://typekit.com/fonts/anonymous-pro) for everything.
 
 
 ## Contact

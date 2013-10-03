@@ -1,6 +1,6 @@
 desc "scss css"
 task :css do
-  system("sass -t expanded _css/backtothefuture.scss css/backtothefuture.css")
+  system("sass -t expanded _css/zpao.scss:css/zpao.css")
 end
 
 desc "put it up"
