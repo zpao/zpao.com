@@ -2,7 +2,7 @@
 title: "This is some good SHIT"
 date: 2013-10-03 14:42
 tags:
-  - 
+  - recruiting
 layout: post
 ---
 
@@ -23,3 +23,13 @@ My response:
 > 4. Spelling and grammer mistakes.
 
 > Don't contact me again.
+
+- - -
+
+**Edit:** yes, I misspelled "grammar". And then I learned about [Muphry's Law](http://en.wikipedia.org/wiki/Muphry%27s_law).
+
+Joe noticed too and responded with a single word email:
+
+> grammar
+
+Touché.
