@@ -6,7 +6,6 @@ tags:
   - mozilla
   - session restore
   - beta7
-layout: post
 tumblr_permalink: post/1099464627/restore-previous-session
 ---
 

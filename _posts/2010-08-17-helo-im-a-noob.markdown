@@ -2,7 +2,6 @@
 title: "Helo, i'm a noob"
 tags:
   - the internet is filled with dumb people
-layout: post
 type: quote
 tumblr_permalink: post/968956777/helo-im-a-noob-pls-be-kind-im-using
 ---

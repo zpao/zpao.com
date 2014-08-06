@@ -5,7 +5,6 @@ tags:
   - personal
   - wedding
   - video
-layout: post
 type: video
 tumblr_permalink: post/11324073440/did-you-know-that-i-got-married-3-5-weeks-ago-now
 ---

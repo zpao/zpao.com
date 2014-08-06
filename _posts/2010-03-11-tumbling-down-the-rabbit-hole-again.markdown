@@ -3,7 +3,6 @@ title: "Tumbling Down the Rabbit Hole (Again)"
 tags:
   - tumblr
   - blogging
-layout: post
 tumblr_permalink: post/442471406/tumbling-down-the-rabbit-hole-again
 ---
 
@@ -13,4 +12,4 @@ Now I'm back on tumblr with the hopes that I have more fun with it. As [Cameron 
 
 So I'll be doing just that: sharing cool things, thoughts that are too long for twitter, and maybe some full-length articles. I haven't decided if I'll be posting my work-related status reports here (it's something we do now, but I've been terrible about) or if those would be better elsewhere. I'll make that call... tomorrow.
 
-I've kicked off the fun by [showing off my desktop](http://zpao.tumblr.com/post/442212843/my-desktop-makes-me-happy-no-menu-no-icons-on). 
+I've kicked off the fun by [showing off my desktop](http://zpao.tumblr.com/post/442212843/my-desktop-makes-me-happy-no-menu-no-icons-on).

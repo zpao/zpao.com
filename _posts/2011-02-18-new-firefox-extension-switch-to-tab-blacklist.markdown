@@ -6,7 +6,6 @@ tags:
   - firefox 4
   - switch-to-tab blacklist
   - extension
-layout: post
 tumblr_permalink: post/3372227196/new-firefox-extension-switch-to-tab-blacklist
 ---
 

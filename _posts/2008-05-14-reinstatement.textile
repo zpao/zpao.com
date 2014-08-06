@@ -4,7 +4,6 @@ blurb: I'm back and better than ever?
 tags:
   - blarg
   - rails
-layout: post
 old_permalink: "articles/1-reinstatement"
 ---
 

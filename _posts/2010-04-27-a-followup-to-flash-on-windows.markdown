@@ -5,7 +5,6 @@ tags:
   - flash
   - mozilla
   - i've calmed down now
-layout: post
 tumblr_permalink: post/554260739/a-followup-to-flash-on-windows
 ---
 

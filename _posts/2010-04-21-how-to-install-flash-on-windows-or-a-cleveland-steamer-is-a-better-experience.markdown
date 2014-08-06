@@ -7,7 +7,6 @@ tags:
   - no really - fuck you adobe
   - mozilla
   - cleveland steamer
-layout: post
 tumblr_permalink: post/538816688/how-to-install-flash-on-windows-or-a-cleveland-steamer
 ---
 

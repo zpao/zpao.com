@@ -3,7 +3,6 @@ title: "Shaver Facts"
 tags:
   - mozilla
   - shaverfacts
-layout: post
 type: photo
 tumblr_permalink: post/475410899/i-had-absolutely-nothing-to-do-with
 ---

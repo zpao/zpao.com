@@ -6,7 +6,6 @@ tags:
   - earlyadopter
   - build
   - firefox
-layout: post
 tumblr_permalink: post/7991556360/building-firefox-on-os-x-lion
 ---
 

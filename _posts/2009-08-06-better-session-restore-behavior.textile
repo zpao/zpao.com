@@ -5,7 +5,6 @@ tags:
   - mozilla
   - opensource
   - sessionstore
-layout: post
 old_permalink: "articles/20-better_session_restore_behavior"
 ---
 

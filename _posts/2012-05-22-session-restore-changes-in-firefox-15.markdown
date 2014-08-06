@@ -5,7 +5,6 @@ tags:
   - Mozilla
   - Firefox
   - Session Restore
-layout: post
 ---
 
 There are a few changes coming in Firefox 15's Session Restore. There are a few under the hood changes which should be transparent to anybody using the API, but there are also some changes to the format of the `JSON` that is exposed.

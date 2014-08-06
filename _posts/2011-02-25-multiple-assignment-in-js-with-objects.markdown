@@ -5,7 +5,6 @@ tags:
   - javascript
   - firefox
   - wtf ecma
-layout: post
 tumblr_permalink: post/3513047019/multiple-assignment-in-js-with-objects
 ---
 

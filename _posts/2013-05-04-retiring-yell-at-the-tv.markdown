@@ -3,7 +3,6 @@ title: "Retiring Yell at the TV"
 date: 2013-05-04 15:10
 tags:
   - yellatthetv
-layout: post
 ---
 
 4 years ago (holy shit!) I [launched]({% post_url 2009-01-21-yell-at-the-tv %}) a little project called [Yell at the TV!](http://yellatthetv.com). Up until recently, I'd mostly forgotten about it, but then I got several emails asking for me to remove some tweets. I'd assumed the site just stopped working at some point but apparently not.

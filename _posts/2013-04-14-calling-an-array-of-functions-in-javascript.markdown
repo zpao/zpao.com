@@ -3,7 +3,6 @@ title: "Calling an Array of Functions in JavaScript"
 tags:
   - javascript
   - programming
-layout: post
 ---
 
 I've reviewed some bits of code over the past couple months that stored functions in an array and then at some point in the future needed to call all of them. This is a very simple thing to do, but something about the code always bothered me.

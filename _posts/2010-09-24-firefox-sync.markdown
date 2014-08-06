@@ -5,7 +5,6 @@ tags:
   - firefox
   - firefox sync
   - firefox4
-layout: post
 tumblr_permalink: post/1180711036/today-i-accidentally-deleted-my-primary-firefox
 ---
 

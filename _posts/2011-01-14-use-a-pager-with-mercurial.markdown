@@ -4,7 +4,6 @@ tags:
   - mercurial
   - mozilla
   - stupid defaults
-layout: post
 type: link
 source_url: "http://mercurial.selenic.com/wiki/PagerExtension"
 tumblr_permalink: post/2749865516/use-a-pager-with-mercurial

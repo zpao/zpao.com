@@ -5,7 +5,6 @@ tags:
   - mozilla
   - firefox
   - statusupdate
-layout: post
 old_permalink: "articles/23-status_update_sept_25_2009"
 ---
 

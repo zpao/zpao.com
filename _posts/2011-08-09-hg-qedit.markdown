@@ -4,7 +4,6 @@ tags:
   - mercurial
   - mozilla
   - workflow
-layout: post
 tumblr_permalink: post/8695952974/hg-qedit
 ---
 

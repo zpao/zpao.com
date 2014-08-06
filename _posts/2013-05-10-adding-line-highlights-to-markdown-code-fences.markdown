@@ -4,7 +4,6 @@ date: 2013-05-10
 tags:
   - markdown
   - ruby
-layout: post
 ---
 
 One thing I needed recently was an unobtrusive way to highlight lines of code, while keeping it readable (and of course, inside Markdown). The main use case I wanted it for is to highlight changed lines of code inside a tutorial. I think this is a fairly common case, and if your code blocks contain more than 3 lines of code, it's really helpful for the reader.

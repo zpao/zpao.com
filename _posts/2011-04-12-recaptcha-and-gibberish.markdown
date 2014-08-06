@@ -3,7 +3,6 @@ title: "reCAPTCHA and Gibberish"
 tags:
   - recaptcha
   - ticketmaster
-layout: post
 type: photo
 tumblr_permalink: post/4561087614/it-appears-the-recaptcha-has-officially-gone
 ---

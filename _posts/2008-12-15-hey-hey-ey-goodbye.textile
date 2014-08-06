@@ -5,7 +5,6 @@ tags:
   - non-work
   - carnegie-mellon
   - life
-layout: post
 old_permalink: "articles/13-hey_hey-ey_goodbye"
 ---
 

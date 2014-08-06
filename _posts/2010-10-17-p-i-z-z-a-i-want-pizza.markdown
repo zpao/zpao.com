@@ -4,7 +4,6 @@ tags:
   - youtube
   - video
   - via reddit
-layout: post
 type: video
 tumblr_permalink: post/1340213794/p-i-z-z-a-i-want-pizza
 ---

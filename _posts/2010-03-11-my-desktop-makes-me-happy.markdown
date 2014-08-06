@@ -3,7 +3,6 @@ title: "My Desktop Makes Me Happy"
 tags:
   - desktop
   - screenshot
-layout: post
 type: photo
 tumblr_permalink: post/442212843/my-desktop-makes-me-happy-no-menu-no-icons-on
 ---

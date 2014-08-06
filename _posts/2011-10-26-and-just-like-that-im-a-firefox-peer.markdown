@@ -3,7 +3,6 @@ title: "And Just Like That I'm a Firefox Peer"
 tags:
   - mozilla
   - firefox
-layout: post
 tumblr_permalink: post/11963194856/and-just-like-that-im-a-firefox-peer
 ---
 

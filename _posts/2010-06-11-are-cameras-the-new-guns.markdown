@@ -5,7 +5,6 @@ tags:
   - photography
   - police
   - link
-layout: post
 type: link
 source_url: "http://gizmodo.com/5553765/are-cameras-the-new-guns"
 tumblr_permalink: post/687865337/are-cameras-the-new-guns

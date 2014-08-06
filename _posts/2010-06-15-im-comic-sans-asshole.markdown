@@ -4,7 +4,6 @@ tags:
   - typography
   - link
   - comic sans
-layout: post
 type: link
 source_url: "http://mcsweeneys.net/links/monologues/15comicsans.html"
 tumblr_permalink: post/702008333/im-comic-sans-asshole

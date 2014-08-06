@@ -3,7 +3,6 @@ title: "Pagination: Next, Next, Previous"
 tags:
   - tumblr
   - blog
-layout: post
 tumblr_permalink: post/2424301310/pagination-next-next-previous
 ---
 

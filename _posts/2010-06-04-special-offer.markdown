@@ -2,7 +2,6 @@
 title: "Special Offer"
 tags:
   - do people fall for these?
-layout: post
 type: photo
 tumblr_permalink: post/664036242/youve-all-seen-these-theyre-all-over-purchase
 ---

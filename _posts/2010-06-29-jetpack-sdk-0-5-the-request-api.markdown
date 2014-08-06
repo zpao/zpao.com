@@ -3,7 +3,6 @@ title: "Jetpack SDK 0.5 & the Request API"
 tags:
   - mozilla
   - jetpack
-layout: post
 tumblr_permalink: post/750771670/jetpack-sdk-0-5-the-request-api
 ---
 

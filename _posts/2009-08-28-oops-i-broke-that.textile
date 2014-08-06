@@ -5,7 +5,6 @@ tags:
   - mozilla
   - firefox
   - windows
-layout: post
 old_permalink: "articles/21-oops_i_broke_that"
 ---
 

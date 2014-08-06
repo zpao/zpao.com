@@ -4,7 +4,6 @@ blurb: "Oh, open source, how thee makes work for me."
 tags:
   - mozilla
   - opensource
-layout: post
 old_permalink: "articles/7-on_open_source"
 ---
 

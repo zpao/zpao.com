@@ -4,7 +4,6 @@ tags:
   - san francsico
   - muni
   - clipper
-layout: post
 tumblr_permalink: post/1297327261/the-clipper-card-system-is-a-fucking-mess
 ---
 

@@ -5,7 +5,6 @@ tags:
   - futura
   - html5
   - sass
-layout: post
 tumblr_permalink: post/458305819/fuckin-style-and-futura-and-html5
 ---
 

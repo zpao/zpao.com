@@ -6,7 +6,6 @@ tags:
   - session restore
   - mozilla
   - bartab
-layout: post
 tumblr_permalink: post/1140456188/cascaded-session-restore-a-hidden-bonus
 ---
 

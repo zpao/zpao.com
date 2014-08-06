@@ -5,7 +5,6 @@ tags:
   - firefox
   - firefox 4
   - panorama
-layout: post
 tumblr_permalink: post/1368669319/reset-panorama-from-the-error-console
 ---
 

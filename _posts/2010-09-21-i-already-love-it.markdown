@@ -6,7 +6,6 @@ tags:
   - change i can believe in
   - firefox
   - firefox4
-layout: post
 type: quote
 tumblr_permalink: post/1164333665/i-already-love-it-i-had-to-wait-several-minutes
 ---

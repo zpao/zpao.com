@@ -15,3 +15,11 @@ redcarpet:
 
 sass:
   style: :expanded
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "post"

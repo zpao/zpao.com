@@ -5,7 +5,6 @@ tags:
   - mozilla
   - firefox
   - extension
-layout: post
 old_permalink: "articles/26-just_released_always_ask"
 ---
 

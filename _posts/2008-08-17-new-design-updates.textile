@@ -6,7 +6,6 @@ tags:
   - rails
   - design
   - comments
-layout: post
 old_permalink: "articles/9-new_design_updates"
 ---
 

@@ -5,7 +5,6 @@ tags:
   - mozilla
   - computers
   - apple problem report
-layout: post
 type: photo
 tumblr_permalink: post/564412242/fact-cats-make-things-happen-that-you-never
 ---

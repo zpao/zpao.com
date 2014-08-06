@@ -8,7 +8,6 @@ tags:
   - CSS
   - Bugs
   - Front-End
-layout: post
 ---
 
 Safari 6 shipped in July with OS X Mountain Lion and with it, a nice little WebKit bug that has some fun side effects. The bug has since been fixed in WebKit, but due to Safari's slow release schedule, we'll probably be living with this one for a while. Chrome on the other hand is unaffected (at least on the current stable release). No other browser seem to suffer from the same bug.

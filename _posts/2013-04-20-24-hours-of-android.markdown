@@ -4,7 +4,6 @@ date: 2013-04-20
 tags:
   - android
   - technology
-layout: post
 ---
 
 Yesterday I picked up an [HTC First](http://www.htc.com/us/smartphones/htc-first/) with [Facebook Home](https://www.facebook.com/home) and have been using it almost exclusively. This is my second Android device (I had a Samsung Galaxy Tab at Mozilla for a little while) but the first phone and first device I've used with any consistency. My first smartphone was an iPhone 3G four years ago and I've since owned an iPhone 4 and 5, so I'm writing from that perspective. I am currently employed by Facebook, so I'll try to focus on Android itself and not go too much into Home.

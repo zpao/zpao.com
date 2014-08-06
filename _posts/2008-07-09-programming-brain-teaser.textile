@@ -4,7 +4,6 @@ blurb: "i is smart!"
 tags:
   - ruby
   - programming
-layout: post
 old_permalink: "articles/6-programming_brain_teaser"
 ---
 

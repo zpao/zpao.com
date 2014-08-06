@@ -5,7 +5,6 @@ tags:
   - mozilla
   - interns
   - firefox
-layout: post
 old_permalink: "articles/2-mozilla_week_1"
 ---
 

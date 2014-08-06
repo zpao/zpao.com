@@ -6,7 +6,6 @@ tags:
   - firefox4
   - mozilla
   - amazon
-layout: post
 type: photo
 tumblr_permalink: post/1536418386/apparently-amazon-is-stepping-right-into-html5-and
 ---

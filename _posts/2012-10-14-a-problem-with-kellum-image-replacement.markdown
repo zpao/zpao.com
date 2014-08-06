@@ -6,7 +6,6 @@ tags:
   - HTML
   - Front-End
   - webdev
-layout: post
 ---
 
 If you've ever made a website that needed to use an image instead of some text, chances are you've used some image replacement technique. We all have our favorite way of doing this, but probably the most popular was the Phark technique, AKA "-9999px hack", which keeps text accessible to screen readers while hiding text off screen (unless you have a ludicrously long piece of text).

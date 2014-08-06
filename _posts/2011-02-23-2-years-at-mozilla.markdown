@@ -4,7 +4,6 @@ tags:
   - mozilla
   - life
   - firefox
-layout: post
 tumblr_permalink: post/3467536354/2-years-at-mozilla
 ---
 

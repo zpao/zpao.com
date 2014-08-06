@@ -5,7 +5,6 @@ tags:
   - mozilla
   - about:home
   - default home page
-layout: post
 type: photo
 tumblr_permalink: post/3045325637/the-new-firefox-default-home-page-is-seriously
 ---

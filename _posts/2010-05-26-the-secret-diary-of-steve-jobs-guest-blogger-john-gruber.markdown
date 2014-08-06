@@ -4,7 +4,6 @@ tags:
   - link
   - gruber
   - mac
-layout: post
 type: link
 source_url: "http://www.fakesteve.net/2010/05/guest-blogger-john-gruber.html"
 tumblr_permalink: post/635220581/the-secret-diary-of-steve-jobs-guest-blogger-john

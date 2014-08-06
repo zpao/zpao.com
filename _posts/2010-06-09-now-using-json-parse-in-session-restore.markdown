@@ -5,7 +5,6 @@ tags:
   - firefox
   - session restore
   - compatibility
-layout: post
 tumblr_permalink: post/681362149/now-using-json-parse-in-session-restore
 ---
 

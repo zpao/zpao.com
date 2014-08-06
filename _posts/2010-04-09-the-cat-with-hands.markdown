@@ -5,7 +5,6 @@ tags:
   - video
   - via reddit
   - cats
-layout: post
 type: video
 tumblr_permalink: post/509052308/the-cat-with-hands-on-vimeo-its-incredibly-well
 ---

@@ -4,7 +4,6 @@ tags:
   - music
   - video
   - concert
-layout: post
 type: video
 tumblr_permalink: post/709965121/last-thursday-i-saw-the-good
 ---

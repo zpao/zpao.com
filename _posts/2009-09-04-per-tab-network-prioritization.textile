@@ -7,7 +7,6 @@ tags:
   - performance
   - startup
   - extension
-layout: post
 old_permalink: "articles/22-per_tab_network_prioritization"
 ---
 

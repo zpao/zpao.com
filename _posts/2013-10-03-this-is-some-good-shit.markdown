@@ -3,7 +3,6 @@ title: "This is some good SHIT"
 date: 2013-10-03 14:42
 tags:
   - recruiting
-layout: post
 ---
 
 It's been a while since [I last wrote about recruiters](/posts/this-is-very-good-position), but when I saw a LinkedIn email with the subject "This is some good S**T", I knew it would be good...

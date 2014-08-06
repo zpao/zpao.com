@@ -4,7 +4,6 @@ tags:
   - mozilla
   - firefox
   - testing
-layout: post
 tumblr_permalink: post/657751943/waitforclipboard-now-available-to-mochitests
 ---
 

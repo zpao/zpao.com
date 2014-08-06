@@ -6,7 +6,6 @@ tags:
   - mozilla
   - session restore
   - omgchange
-layout: post
 tumblr_permalink: post/2854700249/just-quit-it
 ---
 

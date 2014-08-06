@@ -5,7 +5,6 @@ tags:
   - multimedia
   - software
   - windows
-layout: post
 type: link
 source_url: "http://blog.rsbaskin.com/post/3717628154/shoevox-voice-control-for-your-pc"
 tumblr_permalink: post/3768818683/shoevox-voice-control-for-your-pc-multimedia

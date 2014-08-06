@@ -5,7 +5,6 @@ tags:
   - tumblr
   - blog
   - blarg
-layout: post
 old_permalink: "articles/27-i_dont_blog_here_anymore"
 ---
 

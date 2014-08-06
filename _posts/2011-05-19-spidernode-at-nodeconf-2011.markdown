@@ -6,7 +6,6 @@ tags:
   - nodeconf
   - node.js
   - mozilla
-layout: post
 tumblr_permalink: post/5641702863/spidernode-at-nodeconf-2011
 ---
 
@@ -22,7 +21,7 @@ As we'd suspected for a while, Brendan Eich was the “Mozilla Person Secret Tal
 
 Overall, I think the reception we got was really positive. People seemed excited. Some viewed it as a way to run Node on architectures that V8 doesn’t support (before we left NodeConf I had an email from somebody telling me he had patches to get SpiderNode building on Solaris/Sparc). Others were just excited that this could open up the doors to making Node faster (more benchmarks to compete on). Other people were excited because they just really want block scoping (`let`).
 
-Other people weren’t so excited. And that’s fair. But there seemed to be some misconceptions about the project and why we were at NodeConf contributing to what felt a bit like disdain. 
+Other people weren’t so excited. And that’s fair. But there seemed to be some misconceptions about the project and why we were at NodeConf contributing to what felt a bit like disdain.
 
 ## Selling You
 

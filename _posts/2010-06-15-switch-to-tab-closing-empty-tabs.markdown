@@ -4,7 +4,6 @@ tags:
   - firefox
   - mozilla
   - ux
-layout: post
 tumblr_permalink: post/702614651/switch-to-tab-closing-empty-tabs
 ---
 

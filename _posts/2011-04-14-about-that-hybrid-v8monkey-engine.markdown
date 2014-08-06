@@ -8,7 +8,6 @@ tags:
   - v8
   - bad metaphors
   - spidermonkey
-layout: post
 tumblr_permalink: post/4620873765/about-that-hybrid-v8monkey-engine
 ---
 

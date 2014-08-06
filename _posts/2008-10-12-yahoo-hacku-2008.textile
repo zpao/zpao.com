@@ -6,7 +6,6 @@ tags:
   - hacking
   - php
   - blueprint
-layout: post
 old_permalink: "articles/12-yahoo_hacku_2008"
 ---
 

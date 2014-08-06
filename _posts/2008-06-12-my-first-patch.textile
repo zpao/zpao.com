@@ -5,7 +5,6 @@ tags:
   - mozilla
   - firefox
   - patch
-layout: post
 old_permalink: "articles/3-my_first_patch"
 ---
 

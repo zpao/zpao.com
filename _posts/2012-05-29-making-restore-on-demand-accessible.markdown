@@ -5,7 +5,6 @@ tags:
   - mozilla
   - firefox
   - session restore
-layout: post
 ---
 
 I know I just wrote about [some changes to Session Restore coming in Firefox 15](/posts/session-restore-changes-in-firefox-15), but here's another one...

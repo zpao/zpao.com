@@ -6,7 +6,6 @@ tags:
   - firefox 4
   - always ask
   - extension
-layout: post
 tumblr_permalink: post/3453055056/updated-firefox-extension-always-ask-2-0pre
 ---
 

@@ -5,7 +5,6 @@ tags:
   - python
   - mozilla
   - geektool
-layout: post
 old_permalink: "articles/17-is_the_tree_green_for_your_desktop"
 ---
 

@@ -4,7 +4,6 @@ tags:
   - mercurial
   - terminal
   - mozilla
-layout: post
 type: link
 source_url: "http://sjl.bitbucket.org/hg-prompt/"
 tumblr_permalink: post/2690265795/hg-prompt-makes-my-eyes-happier

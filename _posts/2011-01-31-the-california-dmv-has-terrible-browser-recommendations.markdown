@@ -7,7 +7,6 @@ tags:
   - the olden days
   - netscape
   - internet explorer
-layout: post
 tumblr_permalink: post/3037902118/the-california-dmv-has-terrible-browser-recommendations
 ---
 

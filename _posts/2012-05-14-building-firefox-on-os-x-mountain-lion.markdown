@@ -6,7 +6,6 @@ tags:
   - earlyadopter
   - build
   - firefox
-layout: post
 ---
 
 In a similar vein to [my article about building on 10.7](/posts/building-firefox-on-os-x-lion), here are some issues that have come up while building Firefox on 10.8. I've had Mountain Lion installed for a few weeks now and while there were a few hiccups, things have been pretty smooth. Currently I have DP3 update 2 and Xcode 4.4 preview 5 installed.

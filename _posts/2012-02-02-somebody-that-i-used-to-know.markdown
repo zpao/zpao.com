@@ -3,7 +3,6 @@ title: "Somebody That I Used to Know"
 tags:
   - video
   - music
-layout: post
 type: video
 tumblr_permalink: "post/16930190230/somehow-ive-been-listening-to-somebody-that-i"
 ---

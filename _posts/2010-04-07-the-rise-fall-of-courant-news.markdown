@@ -4,7 +4,6 @@ tags:
   - college newspapers
   - django
   - courant news
-layout: post
 tumblr_permalink: post/505069286/the-rise-fall-of-courant-news
 ---
 

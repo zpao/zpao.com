@@ -5,7 +5,6 @@ tags:
   - spidernode
   - v8monkey
   - node.js
-layout: post
 tumblr_permalink: post/16368488549/whats-the-deal-with-v8monkey-spidernode
 ---
 

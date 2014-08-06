@@ -3,20 +3,19 @@ title: "This is Bad Recruiting"
 tags:
   - recruiting
   - grinds my gears
-layout: post
 tumblr_permalink: post/8746168914/this-is-bad-recruiting
 ---
 
 An email came in yesterday with the subject *Amazing Career Opportunity Unlimited Funds!* looking like this:
 
 > Hi Paul,
-> 
+>
 > This is *[name]* from *[recruiting company]*.
 >
 > I’m recruiting for a super HOT online company opening a west coast office in San Francisco to build new products. We are looking for top engineers (Ruby Developers and JavaScript Engineers).
-> 
+>
 > This company is HOT and I want you to be a part of it… We have an unlimited budget! Offering you a guaranteed 20% pay raise (if not more), equity, and paid bonuses! Let’s just say this company is hotter than Google. We just hired the *[manager position]* from Google for $300K. (Seriously no money cap) we are looking for the best and will pay to get the best.
-> 
+>
 > If you are interested and want to learn more let’s talk!
 >
 > What is a good time and number to give you a call?

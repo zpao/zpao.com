@@ -4,7 +4,6 @@ tags:
   - mercurial
   - mozilla
   - workflow
-layout: post
 ---
 
 Mercurial 2.2 introduced a new `--amend` option to `commit`. If you've ever used Git, then you are probably thinking "finally". For those of you who haven't used it, it's a quick way to modify the last commit.

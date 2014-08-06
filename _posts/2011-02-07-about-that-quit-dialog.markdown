@@ -5,7 +5,6 @@ tags:
   - firefox4
   - mozilla
   - omgchange
-layout: post
 tumblr_permalink: post/3174360617/about-that-quit-dialog
 ---
 

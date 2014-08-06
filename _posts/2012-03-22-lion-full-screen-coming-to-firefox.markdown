@@ -6,7 +6,6 @@ tags:
   - 10.7
   - cocoa
   - lion
-layout: post
 ---
 
 For the past little while, I've been working on adding support for [OS X Lion's native Full Screen mode](https://www.apple.com/macosx/whats-new/full-screen.html) to Firefox. This was something that others had started before Lion was even released but nobody ever finished it. Since then, every other major browser has shipped support for the feature.

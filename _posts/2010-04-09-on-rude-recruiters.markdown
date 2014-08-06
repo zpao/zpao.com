@@ -5,7 +5,6 @@ tags:
   - people
   - seriously?
   - pet peeves
-layout: post
 tumblr_permalink: post/509894580/on-rude-recruiters
 ---
 

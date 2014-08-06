@@ -5,7 +5,6 @@ tags:
   - javascript
   - node
   - mozilla
-layout: post
 ---
 
 Lately I've been thinking a lot about JS modules and the different implementations of module loaders. At the end of the day we've all mostly settled on CommonJS, but even then we have our rough patches supporting AMD, "pure" `require`, and global script tags. There are tools to make all of this relatively painless, but I'm pretty excited for a future where we don't need any of it.

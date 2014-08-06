@@ -6,7 +6,6 @@ tags:
   - firefox
   - life
   - apartment
-layout: post
 old_permalink: "articles/15-here_i_am_back_again"
 ---
 

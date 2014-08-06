@@ -3,7 +3,6 @@ title: "JAQK Wine Cellars' Bottles"
 tags:
   - wine
   - design
-layout: post
 type: photo
 tumblr_permalink: post/514225938/jaqk-wine-cellars-http-jaqkcellars-com-has
 ---

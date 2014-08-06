@@ -5,7 +5,6 @@ tags:
   - annoying celebrities
   - infomercial
   - video
-layout: post
 type: video
 tumblr_permalink: post/448680926/gilbert-gottfried-introduces-the
 ---

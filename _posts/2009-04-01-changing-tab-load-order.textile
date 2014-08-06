@@ -4,7 +4,6 @@ blurb: "because loading a lot of tabs sucks"
 tags:
   - mozilla
   - firefox
-layout: post
 old_permalink: "articles/18-changing_tab_load_order"
 ---
 

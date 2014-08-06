@@ -4,7 +4,6 @@ tags:
   - muni
   - sf
   - link
-layout: post
 type: link
 source_url: "http://www.sfweekly.com/2010-04-14/news/the-muni-death-spiral/"
 tumblr_permalink: post/521337263/the-muni-death-spiral

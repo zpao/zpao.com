@@ -6,7 +6,6 @@ tags:
   - stats
   - omgtoomanytabs
   - gist
-layout: post
 tumblr_permalink: post/6636815982/simple-tab-stats-script
 ---
 

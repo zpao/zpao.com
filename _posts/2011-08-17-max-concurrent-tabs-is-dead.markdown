@@ -5,7 +5,6 @@ tags:
   - firefox
   - firefox 8
   - session restore
-layout: post
 tumblr_permalink: post/9052215461/max-concurrent-tabs-is-dead-long-live
 ---
 

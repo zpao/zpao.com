@@ -4,7 +4,6 @@ tags:
   - mozilla
   - firefox
   - session restore
-layout: post
 tumblr_permalink: post/450728650/partially-dropping-support-for-firefox-2-0-3-0
 ---
 
