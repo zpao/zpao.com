@@ -12,3 +12,6 @@ include:
 markdown: redcarpet
 redcarpet:
   extensions: [smart, autolink, fenced_code_blocks, no_intra_emphasis, prettify, superscript]
+
+sass:
+  style: :expanded

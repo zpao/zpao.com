@@ -1,9 +1,6 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'jekyll', "~>1.0"
-
-gem 'sass'
-gem 'bourbon'
+gem 'jekyll', '~>2.0'
 
 # markdown
 gem 'redcarpet'

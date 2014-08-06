@@ -1,8 +1,3 @@
-desc "scss css"
-task :css do
-  system("sass -t expanded _css/zpao.scss:css/zpao.css")
-end
-
 desc "put it up"
 task :deploy do
   system("rsync -avze ssh --delete _site/ zpao.com:zpao.com/")
