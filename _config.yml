@@ -11,7 +11,15 @@ include:
 
 markdown: redcarpet
 redcarpet:
-  extensions: [smart, autolink, fenced_code_blocks, no_intra_emphasis, prettify, superscript]
+  extensions:
+    - smart
+    - autolink
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - prettify
+    - superscript
+    - footnotes
+    - strikethrough
 
 sass:
   style: :expanded

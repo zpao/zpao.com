@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    RedCloth (4.2.9)
     blankslate (2.1.2.4)
     celluloid (0.15.2)
       timers (~> 1.1.0)
@@ -66,6 +65,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth
   jekyll (~> 2.0)
   redcarpet
