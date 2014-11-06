@@ -29,7 +29,7 @@ Bullet points are easier to write than a proper paragraph, so I'm going to be la
 
 This site has gone through many iterations. It was on the web with a couple "free to host" providers and free domains (`.tk` anyone?). Then in 2004 [Matt Claypotch](http://potch.me/) & I decided to go dutch on hosting with [Dreamhost](http://www.dreamhost.com/r.cgi?98611 "Yea,  that's a referral link for cash money") and this (along with many other sites) have been there since. For a long time I had a Wordpress site here, then I was using Tumblr, then I wrote my own blogging software, then I was using Tumblr again, then I started using Jekyll. I'm sticking with that for the foreseeable future. There's been a blog here for a long time. I've kept a lot of those posts around but let's be honest, they weren't all in the greatest taste.
 
-The current design was probably inspired by [iA Writer](http://www.iawriter.com/mac/). I've been using it a lot over the past year to do most of my writing and I really enjoy the simplicity of it. As much as I would like, I can't use their custom typeface here, so I'm using [Anonymous Pro](https://typekit.com/fonts/anonymous-pro) for everything.
+The current design was probably inspired by [iA Writer](http://www.iawriter.com/mac/). I've been using it a lot over the past year to do most of my writing and I really enjoy the simplicity of it. As much as I would like, I can't use their custom typeface here, so I'm using [Inconsolata](http://www.google.com/fonts/specimen/Inconsolata) for everything.
 
 
 ## Contact

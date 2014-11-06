@@ -8,6 +8,7 @@
   {% if page.twitter_card %}{{ page.twitter_card }}{% endif %}
 
   <link href="http://static.zpao.com/favicon.png" rel="shortcut icon" type="image/png">
+  <link href="http://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/css/zpao.css">
   <link rel="stylesheet" href="/css/highlight.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -18,9 +19,6 @@
   <link href="http://www.myopenid.com/server" rel="openid.server">
   <link href="http://zpao.myopenid.com/" rel="openid.delegate">
   <link content="http://www.myopenid.com/xrds?username=zpao.myopenid.com" http-equiv="X-XRDS-Location">
-
-  <script type="text/javascript" src="http://use.typekit.com/ucz1zae.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -48,14 +46,14 @@
     <section id="content">
       <article>
         <header>
+          <h1>{{ page.title | markdownify2 }}</h1>
+          {% if page.blurb %}
+            <h2>{{ page.blurb | markdownify2 }}</h2>
+          {% endif %}
           {% if page.date %}
             <time datetime="{{ page.date | date: "%F" }}">
               {{ page.date | date: "%F" }}
             </time>
-          {% endif %}
-          <h1>{{ page.title | markdownify2 }}</h1>
-          {% if page.blurb %}
-            <h2>{{ page.blurb | markdownify2 }}</h2>
           {% endif %}
         </header>
         <div class="post-content">

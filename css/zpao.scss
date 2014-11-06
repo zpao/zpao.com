@@ -1,10 +1,11 @@
 ---
 ---
-$page_color: #f1f1f1;
-$font_color: #424242;
-$link_color: #f14242;
-$header_color: #919191;
-$border_color: #d1d1d1;
+$page_color: mintcream;
+$font_color: darkslategrey;
+$link_color: crimson;
+$header_color: lightslategrey;
+$border_color: antiquewhite;
+$code_bg_color: lightgoldenrodyellow;
 
 /* A rudimentary "reset" */
 * { margin: 0; padding: 0; border: none; box-sizing: border-box; }
@@ -17,13 +18,13 @@ article, aside, figure, footer, header, hgroup, nav, section, time {
 html {
   background: $page_color;
   color: $font_color;
-  font-family: anonymouspro, monospace;
+  font-family: Inconsolata, monospace;
   font-size: 18px;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 #container {
-  width: 800px;
+  width: 700px;
   margin: auto;
 }
 
@@ -40,7 +41,6 @@ a {
 
 h1 {
   font-size: 133%;
-  margin-bottom: 1em;
 }
 
 h2 {
@@ -48,14 +48,27 @@ h2 {
 }
 
 code {
-  background: #fff;
+  background: $code_bg_color;
   padding: 2px 4px;
 }
 
+// reset for pygments stuff
+.highlight code {
+  background: initial;
+}
+
 blockquote {
-  border-left: 8px solid $border_color;
-  padding: 0 24px;
+  padding: 0 48px;
   font-style: italic;
+  position: relative;
+
+  &:before {
+    content: '“';
+    font-size: 400%;
+    left: -12px;
+    line-height: 1;
+    position: absolute;
+  }
 
   ul, ol {
     list-style-position: inside;
@@ -109,6 +122,10 @@ blockquote {
   pre {
     margin-bottom: 1em;
   }
+}
+
+header {
+  margin-bottom: 1em;
 }
 
 #post-list {
