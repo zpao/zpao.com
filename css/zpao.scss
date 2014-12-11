@@ -17,6 +17,9 @@ article, aside, figure, footer, header, hgroup, nav, section, time {
 
 html {
   background: $page_color;
+}
+
+html, code {
   color: $font_color;
   font-family: Inconsolata, monospace;
   font-size: 18px;
