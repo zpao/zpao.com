@@ -1,7 +1,7 @@
 # A way to specify a Twitter card for posts that can still end up in my default
 # layout. This works around a Jekyll "bug" where page.layout is the parent
 # layout instead of the specific one.
-# Impl based on http://gistflow.com/posts/609-content_for-sidebar-in-jekyll
+# Impl based on https://gistflow.com/posts/609-content_for-sidebar-in-jekyll
 module Jekyll
   class TwitterCard < Liquid::Block
     alias :super_render :render

@@ -10,7 +10,7 @@ old_permalink: "articles/17-is_the_tree_green_for_your_desktop"
 
 [GeekTool](http://projects.tynsoe.org/geektool/) is awesome. [Is the Tree Green?](http://isthetreegreen.com) is awesome. So together they are SUPER AWESOME!
 
-[![isthetreegreen.py + GeekTool by zpao, on Flickr](http://farm4.static.flickr.com/3588/3382045487_01114ff567.jpg "isthetreegreen.py + GeekTool by zpao, on Flickr")](http://www.flickr.com/photos/zpao/3382045487/)
+[![isthetreegreen.py + GeekTool by zpao, on Flickr](https://farm4.static.flickr.com/3588/3382045487_01114ff567.jpg "isthetreegreen.py + GeekTool by zpao, on Flickr")](http://www.flickr.com/photos/zpao/3382045487/)
 
 ## Python?
 
@@ -26,6 +26,6 @@ It’s easy enough to do what I did in the image above. The program can take 2 a
 
 ## Code?
 
-<script src="http://gist.github.com/84210.js">
+<script src="https://gist.github.com/84210.js">
 </script>
 A big thanks to Justin Dolske for [Is the Tree Green?](http://isthetreegreen.com). He deserves more credit for this than I.

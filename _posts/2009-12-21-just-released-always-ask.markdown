@@ -16,4 +16,4 @@ Since I work on Session Restore, I've had it turned on for a long time. In the p
 
 So this extension is pretty simple. It's currently available in English (en-US) but if you'd like to see it in your language, feel free to [help out on Babelzilla](http://www.babelzilla.org/index.php?option=com_wts&extension=5271). Code is available [on Github](http://github.com/zpao/alwaysAsk) (thanks to hg-git).
 
-![Always Ask in action](http://farm3.static.flickr.com/2682/4203971167_45d442d2eb.jpg)
+![Always Ask in action](https://farm3.static.flickr.com/2682/4203971167_45d442d2eb.jpg)
