@@ -1,11 +1,25 @@
 ---
 ---
-$page_color: mintcream;
-$font_color: darkslategrey;
-$link_color: crimson;
-$header_color: lightslategrey;
-$border_color: antiquewhite;
-$code_bg_color: lightgoldenrodyellow;
+/*
+ * based on the original Monokai: http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/
+ * 272822 - bg
+ * F8F8F0 - fg
+ * 75715E - grey
+ * E6DB74 - yellow
+ * AE81FF - purple
+ * F92672 - pink
+ * 66D9EF - blue
+ * A6E22E - green
+ * FD971F - orange
+ */
+$page_color: #272822;
+$font_color: #F8F8F0;
+$link_color: #66D9EF;
+$link_color_visited: #AE81FF;
+$header_color: #F8F8F0;
+$code_bg_color: #49483E;
+$bananaphone_bg: #F92672;
+$del_color: #75715E;
 
 /* A rudimentary "reset" */
 * { margin: 0; padding: 0; border: none; box-sizing: border-box; }
@@ -40,6 +54,14 @@ a {
   &:hover {
     text-decoration: underline;
   }
+
+  &:visited {
+    color: $link_color_visited;
+  }
+}
+
+del {
+  color: $del_color;
 }
 
 h1 {
@@ -81,9 +103,11 @@ blockquote {
 ////////////////
 
 #bananaphone {
+  border-bottom: 1px solid $del_color;
   margin: 24px 0;
+  padding-bottom: 24px;
+  text-align: center;
 
-  h1,
   nav,
   ul,
   li {
@@ -91,12 +115,6 @@ blockquote {
     vertical-align: baseline;
   }
 
-  nav {
-    &:before {
-      content: '|';
-      color: $header_color;
-    }
-  }
   a {
     color: $header_color;
 
@@ -111,10 +129,11 @@ blockquote {
   }
 
   h1 {
-    font-size: 111%;
-    span {
-      color: $font_color;
-      font-size: 133%;
+    a {
+      background: $bananaphone_bg;
+      color: $page_color;
+      font-size: 250%;
+      padding: 0 15px;
     }
   }
 }
@@ -152,7 +171,8 @@ footer {
   font-size: 24px;
 
   a {
-    color: $header_color;
+    color: $del_color;
+    transition: all .2s;
 
     &:hover {
       color: $font_color;
