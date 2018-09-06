@@ -1,5 +1,6 @@
 ---
 title: "The Muni Death Spiral"
+date: 2010-04-14
 tags:
   - muni
   - sf

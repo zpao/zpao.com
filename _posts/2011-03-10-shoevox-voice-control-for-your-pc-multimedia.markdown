@@ -1,5 +1,6 @@
 ---
 title: "ShoeVox: Voice Control for Your PC Multimedia"
+date: 2011-03-10
 tags:
   - voice control
   - multimedia

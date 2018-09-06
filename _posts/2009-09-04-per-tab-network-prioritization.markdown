@@ -1,6 +1,7 @@
 ---
 title: "Per Tab Network Prioritization"
 blurb: "An Introduction to the Idea &amp; Progress Report #1"
+date: 2009-09-04
 tags:
   - mozilla
   - firefox

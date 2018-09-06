@@ -1,5 +1,6 @@
 ---
 title: "Amazon and HTML5"
+date: 2010-11-10
 tags:
   - html5
   - firefox

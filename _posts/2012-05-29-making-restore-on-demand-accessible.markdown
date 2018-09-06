@@ -1,6 +1,6 @@
 ---
 title: "Making restore_on_demand Accessible"
-date: 2012-05-29 13:00
+date: 2012-05-29T13:00
 tags:
   - mozilla
   - firefox

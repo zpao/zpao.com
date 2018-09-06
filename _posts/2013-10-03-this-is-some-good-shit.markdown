@@ -1,6 +1,6 @@
 ---
 title: "This is some good SHIT"
-date: 2013-10-03 14:42
+date: 2013-10-03T14:42
 tags:
   - recruiting
 ---

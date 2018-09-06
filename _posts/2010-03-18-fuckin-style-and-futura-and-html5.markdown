@@ -1,5 +1,6 @@
 ---
 title: "Fuckin' Style. And Futura. And HTML5."
+date: 2010-03-18
 tags:
   - style
   - futura

@@ -1,5 +1,6 @@
 ---
 title: "Building Firefox on OS X Lion"
+date: 2011-07-23
 tags:
   - lion
   - mozilla

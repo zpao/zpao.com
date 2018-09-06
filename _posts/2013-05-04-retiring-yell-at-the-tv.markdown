@@ -1,6 +1,6 @@
 ---
 title: "Retiring Yell at the TV"
-date: 2013-05-04 15:10
+date: 2013-05-04T15:10
 tags:
   - yellatthetv
 ---

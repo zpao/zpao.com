@@ -1,5 +1,6 @@
 ---
 title: "The Secret Diary of Steve Jobs : Guest blogger: John Gruber"
+date: 2010-05-26
 tags:
   - link
   - gruber

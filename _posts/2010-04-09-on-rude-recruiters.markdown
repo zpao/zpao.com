@@ -1,5 +1,6 @@
 ---
 title: "On Rude Recruiters"
+date: 2010-04-09T21:55
 tags:
   - mozilla
   - people

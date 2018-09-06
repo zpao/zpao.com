@@ -1,6 +1,7 @@
 ---
 title: "Per Tab Network Prioritization Update"
 blurb: "Good News..."
+date: 2009-10-30
 tags:
   - mozilla
   - firefox

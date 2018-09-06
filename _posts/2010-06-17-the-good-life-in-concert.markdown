@@ -1,5 +1,6 @@
 ---
 title: "The Good Life in Concert"
+date: 2010-06-17
 tags:
   - music
   - video

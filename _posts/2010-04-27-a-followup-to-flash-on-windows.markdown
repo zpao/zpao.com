@@ -1,5 +1,6 @@
 ---
 title: "A Followup to Flash on Windows"
+date: 2010-04-27
 tags:
   - adobe
   - flash

@@ -1,5 +1,6 @@
 ---
 title: "Tumbling Down the Rabbit Hole (Again)"
+date: 2010-03-11T19:07
 tags:
   - tumblr
   - blogging

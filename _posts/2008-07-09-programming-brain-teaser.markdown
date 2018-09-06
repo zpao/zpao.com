@@ -1,6 +1,7 @@
 ---
 title: "Programming Brain Teaser"
 blurb: "i is smart!"
+date: 2008-07-09
 tags:
   - ruby
   - programming

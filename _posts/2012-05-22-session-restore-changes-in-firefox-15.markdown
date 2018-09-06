@@ -1,6 +1,6 @@
 ---
 title: "Session Restore Changes in Firefox 15"
-date: 2012-05-22 14:23
+date: 2012-05-22T14:23
 tags:
   - Mozilla
   - Firefox

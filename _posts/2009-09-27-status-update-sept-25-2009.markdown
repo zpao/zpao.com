@@ -1,6 +1,7 @@
 ---
 title: "Status Update: September 25, 2009"
 blurb: "Per Tab Network Prioritization &amp; Other Stuff"
+date: 2009-09-27
 tags:
   - mozilla
   - firefox

@@ -1,5 +1,6 @@
 ---
 title: "I Already Love It"
+date: 2010-09-21
 tags:
   - csr
   - mozilla

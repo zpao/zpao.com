@@ -1,6 +1,7 @@
 ---
 title: "Better Session Restore Behavior"
 blurb: "The 'Downloads; window won't destroy your session anymore."
+date: 2009-08-06
 tags:
   - mozilla
   - opensource

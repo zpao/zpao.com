@@ -1,5 +1,6 @@
 ---
 title: "Switch to Tab & Closing Empty Tabs"
+date: 2010-06-15T17:11
 tags:
   - firefox
   - mozilla

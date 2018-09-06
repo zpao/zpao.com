@@ -1,5 +1,6 @@
 ---
 title: "Cascaded Session Restore + a Hidden Bonus"
+date: 2010-09-17
 tags:
   - firefox
   - firefox4

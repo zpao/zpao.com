@@ -1,6 +1,7 @@
 ---
 title: "Password Manager now uses mozStorage"
 blurb: "SQLite FTW!"
+date: 2008-08-18
 tags:
   - mozilla
   - passwordmgr

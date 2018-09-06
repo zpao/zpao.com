@@ -1,5 +1,6 @@
 ---
 title: "Pagination: Next, Next, Previous"
+date: 2010-12-22
 tags:
   - tumblr
   - blog

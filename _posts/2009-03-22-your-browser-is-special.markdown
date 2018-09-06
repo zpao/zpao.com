@@ -1,6 +1,7 @@
 ---
 title: "Your Browser is Special"
 blurb: "The alternative was <a href='http://blog.hugsformonsters.com/post/87657240/overly-judgemental-ie6-splash-pages'>Overly Judgemental IE6 Splash Pages</a>"
+date: 2009-03-22
 tags:
   - ie6
   - browsers

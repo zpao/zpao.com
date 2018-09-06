@@ -1,5 +1,6 @@
 ---
 title: "New Firefox Extension: switch-to-tab Blacklist"
+date: 2011-02-18
 tags:
   - mozilla
   - firefox

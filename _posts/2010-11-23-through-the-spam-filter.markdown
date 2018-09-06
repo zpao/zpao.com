@@ -1,5 +1,6 @@
 ---
 title: "Through the Spam Filter"
+date: 2010-11-23
 tags:
   - ocean of love
   - spam

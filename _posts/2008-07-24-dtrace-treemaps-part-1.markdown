@@ -1,6 +1,7 @@
 ---
 title: "DTrace and Treemaps: Part 1"
 blurb: "An experiment to analyze performance in a visual way."
+date: 2008-07-24
 tags:
   - mozilla
   - opensource

@@ -1,6 +1,7 @@
 ---
 title: My First Patch
 blurb: "I'm famous... kind of... OK fine, I'm not."
+date: 2008-06-12
 tags:
   - mozilla
   - firefox

@@ -1,5 +1,6 @@
 ---
 title: "Simple Tab Stats Script"
+date: 2011-06-17
 tags:
   - mozilla
   - firefox

@@ -1,5 +1,6 @@
 ---
 title: "Jetpack SDK 0.5 & the Request API"
+date: 2010-06-29
 tags:
   - mozilla
   - jetpack

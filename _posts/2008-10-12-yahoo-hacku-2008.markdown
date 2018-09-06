@@ -1,6 +1,7 @@
 ---
 title: "Yahoo! HackU 2008"
 blurb: "zomg revenge of flolcatr!!1"
+date: 2008-10-12
 tags:
   - yahoo
   - hacking

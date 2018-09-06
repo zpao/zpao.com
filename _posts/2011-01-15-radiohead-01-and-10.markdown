@@ -1,5 +1,6 @@
 ---
 title: "Radiohead: 01 and 10"
+date: 2011-01-15
 tags:
   - music
   - radiohead

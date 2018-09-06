@@ -1,5 +1,6 @@
 ---
 title: "The New Firefox Default Home Page is Seriously Sexy"
+date: 2011-01-31T23:15
 tags:
   - firefox
   - mozilla

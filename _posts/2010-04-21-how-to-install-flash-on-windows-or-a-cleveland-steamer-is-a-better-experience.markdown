@@ -1,5 +1,6 @@
 ---
 title: "How to Install Flash on Windows OR A Cleveland Steamer is a Better Experience"
+date: 2010-04-21
 tags:
   - adobe
   - flash

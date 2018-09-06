@@ -1,5 +1,6 @@
 ---
 title: "Gilbert Gottfried Introduces the Shoedini"
+date: 2010-03-14
 tags:
   - youtube
   - annoying celebrities

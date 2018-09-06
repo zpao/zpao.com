@@ -1,5 +1,6 @@
 ---
 title: "And Just Like That I'm a Firefox Peer"
+date: 2011-10-26
 tags:
   - mozilla
   - firefox

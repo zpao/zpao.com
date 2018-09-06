@@ -1,5 +1,6 @@
 ---
 title: "This is very good position"
+date: 2012-02-27
 tags:
   - recruiting
   - blah

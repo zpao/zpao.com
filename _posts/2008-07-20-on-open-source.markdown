@@ -1,6 +1,7 @@
 ---
 title: "On Open Source"
 blurb: "Oh, open source, how thee makes work for me."
+date: 2008-07-20
 tags:
   - mozilla
   - opensource

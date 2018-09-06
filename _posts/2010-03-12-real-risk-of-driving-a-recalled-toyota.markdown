@@ -1,5 +1,6 @@
 ---
 title: "Carnegie Mellon Professor Calculates Real Risk of Driving a Recalled Toyota"
+date: 2010-03-12
 tags:
   - toyota
   - news

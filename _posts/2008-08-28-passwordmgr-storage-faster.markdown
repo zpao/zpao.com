@@ -1,6 +1,7 @@
 ---
 title: "Making the New Password Manager Storage Faster"
 blurb: "It's a simple fix, but it makes a difference."
+date: 2008-08-28
 tags:
   - mozilla
   - passwordmgr

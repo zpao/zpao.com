@@ -1,5 +1,6 @@
 ---
 title: "The California DMV has Terrible Browser Recommendations"
+date: 2011-01-31T15:17
 tags:
   - mozilla
   - browsers

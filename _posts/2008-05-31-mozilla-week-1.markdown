@@ -1,6 +1,7 @@
 ---
 title: "Interning at Mozilla: Week 1"
 blurb: That's right, I'm rocking out on Firefox.
+date: 2008-05-31
 tags:
   - mozilla
   - interns

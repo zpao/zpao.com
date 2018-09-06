@@ -1,6 +1,7 @@
 ---
 title: "Oops, I Broke That"
 blurb: "Turns out that 'Set as Desktop Background' has been broken for 3 weeks."
+date: 2009-08-28
 tags:
   - mozilla
   - firefox

@@ -1,6 +1,7 @@
 ---
 title: "Hey Hey-ey, Goodbye"
 blurb: "Na na na na, na na na na"
+date: 2008-12-15
 tags:
   - non-work
   - carnegie-mellon

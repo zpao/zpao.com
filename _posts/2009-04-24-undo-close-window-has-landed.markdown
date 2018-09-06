@@ -1,6 +1,7 @@
 ---
 title: "Undo Close Window Has Landed!"
 blurb: "Look for it in the History menu near you."
+date: 2009-04-24
 tags:
   - mozilla
   - firefox

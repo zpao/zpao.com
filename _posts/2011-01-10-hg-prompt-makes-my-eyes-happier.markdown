@@ -1,5 +1,6 @@
 ---
 title: "hg-prompt Makes My Eyes Happier"
+date: 2011-01-10
 tags:
   - mercurial
   - terminal

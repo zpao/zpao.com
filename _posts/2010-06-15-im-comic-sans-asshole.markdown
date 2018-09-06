@@ -1,5 +1,6 @@
 ---
 title: "I'm Comic Sans, Asshole."
+date: 2010-06-15T13:33
 tags:
   - typography
   - link

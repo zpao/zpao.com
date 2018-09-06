@@ -1,6 +1,7 @@
 ---
 title: "I Don't Blog Here Anymore"
 blurb: "I moved just <a href='http://blog.zpao.com'>down the street</a> a while ago."
+date: 2010-09-22
 tags:
   - tumblr
   - blog

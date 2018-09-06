@@ -1,5 +1,6 @@
 ---
 title: "SpiderNode at NodeConf 2011"
+date: 2011-05-19
 tags:
   - spidernode
   - v8monkey

@@ -1,5 +1,6 @@
 ---
 title: "Multiple Assignment in JS With Objects"
+date: 2011-02-25
 tags:
   - mozilla
   - javascript

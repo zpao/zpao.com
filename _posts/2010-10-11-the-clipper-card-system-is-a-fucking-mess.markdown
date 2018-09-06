@@ -1,5 +1,6 @@
 ---
 title: "The Clipper Card System is a Fucking Mess"
+date: 2010-10-11
 tags:
   - san francsico
   - muni

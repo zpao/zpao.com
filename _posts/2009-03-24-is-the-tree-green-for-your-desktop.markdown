@@ -1,6 +1,7 @@
 ---
 title: "Is The Tree Green? For Your Desktop"
 blurb: "Go forth &amp; geek it up."
+date: 2009-03-24
 tags:
   - python
   - mozilla

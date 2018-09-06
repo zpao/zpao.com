@@ -1,5 +1,6 @@
 ---
 title: "This is Bad Recruiting"
+date: 2011-08-10
 tags:
   - recruiting
   - grinds my gears

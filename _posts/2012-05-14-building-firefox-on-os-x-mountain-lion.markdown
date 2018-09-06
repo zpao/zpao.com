@@ -1,5 +1,6 @@
 ---
 title: "Building Firefox on OS X Mountain Lion"
+date: 2012-05-14
 tags:
   - mountain lion
   - mozilla

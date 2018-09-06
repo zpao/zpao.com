@@ -1,5 +1,6 @@
 ---
 title: "P-I-Z-Z-A I want pizza!"
+date: 2010-10-17
 tags:
   - youtube
   - video

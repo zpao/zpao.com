@@ -1,6 +1,7 @@
 ---
 title: "It’s Awesome for a Reason"
 blurb: "The Awesome Bar is a paradigm shift. Otherwise it is awesome. That is all."
+date: 2008-06-18
 tags:
   - mozilla
   - firefox

@@ -1,6 +1,7 @@
 ---
 title: "Introducing LOLcanvas"
 blurb: "OMG! LOL!"
+date: 2008-06-26
 tags:
   - mozilla
   - firefox

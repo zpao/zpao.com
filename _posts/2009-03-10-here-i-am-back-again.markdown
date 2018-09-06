@@ -1,6 +1,7 @@
 ---
 title: "Here I Am, Back Again"
 blurb: "Oh hai! I work here now."
+date: 2009-03-10
 tags:
   - mozilla
   - firefox

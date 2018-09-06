@@ -1,5 +1,6 @@
 ---
 title: "2 Years at Mozilla"
+date: 2011-02-23
 tags:
   - mozilla
   - life

@@ -1,5 +1,6 @@
 ---
 title: "Are Cameras the New Guns?"
+date: 2010-06-11
 tags:
   - civil rights
   - photography

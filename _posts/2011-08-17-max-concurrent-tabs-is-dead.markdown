@@ -1,5 +1,6 @@
 ---
 title: "max_concurrent_tabs is Dead; Long Live restore_on_demand"
+date: 2011-08-17
 tags:
   - mozilla
   - firefox

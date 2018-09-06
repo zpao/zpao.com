@@ -1,5 +1,6 @@
 ---
 title: "Restore Previous Session"
+date: 2010-09-10
 tags:
   - firefox
   - firefox4

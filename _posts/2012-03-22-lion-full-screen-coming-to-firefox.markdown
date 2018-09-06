@@ -1,5 +1,6 @@
 ---
 title: "Lion Full Screen Coming to Firefox"
+date: 2012-03-22
 tags:
   - mozilla
   - os x

@@ -1,5 +1,6 @@
 ---
 title: "Somebody That I Used to Know"
+date: 2012-02-02
 tags:
   - video
   - music

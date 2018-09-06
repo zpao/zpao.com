@@ -1,5 +1,6 @@
 ---
 title: "Problem Report: Cat"
+date: 2010-05-01
 tags:
   - tanzee
   - mozilla

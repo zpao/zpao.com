@@ -1,6 +1,6 @@
 ---
 title: "A Problem with Kellum Image Replacement"
-date: 2012-10-14 16:52
+date: 2012-10-14T16:52
 tags:
   - CSS
   - HTML

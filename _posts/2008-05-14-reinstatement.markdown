@@ -1,6 +1,7 @@
 ---
 title: Reinstatement
 blurb: I'm back and better than ever?
+date: 2008-05-14
 tags:
   - blarg
   - rails

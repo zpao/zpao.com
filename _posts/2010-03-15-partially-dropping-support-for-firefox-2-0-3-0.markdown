@@ -1,5 +1,6 @@
 ---
 title: "(Partially) Dropping Support for Firefox 2.0/3.0 Sessions"
+date: 2010-03-15
 tags:
   - mozilla
   - firefox

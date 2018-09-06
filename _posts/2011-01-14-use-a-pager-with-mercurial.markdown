@@ -1,5 +1,6 @@
 ---
 title: "Use a Pager with Mercurial"
+date: 2011-01-14
 tags:
   - mercurial
   - mozilla

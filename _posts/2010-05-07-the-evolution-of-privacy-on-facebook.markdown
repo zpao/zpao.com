@@ -1,5 +1,6 @@
 ---
 title: "The Evolution of Privacy on Facebook"
+date: 2010-05-07
 tags:
   - link
   - facebook

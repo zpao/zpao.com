@@ -1,5 +1,6 @@
 ---
 title: "Shaver Facts"
+date: 2010-03-26
 tags:
   - mozilla
   - shaverfacts

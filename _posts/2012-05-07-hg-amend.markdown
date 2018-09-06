@@ -1,5 +1,6 @@
 ---
 title: "hg amend"
+date: 2012-05-07
 tags:
   - mercurial
   - mozilla

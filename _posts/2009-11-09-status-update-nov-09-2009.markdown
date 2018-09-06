@@ -1,6 +1,7 @@
 ---
 title: "Status Update: November 9, 2009"
 blurb: "Chugging Along"
+date: 2009-11-09
 tags:
   - mozilla
   - firefox

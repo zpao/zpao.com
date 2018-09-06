@@ -1,5 +1,6 @@
 ---
 title: "Updated Firefox Extension: Always Ask 2.0pre"
+date: 2011-02-22
 tags:
   - mozilla
   - firefox

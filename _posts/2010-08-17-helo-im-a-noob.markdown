@@ -1,5 +1,6 @@
 ---
 title: "Helo, i'm a noob"
+date: 2010-08-17
 tags:
   - the internet is filled with dumb people
 type: quote

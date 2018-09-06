@@ -1,6 +1,7 @@
 ---
 title: "YELL AT THE TV!"
 blurb: "AHHHH!! OMGWTFBBQ"
+date: 2009-01-21
 tags:
   - twitter
   - ruby

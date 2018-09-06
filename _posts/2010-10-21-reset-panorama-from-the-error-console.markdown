@@ -1,5 +1,6 @@
 ---
 title: "Reset Panorama from the Error Console."
+date: 2010-10-21
 tags:
   - mozilla
   - firefox

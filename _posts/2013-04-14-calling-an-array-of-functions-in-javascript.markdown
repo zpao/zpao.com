@@ -1,5 +1,6 @@
 ---
 title: "Calling an Array of Functions in JavaScript"
+date: 2013-04-14
 tags:
   - javascript
   - programming

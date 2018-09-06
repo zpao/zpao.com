@@ -1,5 +1,6 @@
 ---
 title: "Now Using JSON.parse in Session Restore"
+date: 2010-06-09
 tags:
   - mozilla
   - firefox

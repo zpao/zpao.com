@@ -1,5 +1,6 @@
 ---
 title: "Just Quit It"
+date: 2011-01-21
 tags:
   - firefox
   - firefox4

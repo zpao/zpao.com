@@ -1,5 +1,6 @@
 ---
 title: "<3 Firefox Sync"
+date: 2010-09-24
 tags:
   - mozilla
   - firefox

@@ -1,6 +1,7 @@
 ---
 title: "Just Released: Always Ask"
 blurb: "Because ⌘Q is WAY too close to ⌘W"
+date: 2009-12-21
 tags:
   - mozilla
   - firefox

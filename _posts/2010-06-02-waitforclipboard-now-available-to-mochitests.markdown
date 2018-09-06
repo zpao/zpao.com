@@ -1,5 +1,6 @@
 ---
 title: "waitForClipboard now available to Mochitests"
+date: 2010-06-02
 tags:
   - mozilla
   - firefox

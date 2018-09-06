@@ -1,5 +1,6 @@
 ---
 title: "The Rise & Fall of Courant News"
+date: 2010-04-07
 tags:
   - college newspapers
   - django

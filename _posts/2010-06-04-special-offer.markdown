@@ -1,5 +1,6 @@
 ---
 title: "Special Offer"
+date: 2010-06-04
 tags:
   - do people fall for these?
 type: photo

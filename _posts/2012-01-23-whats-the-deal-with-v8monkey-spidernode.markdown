@@ -1,5 +1,6 @@
 ---
 title: "What's the Deal With V8Monkey & SpiderNode?"
+date: 2012-01-23
 tags:
   - mozilla
   - spidernode

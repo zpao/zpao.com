@@ -1,6 +1,7 @@
 ---
 title: "Changing Tab Load Order"
 blurb: "because loading a lot of tabs sucks"
+date: 2009-04-01
 tags:
   - mozilla
   - firefox

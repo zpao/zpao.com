@@ -1,6 +1,7 @@
 ---
 title: "New Design &amp; Updates"
 blurb: "OOooOOoOooooooOOOOo pretty!"
+date: 2008-08-17
 tags:
   - blarg
   - rails

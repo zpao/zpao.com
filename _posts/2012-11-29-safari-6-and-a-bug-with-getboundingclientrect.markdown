@@ -1,6 +1,6 @@
 ---
 title: "Safari 6 and a Bug with getBoundingClientRect"
-date: 2012-11-29 23:47
+date: 2012-11-29T23:47
 tags:
   - Safari
   - webdev

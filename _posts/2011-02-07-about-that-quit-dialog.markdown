@@ -1,5 +1,6 @@
 ---
 title: "About That Quit Dialog..."
+date: 2011-02-07
 tags:
   - firefox
   - firefox4
