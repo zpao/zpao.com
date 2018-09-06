@@ -4,7 +4,7 @@ date: 2012-03-22
 tags:
   - mozilla
   - os x
-  - 10.7
+  - "10.7"
   - cocoa
   - lion
 ---
