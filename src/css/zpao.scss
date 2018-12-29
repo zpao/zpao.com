@@ -1,5 +1,3 @@
----
----
 /*
  * based on the original Monokai: http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/
  * 272822 - bg
@@ -13,19 +11,32 @@
  * FD971F - orange
  */
 $page_color: #272822;
-$font_color: #F8F8F0;
-$link_color: #66D9EF;
-$link_color_visited: #AE81FF;
-$header_color: #F8F8F0;
-$code_bg_color: #49483E;
-$bananaphone_bg: #F92672;
-$del_color: #75715E;
+$font_color: #f8f8f0;
+$link_color: #66d9ef;
+$link_color_visited: #ae81ff;
+$header_color: #f8f8f0;
+$code_bg_color: #49483e;
+$bananaphone_bg: #f92672;
+$del_color: #75715e;
 
 /* A rudimentary "reset" */
-* { margin: 0; padding: 0; border: none; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
 
 /* Make HTML 5 elements block level */
-article, aside, figure, footer, header, hgroup, nav, section, time {
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+time {
   display: block;
 }
 
@@ -33,7 +44,8 @@ html {
   background: $page_color;
 }
 
-html, code {
+html,
+code {
   color: $font_color;
   font-family: Inconsolata, monospace;
   font-size: 18px;
@@ -78,9 +90,9 @@ code {
 }
 
 // reset for pygments stuff
-.highlight code {
-  background: initial;
-}
+// .highlight code {
+//   background: initial;
+// }
 
 blockquote {
   padding: 0 48px;
@@ -95,7 +107,8 @@ blockquote {
     position: absolute;
   }
 
-  ul, ol {
+  ul,
+  ol {
     list-style-position: inside;
   }
 }
@@ -124,8 +137,10 @@ blockquote {
   }
 
   li {
-    margin-left: 12px;
     list-style: none;
+    + li {
+      margin-left: 24px;
+    }
   }
 
   h1 {
@@ -172,7 +187,7 @@ footer {
 
   a {
     color: $del_color;
-    transition: all .2s;
+    transition: all 0.2s;
 
     &:hover {
       color: $font_color;
@@ -183,6 +198,9 @@ footer {
   li {
     display: inline-block;
     list-style: none;
+    + li {
+      margin-left: 0.5em;
+    }
   }
 }
 
@@ -195,6 +213,50 @@ footer {
   font-size: 75%;
 }
 
+// Because the themes aren't perfect. It's based on Monokai so should be similar colors, but still, reset.
+code[class*='language-'],
+pre[class*='language-'] {
+  color: inherit;
+  font-family: inherit;
+  text-shadow: none;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: $code_bg_color;
+  border-radius: 0;
+  padding: 2px 4px;
+}
+
+// And we need to make line highlights work.
+.gatsby-highlight {
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+
+  /**
+   * Remove the default PrismJS theme background-color, border-radius, margin,
+   * padding and overflow.
+   * 1. Make the element just wide enough to fit its content.
+   * 2. Always fill the visible space in .gatsby-highlight.
+   */
+  pre[class*='language-'] {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    float: left; /* 1 */
+    min-width: 100%; /* 2 */
+  }
+}
+
+// And custom line highlighting
+.gatsby-highlight-code-line {
+  background: $code_bg_color;
+  display: block;
+  margin: 0 -1em;
+  padding: 0 1em;
+}
 
 @media screen and (max-width: 800px) {
   #container {
@@ -203,10 +265,12 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  html {
+  html,
+  code {
     font-size: 14px;
   }
-  ul, ol {
+  ul,
+  ol {
     list-style-position: inside;
   }
   #bananphone {
