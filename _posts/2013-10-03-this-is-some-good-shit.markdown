@@ -9,7 +9,7 @@ It's been a while since [I last wrote about recruiters](/posts/this-is-very-good
 
 > Hi Paul,
 >
-> This is some good S**T
+> This is some good S\*\*T
 > Every manager and candidate I talk to says they want PASSION in the people they hire, the people they work with, and the position they hold. But when I actually speak with an individual who can CONVEY that passion and not just mouth the words, it’s a real treat. So I’m talking to this manager, and when we challenge her on the passion part, man did she go off. I mean wow. The descriptions are basically the same. RubyRubyRubyRuby. Ruby Tuesday, Ruby will you be mine, Jack Ruby, Rub on rails, Ruby don’t bring your love to town, Ruby Red. But what you will be doing, what you will be working on, what you will discover, what you will learn…Its impossible to convey the excitement this person displayed, the descriptions she gave, the PASSION she felt for her company and product. Really, you HAVE tow work her. Please call or send resume to :joseph@rgatech.com; 415-951-8051 to get hooked up. Not everyone will qualify, but as she said “S**T, its worth a conversation!!!” I LOVE this woman!
 
 My response:
