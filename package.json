@@ -35,7 +35,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "rm -rf public .cache && gatsby build && rsync -avze ssh --delete public/ zpao.com:zpao.com/"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
