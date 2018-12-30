@@ -27,6 +27,6 @@ It’s easy enough to do what I did in the image above. The program can take 2 a
 
 ## Code?
 
-<script src="https://gist.github.com/84210.js">
-</script>
+`gist:zpao/84210`
+
 A big thanks to Justin Dolske for [Is the Tree Green?](http://isthetreegreen.com). He deserves more credit for this than I.

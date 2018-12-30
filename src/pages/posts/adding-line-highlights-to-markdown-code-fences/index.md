@@ -28,4 +28,4 @@ sample.addEventListener('click', function(event) {
 
 I would love to see this (or a similar) syntax make it's way into GFM, and maybe get support in some of the Markdown parsers as another extension. I might start hacking on that soon, but in the mean time, if you want to add support for this to your Jekyll + Redcarpet + Pygments site (and are generating your own `HTML` because GitHub won't run your code), here's a file you can drop into `_plugins` and go (only tested with Jekyll 1.0+):
 
-<script src="https://gist.github.com/zpao/5557101.js"></script>
+`gist:zpao/5557101`

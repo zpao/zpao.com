@@ -19,23 +19,23 @@ This is about multiple assignment in JS. Well, it's actually about destructuring
 
 Hopefully by now we all know that it can be done with arrays.
 
-<script src="https://gist.github.com/844787.js?file=assignment_array.js"></script>
+`gist:zpao/844787#assignment_array.js`
 
 What I didn't know is that it can also be done using objects.
 
-<script src="https://gist.github.com/844787.js?file=assignment_object.js"></script>
+`gist:zpao/844787#assignment_object.js`
 
 This mostly makes sense now that I know it works, I was just a bit surprised. The syntax is strange, but it's oddly satisfying (and follows from the assignment from an array).
 
 Turns out this works for nested objects too...
 
-<script src="https://gist.github.com/844787.js?file=assignment_object_nested.js"></script>
+`gist:zpao/844787#assignment_object_nested.js`
 
 Just keep in mind the same rules for object references applies. If I change `obj2.foo.dude`, that changes `e.dude`
 
 And last but not least, we can also access values directly with nested objects.
 
-<script src="https://gist.github.com/844787.js?file=assignment_object_nested2.js"></script>
+`gist:zpao/844787#assignment_object_nested2.js`
 
 Modifying `obj2.foo.dude` here will have no effect on `g`.
 

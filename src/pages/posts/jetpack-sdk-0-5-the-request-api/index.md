@@ -15,4 +15,4 @@ Keep in mind that this is meant to be a simple API. You can't make complicated r
 
 I wrote up a basic example using the Twitter API, which I've included below. It's not too fancy, but gets your feet wet.
 
-<script src="https://gist.github.com/457704.js?file=gistfile1.js"></script>
+`gist:zpao/457704`

@@ -16,4 +16,4 @@ Instead of making everybody rewrite the wheel, I decided to write [`SimpleTest.w
 
 Following are the arguments and then a simple example test. Hopefully it's clear how to make use of `waitForClipboard` in tests you write in the future. I've already converted a few tests to use this method. If there are any existing [orange]s that you think could benefit from this, please convert them!
 
-<script src="https://gist.github.com/423041.js"></script>
+`gist:zpao/423041`
