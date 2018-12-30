@@ -24,7 +24,7 @@ const AboutPage = () => {
           <ul>
             <li>
               I’m married to a{' '}
-              <a href="https://instagram.com/amandaocreative">
+              <a href="https://instagram.com/amandaoshannessy">
                 pretty cool lady
               </a>
               .
@@ -93,7 +93,7 @@ const AboutPage = () => {
             <li>
               For a slightly more professional presentation that isn’t
               guaranteed to be up to date, I have{' '}
-              <Link to="/resume">my résumé</Link> as well.
+              <Link to="/resume/">my résumé</Link> as well.
             </li>
           </ul>
 
