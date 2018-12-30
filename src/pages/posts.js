@@ -8,7 +8,7 @@ const PostsIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(edge => {
     const post = edge.node;
     return (
-      <tr>
+      <tr key={post.fields.slug}>
         <td className="date">
           <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
         </td>
@@ -28,7 +28,9 @@ const PostsIndex = ({ data }) => {
           <h1>{pageTitle}</h1>
         </header>
         <div className="post-content">
-          <table id="post-list">{posts}</table>
+          <table id="post-list">
+            <tbody>{posts}</tbody>
+          </table>
         </div>
       </article>
     </Layout>
