@@ -28,7 +28,7 @@ I wrote a quick and dirty version and iterated. I released a "good enough" versi
 
 ## This picture is not worth 1000 words
 Previously, that autocomplete result would have been said "Switch to tab:".
-![](/img/posts/switch-to-tab-blacklist.png)
+![](./switch-to-tab-blacklist.png)
 
 ## Customizing the blacklist
 I'm storing a JSON array of regular expressions (stored as strings which get turned into regular expressions with `new RegExp(...)`). This is stored in a preference: `extension.switchToTabBlacklist.blacklist`. You need to edit it by hand for now.

@@ -13,7 +13,7 @@ Since [last September](/posts/cascaded-session-restore-a-hidden-bonus), you coul
 
 Starting with the latest nightly (and soon to be Aurora 8), `browser.sessionstore.max_concurrent_tabs` is no more. We're no longer allowing you to specify a specific number of tabs to restore concurrently. Instead we now allow you to either restore on demand, or use the hard-coded 3 tabs at a time value. The new preference is called `browser.sessionstore.restore_on_demand`. If you had customized `max_concurrent_tabs` and set it to 0, then `restore_on_demand` will be migrated to true. Unlike the old preference, `restore_on_demand` is exposed in the Preferences/Options dialog to make it accessible to a larger audience.
 
-![](/img/posts/restore_on_demand.png)
+![](./restore_on_demand.png)
 
 For the details, check out [bug 648683](https://bugzilla.mozilla.org/show_bug.cgi?id=648683).
 

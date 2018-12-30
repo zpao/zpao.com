@@ -10,7 +10,7 @@ type: photo
 tumblr_permalink: post/3045325637/the-new-firefox-default-home-page-is-seriously
 ---
 
-[![](/img/posts/new-firefox-default-home-page.png)](/img/posts/originals/new-firefox-default-home-page.png)
+![](./new-firefox-default-home-page.png)
 
 The new Firefox default home page is seriously sexy. **Seriously.**
 

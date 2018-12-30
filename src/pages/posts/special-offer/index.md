@@ -7,7 +7,7 @@ type: photo
 tumblr_permalink: post/664036242/youve-all-seen-these-theyre-all-over-purchase
 ---
 
-![](/img/posts/special-offer.gif)
+![](./special-offer.gif)
 
 You've all seen these. They're all over purchase confirmation pages on sites like TicketMaster, CampusFood, Fandango. This particular one was on TicketWeb ([after buying tickets to see Matt Pond PA](http://www.theindependentsf.com/calendar/event-detail/?tfly_event_id=7979)).
 

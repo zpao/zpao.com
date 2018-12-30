@@ -12,7 +12,7 @@ tumblr_permalink: post/2854700249/just-quit-it
 
 For a long time now, if you didn't have Firefox set to restore your session then Firefox would prompt you before quitting. A dialog with 3 buttons and a checkbox. It looked like this:
 
-![](/img/posts/just-quit-it.png)
+![](./just-quit-it.png)
 
 That mostly just gets in your way though. You've already decided you want to quit. You don't also need to decide if you want to reopen your tabs next time. So starting with the next nightly (January 21st) and Firefox 4 beta 10, you will no longer see that prompt. Of course if you already checked the box to "not ask next time" you weren't seeing this anyway.
 

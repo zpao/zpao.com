@@ -24,7 +24,7 @@ Also, did you know you can crash the keyboard? And then you can't get it back wi
 
 I noticed this a lot in the Play Store, but it seems to be a more systemic issue. Click targets are often small, often not well marked, and sometimes both.
 
-![What is this? A click target for ants!?](/img/posts/24-hours-of-android_click-target-for-ants.jpg)
+![What is this? A click target for ants!?](./24-hours-of-android_click-target-for-ants.jpg)
 
 ## Browsers
 The First ships with Chrome, but I also installed Firefox (obviously). Being able to choose a browser has been pretty cool. Both of these are synced with my desktop browsers so passwords and history are shared (with their respective desktop counterparts, there's not good cross-browser sync yet that I know of). So overall my experience has been positive, except for one thing…

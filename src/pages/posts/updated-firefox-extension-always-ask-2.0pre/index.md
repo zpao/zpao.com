@@ -10,7 +10,7 @@ tags:
 tumblr_permalink: post/3453055056/updated-firefox-extension-always-ask-2-0pre
 ---
 
-![](/img/posts/always-ask-2.0pre.png "The dialog that Always Ask shows when it has determined Firefox will quit without prompting")
+![](./always-ask-2.0pre.png "The dialog that Always Ask shows when it has determined Firefox will quit without prompting")
 
 Around the endgame for Firefox 3.6, [I wrote an extension called Always Ask](/posts/just-released-always-ask) to make sure I always got a prompt when quitting. I used it for a while and then forgot about it when it was no longer compatible as Firefox 3.7 (now 4) moved forward.
 

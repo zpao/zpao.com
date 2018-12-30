@@ -12,7 +12,7 @@ tumblr_permalink: post/1099464627/restore-previous-session
 
 I landed [bug 588482](https://bugzilla.mozilla.org/show_bug.cgi?id=588482) today (September 10<sup>th</sup>), so starting with tomorrow's nightly version of Firefox (AKA Minefield), you'll be able to restore your previous session at any point after start up. This means that you no longer have to restore your whole session immediately at start up. This will be available through a menu item in the History menu, as shown below.
 
-![Screenshot of History Menu](/img/posts/restore-previous-session.png)
+![Screenshot of History Menu](./restore-previous-session.png)
 
 This feature will be in Firefox 4 <strike>beta 6</strike> beta 7, due out in the next couple weeks.
 

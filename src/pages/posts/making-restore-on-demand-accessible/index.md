@@ -13,4 +13,4 @@ Since Firefox 8, [we've had a visible preference to restore tabs "on demand"](/p
 
 We'll be changing that in Firefox 15 now that [bug 720154](https://bugzilla.mozilla.org/show_bug.cgi?id=720154) landed. The checkbox has been moved from the "General" pane to the "Tabs" pane and we've removed the dependency on Session Restore being enabled.
 
-[![](/img/posts/making-restore-on-demand-accessible.png)](/img/posts/originals/making-restore-on-demand-accessible.png)
+![](./making-restore-on-demand-accessible.png)

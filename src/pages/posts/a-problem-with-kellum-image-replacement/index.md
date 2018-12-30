@@ -28,4 +28,4 @@ I haven't figured out a way to work around this, so for the time being I'll like
 
 In case you're using Firefox and can't see the bug, here's what it looks like:
 
-![](/img/posts/a-problem-with-kellum-image-replacement.png)
+![](./a-problem-with-kellum-image-replacement.png)
