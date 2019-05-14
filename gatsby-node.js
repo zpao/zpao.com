@@ -115,6 +115,8 @@ exports.onPostBuild = async ({ store, pathPrefix }, userPluginOptions) => {
   const htaccessLines = [
     `RewriteEngine On`,
     `RewriteBase /`,
+    `RewriteCond %{HTTPS} off`,
+    `RewriteRule ^(.*)$ https://zpao.com/$1 [R,L]`,
     `ErrorDocument 404 /404.html`,
     ...redirects.map(redirect => {
       return `RewriteRule ^${redirect.fromPath}$ ${
