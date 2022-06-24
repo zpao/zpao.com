@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
         </header>
         <div className="post-content">
           <p>
-            My name is Paul O&rsquo;Shannessy & This is where I live on the
+            My name is Paul O&rsquo;Shannessy & this is where I live on the
             internet.
           </p>
 
