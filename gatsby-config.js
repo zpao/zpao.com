@@ -1,6 +1,6 @@
 function rssSetup({ query: { site, allMarkdownRemark } }) {
   return {
-    title: `${site.siteMetadata.author} - ${site.siteMetadata.subTitle}`,
+    title: `${site.siteMetadata.title} - ${site.siteMetadata.subTitle}`,
     generator: null,
     feed_url: `${site.siteMetadata.siteURL}/feeds/default.xml`,
     site_url: site.siteMetadata.siteURL,
@@ -15,18 +15,22 @@ function rssSerialize({ query: { site, allMarkdownRemark } }) {
       url: site.siteMetadata.siteURL + edge.node.fields.slug,
       guid: site.siteMetadata.siteURL + edge.node.fields.slug,
       custom_elements: [{ 'content:encoded': edge.node.html }],
-      author: 'Paul O’Shannessy',
+      author: SITE_AUTHOR,
     };
   });
 }
 
+const SITE_TITLE = 'ZPAO';
+const SITE_SUBTITLE = 'blah. blah. blah.';
+const SITE_AUTHOR = 'Paul O’Shannessy';
+
 module.exports = {
   siteMetadata: {
-    title: 'ZPAO',
-    subTitle: 'blah. blah. blah.',
+    title: SITE_TITLE,
+    subTitle: SITE_SUBTITLE,
     author: 'Paul O’Shannessy',
-    // siteURL: 'https://zpao.com',
-    siteURL: 'http://moc.oapz.zpao.com',
+    siteURL: 'https://zpao.com',
+    // siteURL: 'http://moc.oapz.zpao.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -86,6 +90,7 @@ module.exports = {
         `,
         feeds: [
           {
+            title: `${SITE_TITLE} - ${SITE_SUBTITLE}`,
             setup: rssSetup,
             serialize: rssSerialize,
             query: `
@@ -119,6 +124,7 @@ module.exports = {
             output: '/feeds/default.xml',
           },
           {
+            title: `${SITE_TITLE} - ${SITE_SUBTITLE}`,
             setup: rssSetup,
             serialize: rssSerialize,
             query: `
