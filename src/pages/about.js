@@ -72,7 +72,7 @@ const AboutPage = () => {
               <a href="https://facebook.com/zpao">Facebook</a>.
             </li>
             <li>
-              I put code on <a href="https://github.com/zpao">Github</a>.
+              I put code on <a href="https://github.com/zpao">GitHub</a>.
             </li>
             <li>
               I listen to music on{' '}
