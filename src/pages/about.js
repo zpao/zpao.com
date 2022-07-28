@@ -31,7 +31,10 @@ const AboutPage = () => {
             </li>
             <li>
               I currently work at{' '}
-              <a href="https://www.facebook.com">Facebook</a>.
+              <del>
+                <a href="https://www.facebook.com">Facebook</a>
+              </del>{' '}
+              <a href="https://meta.com">Meta</a>.
             </li>
             <li>
               I used to work on{' '}

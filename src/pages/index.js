@@ -22,8 +22,9 @@ const IndexPage = ({ data }) => {
           </p>
 
           <p>
-            I'm a software developer living in <del>San Francisco</del> Seattle.
-            I write JavaScript & work on open source at Facebook.{' '}
+            I'm <del>a software developer</del> an engineering manager living in{' '}
+            <del>San Francisco</del> Seattle. I write JavaScript & work on open
+            source at <del>Facebook</del> Meta.{' '}
             <Link to="/about/">Read more about me & this site…</Link>
           </p>
 
