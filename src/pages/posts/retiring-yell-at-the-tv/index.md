@@ -5,7 +5,7 @@ tags:
   - yellatthetv
 ---
 
-4 years ago (holy shit!) I [launched]({% post_url 2009-01-21-yell-at-the-tv %}) a little project called [Yell at the TV!](http://yellatthetv.com). Up until recently, I'd mostly forgotten about it, but then I got several emails asking for me to remove some tweets. I'd assumed the site just stopped working at some point but apparently not.
+4 years ago (holy shit!) I [launched](/posts/yell-at-the-tv) a little project called [Yell at the TV!](http://yellatthetv.com). Up until recently, I'd mostly forgotten about it, but then I got several emails asking for me to remove some tweets. I'd assumed the site just stopped working at some point but apparently not.
 
 For the past 4 years, it's been slowly slurping up tweets with a few searches (most of which probably failed). It was running on Dreamhost shared hosting, on an ancient version of Rails, using SQLite. It had a *1.7GB* production.sqlite. For any number of reasons the site should have stopped working a while ago, but it kept chugging. It was *sloooooooooooooooow* but Google stuck it out and kept scraping.
 
