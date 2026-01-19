@@ -63,12 +63,16 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-66375-1',
-        head: false,
-        anonymize: true,
-        respectDNT: true,
+        trackingIds: ['UA-66375-1'],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+        },
       },
     },
     {
@@ -105,7 +109,7 @@ module.exports = {
                 }
                 allMarkdownRemark(
                   limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { frontmatter: { date: DESC } },
                 ) {
                   edges {
                     node {
@@ -139,7 +143,7 @@ module.exports = {
                 }
                 allMarkdownRemark(
                   limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { frontmatter: { date: DESC } },
                   filter: { frontmatter: { tags: { in: ["mozilla"] } } }
                 ) {
                   edges {

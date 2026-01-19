@@ -41,7 +41,7 @@ export default PostsIndex;
 export const pageQuery = graphql`
   query PostsIndex {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       limit: 1000
     ) {
       edges {
