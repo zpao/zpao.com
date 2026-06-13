@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 const PostsIndex = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges.map(edge => {
+  const posts = data.allMarkdownRemark.edges.map((edge) => {
     const post = edge.node;
     return (
       <tr key={post.fields.slug}>
@@ -40,10 +40,7 @@ const PostsIndex = ({ data }) => {
 export default PostsIndex;
 export const pageQuery = graphql`
   query PostsIndex {
-    allMarkdownRemark(
-      sort: { frontmatter: { date: DESC } }
-      limit: 1000
-    ) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 1000) {
       edges {
         node {
           fields {

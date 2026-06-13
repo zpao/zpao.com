@@ -36,7 +36,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
+    "format": "prettier --write '**/*.{js,scss}'",
     "deploy": "pnpm run clean && pnpm run build && pnpm run rsync",
     "clean": "rm -rf public .cache",
     "rsync": "rsync -avze ssh --delete public/ zpao.com:zpao.com/"

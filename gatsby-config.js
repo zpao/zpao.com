@@ -8,7 +8,7 @@ function rssSetup({ query: { site, allMarkdownRemark } }) {
 }
 
 function rssSerialize({ query: { site, allMarkdownRemark } }) {
-  return allMarkdownRemark.edges.map(edge => {
+  return allMarkdownRemark.edges.map((edge) => {
     return {
       title: edge.node.frontmatter.title,
       description: edge.node.excerpt,

@@ -21,7 +21,7 @@ const Layout = ({ children, data, pageTitle }) => (
         }
       }
     `}
-    render={data => {
+    render={(data) => {
       let author = data.site.siteMetadata.author;
       return (
         <div id="container">

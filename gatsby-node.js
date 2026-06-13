@@ -15,35 +15,33 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js');
     resolve(
-      graphql(
-        `
-          {
-            allMarkdownRemark(
-              sort: { frontmatter: { date: DESC } }
-              limit: 1000
-            ) {
-              edges {
-                node {
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                    old_permalink
-                  }
+      graphql(`
+        {
+          allMarkdownRemark(
+            sort: { frontmatter: { date: DESC } }
+            limit: 1000
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title
+                  old_permalink
                 }
               }
             }
           }
-        `
-      ).then(result => {
+        }
+      `).then((result) => {
         if (result.errors) {
           console.log(result.errors);
           reject(result.errors);
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges.filter(edge => {
+        const posts = result.data.allMarkdownRemark.edges.filter((edge) => {
           return edge.node.fields.slug.includes('/posts/');
         });
 
@@ -70,7 +68,7 @@ exports.createPages = ({ graphql, actions }) => {
             });
           }
         });
-      })
+      }),
     );
   });
 };
@@ -118,7 +116,7 @@ exports.onPostBuild = async ({ store, pathPrefix }, userPluginOptions) => {
     `RewriteCond %{HTTPS} off`,
     `RewriteRule ^(.*)$ https://zpao.com/$1 [R,L]`,
     `ErrorDocument 404 /404.html`,
-    ...redirects.map(redirect => {
+    ...redirects.map((redirect) => {
       return `RewriteRule ^${redirect.fromPath}$ ${
         redirect.toPath
       } [R=301,NC,L]`;

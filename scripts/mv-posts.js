@@ -8,7 +8,7 @@ const files = fs.readdirSync(SRC_POSTS_PATH);
 
 console.log(files);
 
-files.forEach(filename => {
+files.forEach((filename) => {
   if (!filename.endsWith('.markdown')) {
     return;
   }
