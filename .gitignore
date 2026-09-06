@@ -1,6 +1,19 @@
-.sass-cache
-_site
-.sass-cache
-node_modules/
-public/
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# build artifacts
+/public/posts/
+/public/.htaccess
 .cache
+
+# pnpm
+.pnpm-store/
+.pnpm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
