@@ -114,10 +114,10 @@ exports.onPostBuild = async ({ store, pathPrefix }, userPluginOptions) => {
     `RewriteEngine On`,
     `RewriteBase /`,
     `RewriteCond %{HTTPS} off`,
-    `RewriteRule ^(.*)$ https://zpao.com/$1 [R,L]`,
+    `RewriteRule ^(.*)$ https://zpao.com/$1 [R=301,L]`,
     `ErrorDocument 404 /404.html`,
     ...redirects.map((redirect) => {
-      return `RewriteRule ^${redirect.fromPath}$ ${
+      return `RewriteRule ^${redirect.fromPath.replace(/^\//, '')}$ ${
         redirect.toPath
       } [R=301,NC,L]`;
     }),
