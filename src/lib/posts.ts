@@ -7,12 +7,10 @@ import remarkSmartypants from 'remark-smartypants';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeRaw from 'rehype-raw';
+import rehypePrism from 'rehype-prism-plus/common';
 import { visit } from 'unist-util-visit';
-import Prism from 'prismjs';
 import { imageInfo, variantName } from './images.ts';
 import { readGist } from './gists.ts';
-import loadLanguages from 'prismjs/components/index.js';
-loadLanguages(['bash', 'ruby', 'python', 'diff', 'json', 'css']);
 
 export const postsDirectory = path.join(process.cwd(), 'src/content/posts');
 export { site } from './site.ts';
@@ -69,6 +67,29 @@ export async function getPosts(): Promise<Post[]> {
 }
 
 type GistLoader = (identifier: string) => Promise<string>;
+
+function codeMetadata() {
+  return (tree: any) => {
+    visit(tree, 'code', (node: any) => {
+      if (!node.meta) return;
+      node.data = {
+        ...node.data,
+        hProperties: { ...node.data?.hProperties, metastring: node.meta },
+      };
+    });
+  };
+}
+
+function restoreCodeMetadata() {
+  return (tree: any) => {
+    visit(tree, 'element', (node: any) => {
+      const meta = node.properties?.metastring;
+      if (node.tagName !== 'code' || typeof meta !== 'string') return;
+      node.data = { ...node.data, meta };
+      delete node.properties.metastring;
+    });
+  };
+}
 
 function enhancements({
   slug,
@@ -140,32 +161,6 @@ function enhancements({
       },
     );
     await Promise.all(gists);
-    visit(tree, 'code', (node: any) => {
-      const match = /^(\w+)?(?:\{([\d,-]+)\})?$/.exec(node.lang || '');
-      const language = match?.[1] || 'text';
-      const selected = new Set<number>();
-      for (const range of (match?.[2] || '').split(',').filter(Boolean)) {
-        const [start, end = start] = range.split('-').map(Number);
-        for (let n = start; n <= end; n++) selected.add(n);
-      }
-      const grammar = Prism.languages[language];
-      const escaped = node.value
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-      const code = grammar
-        ? Prism.highlight(node.value, grammar, language)
-        : escaped;
-      node.type = 'html';
-      node.value = `<div class="gatsby-highlight"><pre class="language-${language}"><code class="language-${language}">${code
-        .split('\n')
-        .map((line: string, i: number, lines: string[]) =>
-          selected.has(i + 1)
-            ? `<span class="gatsby-highlight-code-line">${line}</span>`
-            : line + (i < lines.length - 1 ? '\n' : ''),
-        )
-        .join('')}</code></pre></div>`;
-    });
   };
 }
 
@@ -178,8 +173,11 @@ export async function renderPost<T extends RenderablePost>(
       .use(remarkParse)
       .use(remarkSmartypants)
       .use(enhancements as any, { ...post, gistLoader })
+      .use(codeMetadata)
       .use(remarkRehype, { allowDangerousHtml: true })
       .use(rehypeRaw)
+      .use(restoreCodeMetadata)
+      .use(rehypePrism, { ignoreMissing: true, defaultLanguage: 'text' })
       .use(rehypeStringify, { allowDangerousHtml: true })
       .process(post.content),
   );

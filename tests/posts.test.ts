@@ -26,7 +26,7 @@ test('Markdown retains HTML, local images, typography, gists, and highlighted li
     {
       slug: '/posts/test/',
       content:
-        '![alt](./image.png)\n\n"smart" -- test\n\n<iframe src="https://example.com"></iframe>\n\n`gist:zpao/844787#assignment_array.js`\n\n```javascript{2}\nconst a = 1;\nconst b = 2;\n```',
+        '![alt](./image.png)\n\n"smart" -- test\n\n<iframe src="https://example.com"></iframe>\n\n`gist:zpao/844787#assignment_array.js`\n\n```javascript {2}\nconst a = 1;\nconst b = 2;\n```',
     },
     {
       gistLoader: async (identifier: string) =>
@@ -37,8 +37,8 @@ test('Markdown retains HTML, local images, typography, gists, and highlighted li
   assert.match(html, /“smart”/);
   assert.match(html, /<iframe src="https:\/\/example.com"/);
   assert.match(html, /844787#assignment_array.js/);
-  assert.match(html, /gatsby-highlight-code-line/);
-  assert.match(html, /token keyword/);
+  assert.match(html, /highlight-line/);
+  assert.match(html, /class="token keyword"/);
 });
 
 test('embedded tables are normalized for browser hydration', async () => {

@@ -66,17 +66,6 @@ const styles = stylex.create({
   },
   iframe: { maxWidth: '100%' },
   highlight: { margin: '0.5em 0', padding: '1em', overflow: 'auto' },
-  highlightedPre: {
-    backgroundColor: 'transparent',
-    margin: 0,
-    padding: 0,
-    overflow: 'visible',
-    minWidth: '100%',
-    float: 'left',
-    color: 'inherit',
-    textShadow: 'none',
-    borderRadius: 0,
-  },
   highlightedCode: {
     backgroundColor: 'transparent',
     padding: '2px 4px',
@@ -84,6 +73,7 @@ const styles = stylex.create({
     textShadow: 'none',
     fontFamily: 'inherit',
   },
+  codeLine: { display: 'block' },
   highlightedLine: {
     backgroundColor: '#49483e',
     display: 'block',
@@ -150,9 +140,9 @@ function elementStyle(tag: string, className = '') {
     styles[tag as StyleKey],
     className === 'gist' && styles.gist,
     ...tokenStyles,
-    className.includes('gatsby-highlight-code-line') && styles.highlightedLine,
-    className === 'gatsby-highlight' && styles.highlight,
-    tag === 'pre' && className.includes('language-') && styles.highlightedPre,
+    className.includes('code-line') && styles.codeLine,
+    className.includes('highlight-line') && styles.highlightedLine,
+    tag === 'pre' && className.includes('language-') && styles.highlight,
     tag === 'code' && className.includes('language-') && styles.highlightedCode,
     tag === 'td' && className === 'date' && styles.date,
   );
