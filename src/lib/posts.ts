@@ -10,7 +10,7 @@ import rehypeRaw from 'rehype-raw';
 import rehypePrism from 'rehype-prism-plus/common';
 import { visit } from 'unist-util-visit';
 import { imageInfo, variantName } from './images.ts';
-import { readGist } from './gists.ts';
+import { readGist, type Gist } from './gists.ts';
 
 export const postsDirectory = path.join(process.cwd(), 'src/content/posts');
 export { site } from './site.ts';
@@ -66,7 +66,7 @@ export async function getPosts(): Promise<Post[]> {
   );
 }
 
-type GistLoader = (identifier: string) => Promise<string>;
+type GistLoader = (identifier: string) => Promise<Gist>;
 
 function codeMetadata() {
   return (tree: any) => {
@@ -89,6 +89,24 @@ function restoreCodeMetadata() {
       delete node.properties.metastring;
     });
   };
+}
+
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function renderGist(gist: Gist) {
+  return `<div class="gist">${gist.files
+    .map((file) => {
+      const language =
+        file.language?.toLowerCase().replace(/\s+/g, '-') || 'text';
+      return `<div class="gist-file"><pre><code class="language-${escapeHtml(language)}">${escapeHtml(file.content)}</code></pre><div class="gist-meta"><a href="${escapeHtml(file.rawUrl)}">view raw</a> <a href="${escapeHtml(gist.url)}">${escapeHtml(file.filename)}</a> hosted with ❤ by <a href="https://github.com">GitHub</a></div></div>`;
+    })
+    .join('')}</div>`;
 }
 
 function enhancements({
@@ -147,7 +165,7 @@ function enhancements({
         const identifier = node.value.slice(5);
         gists.push(
           (async () => {
-            const html = await gistLoader(identifier);
+            const html = renderGist(await gistLoader(identifier));
             // A gist is block HTML, so replace its otherwise-empty paragraph too.
             const target =
               parent.type === 'paragraph' && parent.children.length === 1
