@@ -66,24 +66,26 @@ assert.ok(notFound.includes('Nice Try 1337 H4xx0R!'));
 for (const name of ['default', 'mozilla']) {
   const xml = await fs.readFile(`out/feeds/${name}.xml`, 'utf8');
   const expected = posts.filter(
-    (post) => name === 'default' || post.tags?.includes('mozilla'),
+    (post) =>
+      name === 'default' ||
+      post.tags?.some((tag) => tag.toLowerCase() === name),
   );
   assert.equal((xml.match(/<item>/g) || []).length, expected.length);
   for (const post of expected)
     assert.ok(xml.includes(`https://zpao.com${post.slug}`));
 }
-async function checkStatic(directory = 'static') {
+async function checkPublic(directory = 'public') {
   for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
     const source = path.join(directory, entry.name);
-    if (entry.isDirectory()) await checkStatic(source);
+    if (entry.isDirectory()) await checkPublic(source);
     else
       assert.deepEqual(
-        await fs.readFile(path.join('out', path.relative('static', source))),
+        await fs.readFile(path.join('out', path.relative('public', source))),
         await fs.readFile(source),
       );
   }
 }
-await checkStatic();
+await checkPublic();
 const cssFiles = await fs.readdir('out/_next/static/css');
 const css = (
   await Promise.all(
@@ -95,5 +97,5 @@ assert.match(css, /#f92672/);
 assert.match(css, /max-width:600px/);
 assert.match(css, /border-bottom/);
 console.log(
-  `Verified ${routes.length} routes, ${posts.length} archive entries, local assets, both feeds, static files, Apache rules, and compiled StyleX.`,
+  `Verified ${routes.length} routes, ${posts.length} archive entries, local assets, both feeds, public files, Apache rules, and compiled StyleX.`,
 );

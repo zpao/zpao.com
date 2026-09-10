@@ -33,7 +33,7 @@
     "dev": "pnpm run prepare-static && next dev",
     "format": "prettier --write '**/*.{js,mjs,ts,tsx,css}'",
     "deploy": "pnpm run clean && pnpm run build && pnpm run verify && pnpm run rsync",
-    "clean": "rm -rf public out .next .cache",
+    "clean": "rm -rf out .next .cache",
     "rsync": "rsync -avze ssh --delete out/ zpao.com:zpao.com/",
     "test": "node --test tests/*.test.ts",
     "typecheck": "tsc --noEmit",
