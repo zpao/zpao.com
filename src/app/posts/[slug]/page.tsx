@@ -1,7 +1,8 @@
 import { cache } from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { P, A, H1, H2, Header, Time, Markdown } from '@/components/typography';
+import { Link, PageHeader, Paragraph } from '@/components/content';
+import { Markdown } from '@/components/markdown';
 import { getPosts, renderPost } from '@/lib/posts';
 
 export const dynamicParams = false;
@@ -43,19 +44,17 @@ export default async function Post({ params }: PostPageProps) {
   const post = await getPost((await params).slug);
   return (
     <article>
-      <Header>
-        <H1>{post.title}</H1>
-        <Time dateTime={post.date}>{post.displayDate}</Time>
-        {post.blurb && <H2>{post.blurb}</H2>}
-      </Header>
-      <div className="post-content">
-        <Markdown html={post.html} />
-        {post.type === 'link' && (
-          <P>
-            <A href={post.source_url}>view original &rarr;</A>
-          </P>
-        )}
-      </div>
+      <PageHeader
+        title={post.title}
+        date={{ dateTime: post.date, label: post.displayDate }}
+        description={post.blurb}
+      />
+      <Markdown html={post.html} />
+      {post.type === 'link' && post.source_url && (
+        <Paragraph>
+          <Link href={post.source_url}>view original &rarr;</Link>
+        </Paragraph>
+      )}
     </article>
   );
 }

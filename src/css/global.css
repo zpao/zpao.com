@@ -1,22 +1,10 @@
-/* Only the document reset is global; site and article styles use StyleX. */
+/* Only the document reset is global; site styles and theme values use StyleX. */
 @layer reset {
   * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-  }
-  html {
-    background: #272822;
-    color: #f8f8f0;
-    font-family: Inconsolata, monospace;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  @media (max-width: 600px) {
-    html {
-      font-size: 14px;
-    }
   }
 }
 @stylex;

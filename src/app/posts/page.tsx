@@ -1,40 +1,15 @@
-import { H1, Header, Time, Td, TextLink } from '@/components/typography';
-import React from 'react';
-
+import type { Metadata } from 'next';
+import { PageHeader } from '@/components/content';
+import { PostArchive } from '@/components/post-archive';
 import { getPosts } from '@/lib/posts';
 
-const PostsIndex = async () => {
-  const allPosts = await getPosts();
-  const posts = allPosts.map((post) => {
-    return (
-      <tr key={post.slug}>
-        <Td className="date">
-          <Time dateTime={post.displayDate}>{post.displayDate}</Time>
-        </Td>
-        <Td>
-          <TextLink href={post.slug}>{post.title}</TextLink>
-        </Td>
-      </tr>
-    );
-  });
+export const metadata: Metadata = { title: 'Archive' };
 
-  const pageTitle = 'Archive';
+export default async function PostsIndex() {
   return (
-    <>
-      <article>
-        <Header>
-          <H1>{pageTitle}</H1>
-        </Header>
-        <div className="post-content">
-          <table id="post-list">
-            <tbody>{posts}</tbody>
-          </table>
-        </div>
-      </article>
-    </>
+    <article>
+      <PageHeader title="Archive" />
+      <PostArchive posts={await getPosts()} />
+    </article>
   );
-};
-
-export default PostsIndex;
-
-export const metadata = { title: 'Archive' };
+}

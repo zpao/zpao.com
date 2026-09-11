@@ -1,47 +1,48 @@
-import { P, H1, Header, Del, TextLink } from '@/components/typography';
-import React from 'react';
-
+import * as stylex from '@stylexjs/stylex';
+import type { Metadata } from 'next';
+import { Link, PageHeader, Paragraph } from '@/components/content';
 import { site } from '@/lib/site';
 import { getPosts } from '@/lib/posts';
+import { colors } from '../styles/tokens.stylex';
 
-const IndexPage = async () => {
+// The root layout's title template applies only to child route segments.
+export const metadata: Metadata = {
+  title: `${site.author} - ${site.subtitle}`,
+};
+
+export default async function IndexPage() {
   const [post] = await getPosts();
   const pageTitle = 'blah. blah. blah.';
 
   return (
-    <>
-      <article>
-        <Header>
-          <H1>{pageTitle}</H1>
-        </Header>
-        <div className="post-content">
-          <P>
-            My name is Paul O&rsquo;Shannessy & this is where I live on the
-            internet.
-          </P>
+    <article>
+      <PageHeader title={pageTitle} />
+      <Paragraph>
+        My name is Paul O&rsquo;Shannessy & this is where I live on the
+        internet.
+      </Paragraph>
 
-          <P>
-            I'm <Del>a software developer</Del> an engineering manager living in{' '}
-            <Del>San Francisco</Del> Seattle. I write JavaScript & work on open
-            source at <Del>Facebook</Del> Meta.{' '}
-            <TextLink href="/about/">Read more about me & this site…</TextLink>
-          </P>
+      <Paragraph>
+        I'm <del {...stylex.props(styles.deleted)}>a software developer</del> an
+        engineering manager living in{' '}
+        <del {...stylex.props(styles.deleted)}>San Francisco</del> Seattle. I
+        write JavaScript & work on open source at{' '}
+        <del {...stylex.props(styles.deleted)}>Facebook</del> Meta.{' '}
+        <Link href="/about/">Read more about me & this site…</Link>
+      </Paragraph>
 
-          <P>
-            At this point, I primarily use this site for writing. The last thing
-            I wrote was titled{' '}
-            <em>
-              <TextLink href={post.slug}>{post.title}</TextLink>
-            </em>
-            .
-          </P>
-        </div>
-      </article>
-    </>
+      <Paragraph>
+        At this point, I primarily use this site for writing. The last thing I
+        wrote was titled{' '}
+        <em>
+          <Link href={post.slug}>{post.title}</Link>
+        </em>
+        .
+      </Paragraph>
+    </article>
   );
-};
+}
 
-export default IndexPage;
-
-// The root layout's title template applies only to child route segments.
-export const metadata = { title: `${site.author} - ${site.subtitle}` };
+const styles = stylex.create({
+  deleted: { color: colors.textMuted },
+});
