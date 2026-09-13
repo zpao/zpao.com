@@ -98,11 +98,6 @@ export default function AboutPage() {
             </Link>{' '}
             account but really don’t like it.
           </ListItem>
-          <ListItem>
-            For a slightly more professional presentation that isn’t guaranteed
-            to be up to date, I have <Link href="/resume/">my résumé</Link> as
-            well.
-          </ListItem>
         </List>
 
         <Paragraph>
