@@ -1,11 +1,39 @@
 import '../css/global.css';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import * as stylex from '@stylexjs/stylex';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
 import type { ReactNode } from 'react';
+import { config, type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { site } from '@/lib/site';
 import { colors, layout, spacing, typography } from '../styles/tokens.stylex';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faThreads,
+  faXTwitter,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons';
+
+config.autoAddCss = false;
+
+const SOCIALS: Array<{ name: string; url: string; icon: IconDefinition }> = [
+  {
+    name: 'threads',
+    url: 'https://threads.com/@zpao',
+    icon: faThreads,
+  },
+  {
+    name: 'x',
+    url: 'https://x.com/zpao',
+    icon: faXTwitter,
+  },
+  {
+    name: 'github',
+    url: 'https://github.com/zpao',
+    icon: faGithub,
+  },
+];
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -25,10 +53,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <link
           href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
-          rel="stylesheet"
-        />
-        <link
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
           rel="stylesheet"
         />
       </head>
@@ -58,13 +82,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <section>{children}</section>
           <footer {...stylex.props(styles.footer)}>
             <ul {...stylex.props(styles.socialLinks)}>
-              {['facebook', 'twitter', 'github'].map((name) => (
+              {SOCIALS.map(({ name, url, icon }) => (
                 <li key={name}>
                   <a
-                    href={`https://${name}.com/zpao`}
+                    href={url}
                     aria-label={name}
                     {...stylex.props(styles.socialLink)}>
-                    <i className={`fa fa-${name}`} />
+                    <FontAwesomeIcon icon={icon} />
                   </a>
                 </li>
               ))}
