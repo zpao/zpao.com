@@ -14,6 +14,14 @@ import {
   faXTwitter,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
+import { Inconsolata } from 'next/font/google';
+
+const inconsolata = Inconsolata({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  fallback: ['ui-monospace', 'monospace'],
+  variable: '--font-inconsolata',
+});
 
 config.autoAddCss = false;
 
@@ -48,15 +56,11 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  const documentStyles = stylex.props(styles.document);
+
   return (
-    <html lang="en" {...stylex.props(styles.document)}>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
+    <html lang="en" className={inconsolata.variable}>
+      <body {...stylex.props(styles.document)}>
         <div {...stylex.props(styles.container)}>
           <header {...stylex.props(styles.header)}>
             <h1 {...stylex.props(styles.heading)}>
