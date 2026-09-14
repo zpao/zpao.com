@@ -56,8 +56,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const documentStyles = stylex.props(styles.document);
-
   return (
     <html lang="en" className={inconsolata.variable}>
       <body {...stylex.props(styles.document)}>

@@ -1,4 +1,4 @@
-import { createFeed, getFeedTags } from '../../../lib/feed.ts';
+import { createFeed } from '../../../lib/feed.ts';
 
 export const dynamic = 'force-static';
 export const dynamicParams = false;

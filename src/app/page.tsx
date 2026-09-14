@@ -20,9 +20,9 @@ export default async function IndexPage() {
       </Paragraph>
 
       <Paragraph>
-        I'm a software engineer / engineering manager living in Seattle. My
+        I’m a software engineer / engineering manager living in Seattle. My
         career is deeply intertwined with Open Source - I spent the last decade
-        supporting Meta's open source program and had previously been a
+        supporting Meta’s open source program and had previously been a
         maintainer of React & Firefox.
       </Paragraph>
 
