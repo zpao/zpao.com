@@ -1,9 +1,7 @@
-import * as stylex from '@stylexjs/stylex';
 import type { Metadata } from 'next';
 import { Link, PageHeader, Paragraph } from '@/components/content';
 import { site } from '@/lib/site';
 import { getPosts } from '@/lib/posts';
-import { colors } from '../styles/tokens.stylex';
 
 // The root layout's title template applies only to child route segments.
 export const metadata: Metadata = {
@@ -12,23 +10,20 @@ export const metadata: Metadata = {
 
 export default async function IndexPage() {
   const [post] = await getPosts();
-  const pageTitle = 'blah. blah. blah.';
 
   return (
     <article>
-      <PageHeader title={pageTitle} />
+      <PageHeader title="blah. blah. blah." />
       <Paragraph>
         My name is Paul O&rsquo;Shannessy & this is where I live on the
         internet.
       </Paragraph>
 
       <Paragraph>
-        I'm <del {...stylex.props(styles.deleted)}>a software developer</del> an
-        engineering manager living in{' '}
-        <del {...stylex.props(styles.deleted)}>San Francisco</del> Seattle. I
-        write JavaScript & work on open source at{' '}
-        <del {...stylex.props(styles.deleted)}>Facebook</del> Meta.{' '}
-        <Link href="/about/">Read more about me & this site…</Link>
+        I'm a software engineer / engineering manager living in Seattle. My
+        career is deeply intertwined with Open Source - I spent the last decade
+        supporting Meta's open source program and had previously been a
+        maintainer of React & Firefox.
       </Paragraph>
 
       <Paragraph>
@@ -42,7 +37,3 @@ export default async function IndexPage() {
     </article>
   );
 }
-
-const styles = stylex.create({
-  deleted: { color: colors.textMuted },
-});
