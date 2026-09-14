@@ -26,7 +26,7 @@ export const spacing = stylex.defineVars({
 });
 
 export const typography = stylex.defineVars({
-  family: 'Inconsolata, monospace',
+  family: 'var(--font-inconsolata)',
   bodySize: { default: '18px', [SMALL_SCREEN]: '14px' },
   lineHeight: '1.5',
   smallSize: '75%',
