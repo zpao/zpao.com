@@ -86,10 +86,13 @@ async function checkPublic(directory = 'public') {
   }
 }
 await checkPublic();
-const cssFiles = await fs.readdir('out/_next/static/css');
+const cssDirectory = 'out/_next/static/chunks';
+const cssFiles = (await fs.readdir(cssDirectory)).filter((file) =>
+  file.endsWith('.css'),
+);
 const css = (
   await Promise.all(
-    cssFiles.map((file) => fs.readFile(`out/_next/static/css/${file}`, 'utf8')),
+    cssFiles.map((file) => fs.readFile(path.join(cssDirectory, file), 'utf8')),
   )
 ).join('\n');
 assert.ok(!css.includes('@stylex;'), 'StyleX was not compiled');
