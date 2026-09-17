@@ -44,7 +44,7 @@ export default function AboutPage() {
           </ListItem>
           <ListItem>
             I graduated from{' '}
-            <Link href="http://cmu.edu">Carnegie Mellon University</Link> twice
+            <Link href="https://cmu.edu">Carnegie Mellon University</Link> twice
             in 2008. First with a BS in Information Systems and then later with
             a MS in Information Systems Management.
           </ListItem>
@@ -58,13 +58,13 @@ export default function AboutPage() {
           <ListItem>
             I listen to music on{' '}
             <del {...stylex.props(styles.deleted)}>
-              <Link title="RIP Rdio" href="http://www.rdio.com/people/zpao/">
+              <Link title="RIP Rdio" href="https://www.rdio.com/people/zpao/">
                 Rdio
               </Link>
             </del>{' '}
             <Link href="https://open.spotify.com/user/zpao">Spotify</Link> &
-            track that with <Link href="http://last.fm/user/zpao">last.fm</Link>
-            .
+            track that with{' '}
+            <Link href="https://last.fm/user/zpao">last.fm</Link>.
           </ListItem>
           <ListItem>
             I’m a professional adult on{' '}

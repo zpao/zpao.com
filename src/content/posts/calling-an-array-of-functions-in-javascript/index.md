@@ -46,7 +46,7 @@ Function.prototype.call = function(thisArg, arg1, arg2, ...) {
 }
 ```
 
-That's going to be down in native code and will of course vary by engine, but the important thing to remember is that `this` is the function that gets called. There are a few more details in [the spec](http://es5.github.io/#x15.3.4.4).
+That's going to be down in native code and will of course vary by engine, but the important thing to remember is that `this` is the function that gets called. There are a few more details in [the spec](https://es5.github.io/#x15.3.4.4).
 
 The second thing to know is that you can call functions on prototypes, so long as you use them correctly. So let's try just calling one function.
 
@@ -64,7 +64,7 @@ This works, but it's also equivalent to just saying `callbacks[0].call()` so it'
 
 ## Array.prototype.forEach
 
-The way `forEach` works is also important to know. Go read [the spec](http://es5.github.io/#x15.4.4.18), or even just the [MDN page](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/forEach).
+The way `forEach` works is also important to know. Go read [the spec](https://es5.github.io/#x15.4.4.18), or even just the [MDN page](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/forEach).
 
 The key take away: the 2nd argument will be used as the `this` that is accessible in the function argument. If you followed along with that chunk of the spec, you may have seen `[[Call]]` — this is effectively saying that your JS is transformed into this:
 
@@ -88,10 +88,10 @@ But that doesn't work. It's actually going to throw an error. Remember, `this` i
 Function.prototype.call.call(undefined, callbacks[0]);
 ```
 
-We're almost there. We actually want to pass `Function.prototype.call` as `this` so it gets called — effectively `Function.prototype.call.call`. And that in turn is passed our callback. Basically, we're creating a little JavaScript [Matryoshka doll](http://en.wikipedia.org/wiki/Matryoshka_doll). It's a little crazy but it works.
+We're almost there. We actually want to pass `Function.prototype.call` as `this` so it gets called — effectively `Function.prototype.call.call`. And that in turn is passed our callback. Basically, we're creating a little JavaScript [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll). It's a little crazy but it works.
 
 ``` js
 callbacks.forEach(Function.prototype.call, Function.prototype.call);
 ```
 
-At the end of the day though, this isn't straightforward code. And in fact, [it's quite slow](http://jsperf.com/call-vs-prototype-call). So I can't recommend ever writing this code, though it made for an interesting thought experiment.
+At the end of the day though, this isn't straightforward code. And in fact, [it's quite slow](https://jsperf.com/call-vs-prototype-call). So I can't recommend ever writing this code, though it made for an interesting thought experiment.

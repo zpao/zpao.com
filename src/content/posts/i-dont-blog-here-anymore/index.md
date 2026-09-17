@@ -1,6 +1,6 @@
 ---
 title: "I Don't Blog Here Anymore"
-blurb: "I moved just <a href='http://blog.zpao.com'>down the street</a> a while ago."
+blurb: "I moved just <a href='https://blog.zpao.com'>down the street</a> a while ago."
 date: 2010-09-22
 tags:
   - tumblr
@@ -17,4 +17,4 @@ Eventually I'll put on a fresh coat of paint here and make this more of a launch
 
 If you're an RSS kind of person & you subscribed to the Feedburner feed, you'll automagically get switched over to the new feed soon.
 
-  [Tumblr]: http://tumblr.com
+  [Tumblr]: https://tumblr.com

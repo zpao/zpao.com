@@ -14,9 +14,9 @@ tumblr_permalink: post/4620873765/about-that-hybrid-v8monkey-engine
 
 I've sort of been working on this thing...
 
-Several weeks ago I was curious about why there was no implementation of [Node.js](http://nodejs.org/) using the [SpiderMonkey](https://developer.mozilla.org/En/SpiderMonkey) JavaScript engine (the one we use in Firefox). So [I tweeted](https://twitter.com/#!/zpao/status/42780850177327105) about it and several people said they wanted such a thing and would help work on it.
+Several weeks ago I was curious about why there was no implementation of [Node.js](https://nodejs.org/) using the [SpiderMonkey](https://developer.mozilla.org/En/SpiderMonkey) JavaScript engine (the one we use in Firefox). So [I tweeted](https://twitter.com/#!/zpao/status/42780850177327105) about it and several people said they wanted such a thing and would help work on it.
 
-After some poking around the source, we realized that Node was tied pretty closely to [V8](http://code.google.com/apis/v8/), and there really wouldn't be any way to use SpiderMonkey without ripping Node apart and rebuilding it. Not only would that suck now, but it would likely suck long into the future as Node gets updated. This port would fall behind and nobody wants that.
+After some poking around the source, we realized that Node was tied pretty closely to [V8](https://code.google.com/apis/v8/), and there really wouldn't be any way to use SpiderMonkey without ripping Node apart and rebuilding it. Not only would that suck now, but it would likely suck long into the future as Node gets updated. This port would fall behind and nobody wants that.
 
 ## V8Monkey
 
@@ -44,7 +44,7 @@ We also chat a lot on IRC: [#spidernode on irc.mozilla.org](irc://irc.mozilla.or
 
 That's for damn sure. [Rob Arnold](https://twitter.com/robarnold) and [Shawn Wilsher](https://twitter.com/sdwilsh) have been doing most of the heavy lifting. Rob has done some work on SpiderMonkey in a past life and is really good at this sort of language stuff. Shawn is also really smart and definitely no stranger to using SpiderMonkey. This project would be nowhere without these guys. [John Ford](https://twitter.com/john_h_ford) set up a buildbot for us, which has been incredibly helpful for catching all the tests I break. Having a build engineer helping out has been really great.
 
-[Brendan Eich](https://twitter.com/BrendanEich) (you may have heard of him) said he's going to start contributing. My intern [Mehdi Mulani](http://twitter.com/mehdiisdumb) submitted a couple patches early on and others have stepped up and are working on patches right now.
+[Brendan Eich](https://twitter.com/BrendanEich) (you may have heard of him) said he's going to start contributing. My intern [Mehdi Mulani](https://twitter.com/mehdiisdumb) submitted a couple patches early on and others have stepped up and are working on patches right now.
 
 ## My Experience So Far
 

@@ -10,13 +10,13 @@ tags:
 old_permalink: "articles/14-yell_at_the_tv"
 ---
 
-**FRESHLY LAUNCHED:** [Yell At The TV!](http://yellatthetv.com)
+**FRESHLY LAUNCHED:** [Yell At The TV!](https://yellatthetv.com)
 
 I just launched a new app that lets you yell at your TV via twitter. It’s nothing fancy, but it was a good little bit of fun.
 
 ## Is LOST on yet?
 
-While this was an idea I had been kicking around for a while, it was the work done by Rick Olsen on [Is LOST on yet?](http://islostonyet.com/) that made me decide to do this.
+While this was an idea I had been kicking around for a while, it was the work done by Rick Olsen on [Is LOST on yet?](https://islostonyet.com/) that made me decide to do this.
 
 ## Feature Poor
 
@@ -26,6 +26,6 @@ Hopefully I’ll be adding features over the next week or so. The primary thing 
 
 ## Dreamhost Pains
 
-I originally made this in [Sinatra](http://sinatra.github.com), but that didn’t work out so well on Dreamhost for a few reasons. I fucked around for a bit trying to get it to work, but gave up and instead rewrote it using Ruby on Rails. I really do like Dreamhost, but for projects like this, it’d be nice to host it with ease, using the framework of my choice.
+I originally made this in [Sinatra](https://sinatra.github.com), but that didn’t work out so well on Dreamhost for a few reasons. I fucked around for a bit trying to get it to work, but gave up and instead rewrote it using Ruby on Rails. I really do like Dreamhost, but for projects like this, it’d be nice to host it with ease, using the framework of my choice.
 
-**So give it a try: [http://yellatthetv.com](http://yellatthetv.com)**
+**So give it a try: [https://yellatthetv.com](https://yellatthetv.com)**

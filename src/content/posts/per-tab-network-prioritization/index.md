@@ -15,7 +15,7 @@ old_permalink: "articles/22-per_tab_network_prioritization"
 
 ## The Idea In Summary
 
-An idea that’s likely been tossed around before has been brought to the forefront more recently by Firefox’s newest designer [Alexander Limi](http://limi.net/), the idea of [per tab network prioritization](https://wiki.mozilla.org/Firefox/Projects/Per_Tab_Network_Prioritization). The premise of the idea is that what you’re doing right now is more important that what you were doing 5 minutes ago. So to account for the relative importance, we should make what you’re looking at right now load faster. This is really part of a grander scheme to improve perceived performance, but has been reduced to try to make some improvement achievable for Firefox 3.6.
+An idea that’s likely been tossed around before has been brought to the forefront more recently by Firefox’s newest designer [Alexander Limi](https://limi.net/), the idea of [per tab network prioritization](https://wiki.mozilla.org/Firefox/Projects/Per_Tab_Network_Prioritization). The premise of the idea is that what you’re doing right now is more important that what you were doing 5 minutes ago. So to account for the relative importance, we should make what you’re looking at right now load faster. This is really part of a grander scheme to improve perceived performance, but has been reduced to try to make some improvement achievable for Firefox 3.6.
 
 ## In More Detail
 

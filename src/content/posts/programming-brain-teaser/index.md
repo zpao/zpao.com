@@ -8,7 +8,7 @@ tags:
 old_permalink: "articles/6-programming_brain_teaser"
 ---
 
-Since I was at a presentation during lunch, I took some time for myself and took a quick crack at Dustin Diaz’s [programming brain teaser](http://www.dustindiaz.com/programming-brain-teaser/). He said any language, so the quickest to get running for me is Ruby (and `Command-R` in Textmate is so easy).
+Since I was at a presentation during lunch, I took some time for myself and took a quick crack at Dustin Diaz’s [programming brain teaser](https://www.dustindiaz.com/programming-brain-teaser/). He said any language, so the quickest to get running for me is Ruby (and `Command-R` in Textmate is so easy).
 
 It’s not terribly clever, but it takes a different approach from some of the other solutions in that it modifies the array elements then just joins them, instead of creating a single output string and concatenating as time goes. My favorite solution in the comments used a regular expression, which I thought was particularly clever. Anyway, here’s mine:
 

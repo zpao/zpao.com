@@ -23,4 +23,4 @@ Just add the above to your .hgrc and you now have a new command which will pop o
 
 A couple people have mentioned that there are easier ways to move things around in your queue without editing your series file...
 
-[Gavin](http://www.gavinsharp.com/blog/) told me about [qup](http://mercurial.selenic.com/wiki/QupExtension), and [Dave](http://www.oxymoronical.com/) said that `hg qpush --move <name>` achieves the same thing.
+[Gavin](https://www.gavinsharp.com/blog/) told me about [qup](https://mercurial.selenic.com/wiki/QupExtension), and [Dave](https://www.oxymoronical.com/) said that `hg qpush --move <name>` achieves the same thing.

@@ -25,7 +25,7 @@ My response:
 
 - - -
 
-**Edit:** yes, I misspelled "grammar". And then I learned about [Muphry's Law](http://en.wikipedia.org/wiki/Muphry%27s_law).
+**Edit:** yes, I misspelled "grammar". And then I learned about [Muphry's Law](https://en.wikipedia.org/wiki/Muphry%27s_law).
 
 Joe noticed too and responded with a single word email:
 

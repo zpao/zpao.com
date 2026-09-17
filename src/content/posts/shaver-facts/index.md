@@ -10,4 +10,4 @@ tumblr_permalink: post/475410899/i-had-absolutely-nothing-to-do-with
 
 ![](./shaver-facts.png)
 
-I had absolutely nothing to do with [shaverfacts.com](http://shaverfacts.com). Absolutely nothing.
+I had absolutely nothing to do with [shaverfacts.com](https://shaverfacts.com). Absolutely nothing.

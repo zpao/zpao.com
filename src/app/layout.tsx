@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     shortcut: { url: 'https://static.zpao.com/favicon.png', type: 'image/png' },
   },
   alternates: {
-    types: { 'application/rss+xml': 'http://feeds.feedburner.com/zpao' },
+    types: { 'application/rss+xml': 'https://feeds.feedburner.com/zpao' },
   },
 };
 

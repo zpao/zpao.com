@@ -22,4 +22,4 @@ Now that we're at the endgame for Firefox 4, and especially with all the changes
 Mostly just in case there are any further changes needed to be compatible with Firefox 4 (there better not be though).
 
 ## Why not restartless?
-This would probably work really well as a restartless extension. But I was really lazy and didn't feel like figuring out the l10n part of that (though it looks like [Erik Vold has that figured out already](http://erikvold.com/blog/index.cfm/2011/2/18/restartless-firefox-addons-part-4-localization-l10n)).
+This would probably work really well as a restartless extension. But I was really lazy and didn't feel like figuring out the l10n part of that (though it looks like [Erik Vold has that figured out already](https://erikvold.com/blog/index.cfm/2011/2/18/restartless-firefox-addons-part-4-localization-l10n)).

@@ -16,7 +16,7 @@ For the most part, I really like this new feature. It's saved me much tab duplic
 
 But a couple weeks ago after trying to do multiple Google Maps search, I decided that I'd had enough. I never wanted Google Maps to show up in switch to tab and I was going to write an add-on to make that possible. So I spent a bit of time figuring out how I might do that and looking at this new bootstrapped extension stuff (which is pretty awesome by the way). I didn't get far enough to make it actually work and stalled. Then I got back to work and fixed some more blockers and promptly forgot about this idea.
 
-Yesterday I started working on it again but my current approach wasn't working (turns out `gBrowser._placesAutocomplete` is readonly and it means it). So I asked [Shawn](http://shawnwilsher.com/) about it and he came up with the answer: cheat. Don't try to intercept the additions to the database, just revert them after the fact. Smart guy.
+Yesterday I started working on it again but my current approach wasn't working (turns out `gBrowser._placesAutocomplete` is readonly and it means it). So I asked [Shawn](https://shawnwilsher.com/) about it and he came up with the answer: cheat. Don't try to intercept the additions to the database, just revert them after the fact. Smart guy.
 
 I wrote a quick and dirty version and iterated. I released a "good enough" version 1.0 last night. "Good enough" meant it was restartless but required restarting to re-process the blacklist preference, which was... dumb. Over lunch today I finished v1.1 to fix that and a couple other small issues.
 

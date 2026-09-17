@@ -21,8 +21,8 @@ I think Node and npm have been forces of awesome over the past few years and the
 
 Just imagine: `#!/usr/bin/env js`
 
-[dherman]: http://twitter.com/littlecalculist
-[nodeglobals]: http://nodejs.org/docs/latest/api/globals.html
-[rubygems]: http://rubygems.org/
+[dherman]: https://twitter.com/littlecalculist
+[nodeglobals]: https://nodejs.org/docs/latest/api/globals.html
+[rubygems]: https://rubygems.org/
 [pypi]: https://pypi.python.org/pypi
-[cocoapods]: http://cocoapods.org/
+[cocoapods]: https://cocoapods.org/

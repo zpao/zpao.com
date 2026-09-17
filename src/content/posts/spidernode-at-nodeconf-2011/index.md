@@ -10,7 +10,7 @@ tags:
 tumblr_permalink: post/5641702863/spidernode-at-nodeconf-2011
 ---
 
-Two weeks ago, I traveled with Shawn and Rob to Portland for the inaugural NodeConf. To summarize: it was a great experience and a well run conference. Other people have done overviews, so I’m not going to go there, but read a few [here](http://www.sauria.com/blog/2011/05/09/nodeconf-2011/), [here](http://www.claassen.net/geek/blog/2011/05/reflections-on-jsconf-and-nodeconf-by-a-language-geek.html), and [here](http://www.adamchristian.com/archives/10435). I’m going to talk about SpiderNode at NodeConf instead.
+Two weeks ago, I traveled with Shawn and Rob to Portland for the inaugural NodeConf. To summarize: it was a great experience and a well run conference. Other people have done overviews, so I’m not going to go there, but read a few [here](https://www.sauria.com/blog/2011/05/09/nodeconf-2011/), [here](https://www.claassen.net/geek/blog/2011/05/reflections-on-jsconf-and-nodeconf-by-a-language-geek.html), and [here](https://www.adamchristian.com/archives/10435). I’m going to talk about SpiderNode at NodeConf instead.
 
 ## A Quick Aside on the State of Things
 
@@ -18,7 +18,7 @@ We got SpiderNode running on the train ride shortly before getting on a plane to
 
 ## Back to NodeConf
 
-As we'd suspected for a while, Brendan Eich was the “Mozilla Person Secret Talk” listed on the schedule. He talked a little bit about ES.next and SpiderNode, with a couple demos. In typical Brendan fashion, it was a lot of information to get in a short period of time. If you want to see the slides, [Brendan has them on his blog](http://brendaneich.com/2011/05/mozillas-nodeconf-presentation/).
+As we'd suspected for a while, Brendan Eich was the “Mozilla Person Secret Talk” listed on the schedule. He talked a little bit about ES.next and SpiderNode, with a couple demos. In typical Brendan fashion, it was a lot of information to get in a short period of time. If you want to see the slides, [Brendan has them on his blog](https://brendaneich.com/2011/05/mozillas-nodeconf-presentation/).
 
 Overall, I think the reception we got was really positive. People seemed excited. Some viewed it as a way to run Node on architectures that V8 doesn’t support (before we left NodeConf I had an email from somebody telling me he had patches to get SpiderNode building on Solaris/Sparc). Others were just excited that this could open up the doors to making Node faster (more benchmarks to compete on). Other people were excited because they just really want block scoping (`let`).
 
@@ -28,7 +28,7 @@ Other people weren’t so excited. And that’s fair. But there seemed to be som
 
 There were some people who seemed convinced that we were there to sell people on using SpiderNode. I think Brendan made this pretty clear during his talk, but here it is again: we’re not trying to sell you. We don’t think you should use it right now. We’re getting closer, but it might be a little while before we suggest people use it for anything besides experimenting. We don’t pass all of the Node tests and we’re almost certainly not faster at this point.
 
-I think [Brendan put it best](http://brendaneich.com/2011/05/mozillas-nodeconf-presentation/):
+I think [Brendan put it best](https://brendaneich.com/2011/05/mozillas-nodeconf-presentation/):
 
 > We are not out to make a maintained, competing fork of Node, just a friendly downstream that should go away as soon as possible. We aren’t selling anything to Node users.
 

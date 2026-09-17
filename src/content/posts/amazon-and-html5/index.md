@@ -15,4 +15,4 @@ tumblr_permalink: post/1536418386/apparently-amazon-is-stepping-right-into-html5
 
 Apparently Amazon is stepping right into HTML5 and using `type="email"` in their sign in form. You can see the built-in form validation in action there. This is pretty awesome to actually see out in the wild, especially from such a big name.
 
-Client-side form validation without various JS libraries is pretty cool. [Read more about it](http://blog.oldworld.fr/index.php?post/2010/11/17/HTML5-Forms-Validation-in-Firefox-4).
+Client-side form validation without various JS libraries is pretty cool. [Read more about it](https://blog.oldworld.fr/index.php?post/2010/11/17/HTML5-Forms-Validation-in-Firefox-4).

@@ -39,7 +39,7 @@ We did this primarily for 2 reasons.
 
 ## Privacy
 
-Obviously, in order for us to restore your session, we need to save it to disk. We save this data in a plain-text JSON file in your [profile](http://support.mozilla.com/kb/Profiles).
+Obviously, in order for us to restore your session, we need to save it to disk. We save this data in a plain-text JSON file in your [profile](https://support.mozilla.com/kb/Profiles).
 
 We currently consider sessions a little differently than some other browsers. We consider your session cookies (and a few other things) as part of your session. This means we write that information to disk. Under a normal session restore that you've explicitly opted-in to, that's fine. We have a hidden preference (`browser.sessionstore.privacy_level`) that specifies what level of privacy to use. **The default value is 1**.
 

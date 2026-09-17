@@ -12,4 +12,4 @@ tumblr_permalink: post/564412242/fact-cats-make-things-happen-that-you-never
 
 ![](./problem-report-cat.png)
 
-Fact: Cats make things happen that you never expect. Like crash your computer. [See also](http://twitter.com/zpao/status/10605017612).
+Fact: Cats make things happen that you never expect. Like crash your computer. [See also](https://twitter.com/zpao/status/10605017612).

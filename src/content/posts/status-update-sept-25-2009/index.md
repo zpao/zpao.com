@@ -15,7 +15,7 @@ The week of September 7, I was working on a [couple](https://bugzilla.mozilla.or
 
 The week of September 14, I was in Pittsburgh recruiting at the Carnegie Mellon <abbr title="Technical Opportunities Conference">TOC</abbr> (job fair). I also did some work on Per Tab Network Prioritization ([bug 514490](https://bugzilla.mozilla.org/show_bug.cgi?id=514490)) and a password manager performance bug ([bug 492197](https://bugzilla.mozilla.org/show_bug.cgi?id=492197)).
 
-This past week I worked on a few different things. I finished the password manager bug (which I hadn’t finished because of a non-syntax-error-syntax-error). While helping [Henrik](http://www.hskupin.info/) as he was using the storage API, [Shawn](http://shawnwilsher.com/) mentioned that one of the methods I used was deprecated (though never explicitly). So I filed [the bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=518434) and [fixed the places](http://hg.mozilla.org/mozilla-central/pushloghtml?changeset=5e6a413226d2) that used the deprecated code (hint: use `executeStep()` instead of `step()` and don’t use `mozIStorageStatementWrapper`). Filing the bugs took longer than fixing them.
+This past week I worked on a few different things. I finished the password manager bug (which I hadn’t finished because of a non-syntax-error-syntax-error). While helping [Henrik](https://www.hskupin.info/) as he was using the storage API, [Shawn](https://shawnwilsher.com/) mentioned that one of the methods I used was deprecated (though never explicitly). So I filed [the bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=518434) and [fixed the places](https://hg.mozilla.org/mozilla-central/pushloghtml?changeset=5e6a413226d2) that used the deprecated code (hint: use `executeStep()` instead of `step()` and don’t use `mozIStorageStatementWrapper`). Filing the bugs took longer than fixing them.
 
 But all of that was unrelated to …
 
@@ -23,7 +23,7 @@ But all of that was unrelated to …
 
 ### Progress
 
-* Made it a JS module. This was advice from [Dietrich](http://autonome.wordpress.com/) to cut down on overhead. Since it was only being used from JS code, there was no need to use XPCOM.
+* Made it a JS module. This was advice from [Dietrich](https://autonome.wordpress.com/) to cut down on overhead. Since it was only being used from JS code, there was no need to use XPCOM.
 * Made it pref enabled. Right now it’s `browser.networkprioritizer.enabled` but that’s easy to change.
 * Got a first pass look from Shawn, fixed a few things up.
 
