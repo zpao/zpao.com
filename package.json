@@ -8,22 +8,22 @@
     "@fortawesome/fontawesome-svg-core": "^7.3.1",
     "@fortawesome/free-brands-svg-icons": "^7.3.1",
     "@fortawesome/react-fontawesome": "^3.5.0",
-    "@stylexjs/stylex": "^0.19.0",
+    "@stylexjs/stylex": "^0.19.1",
     "gray-matter": "^4.0.3",
     "html-react-parser": "^6.1.7",
-    "next": "^16.3.4",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "rehype-prism-plus": "^2.0.2",
     "rehype-raw": "^7.0.0",
     "rehype-stringify": "^10.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
-    "remark-smartypants": "^3.0.2",
+    "remark-smartypants": "^3.0.3",
     "rss": "^1.2.2",
     "sharp": "^0.35.4",
     "unified": "^11.0.5",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.1.0"
   },
   "keywords": [
     "nextjs",
@@ -44,23 +44,23 @@
     "verify": "node scripts/verify-export.ts"
   },
   "devDependencies": {
-    "@stylexjs/babel-plugin": "^0.19.0",
-    "@stylexjs/postcss-plugin": "^0.19.0",
+    "@stylexjs/babel-plugin": "^0.19.1",
+    "@stylexjs/postcss-plugin": "^0.19.1",
     "@types/hast": "^3.0.5",
     "@types/mdast": "^4.0.4",
-    "@types/node": "^24.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
+    "@types/node": "^26.6.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@types/rss": "^0.0.32",
     "eslint": "^10.10.0",
     "eslint-config-next": "^16.3.5",
     "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.4.0",
-    "typescript": "^5.9.0"
+    "prettier": "^3.9.7",
+    "typescript": "^6.0.3"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/zpao/zpao.com"
   },
-  "packageManager": "pnpm@11.6.0+sha512.9a36518224080c6fe5165afdcfe79bfa118c29be703f3f462b1e32efe1e98e47e8750b148e08286250aad4113cc7993ca413c4e2cd447752708c2ee5751bc95f"
+  "packageManager": "pnpm@12.4.2"
 }
