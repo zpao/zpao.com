@@ -10,7 +10,7 @@ I've reviewed some bits of code over the past couple months that stored function
 
 Assuming:
 
-``` js
+```js
 var callbacks = [
   function() { console.log(1); },
   function() { console.log(2); }
@@ -19,7 +19,7 @@ var callbacks = [
 
 You end up iterating over the array and calling each function explicitly:
 
-``` js
+```js
 callbacks.forEach(function(callback) {
   callback();
 });
@@ -27,7 +27,7 @@ callbacks.forEach(function(callback) {
 
 Part of the beauty of `forEach` is that you can pass it a function without it having to be defined each time. So we could define a function that does what our anonymous function does for us.
 
-``` js
+```js
 function call(fn) {
   fn();
 }
@@ -40,7 +40,7 @@ This works but it feels silly. JS already has `Function.prototype.call` so why s
 
 The very first thing to know about is some internal implementation details. Like most objects in JS, functions use prototypes, and so within the prototype `this` refers to a particular instance. So a simplified implementation of `call` would look something like this:
 
-``` js
+```js
 Function.prototype.call = function(thisArg, arg1, arg2, ...) {
   CALL_FN_WITH_SCOPE(this, thisArg, arg1, arg2, ...);
 }
@@ -50,13 +50,13 @@ That's going to be down in native code and will of course vary by engine, but th
 
 The second thing to know is that you can call functions on prototypes, so long as you use them correctly. So let's try just calling one function.
 
-``` js
+```js
 Function.prototype.call(callbacks[0]);
 ```
 
 That's not going to work. Effectively you're just calling a function that then calls `this`. We might be able to write some weird code that ends up doing what we want but let's not. What you actually want to do is call `Function.prototype.call` with a specific `this` so it knows what function to actually run. Confused?
 
-``` js
+```js
 Function.prototype.call.call(callbacks[0]);
 ```
 
@@ -68,29 +68,29 @@ The way `forEach` works is also important to know. Go read [the spec](https://es
 
 The key take away: the 2nd argument will be used as the `this` that is accessible in the function argument. If you followed along with that chunk of the spec, you may have seen `[[Call]]` — this is effectively saying that your JS is transformed into this:
 
-``` js
+```js
 myFunction.call(thisArg, item, index, array);
 ```
 
-(I say "effectively" because that's not *exactly* how it happens but if you read the spec, the result is the same, with the same possible errors.)
+(I say "effectively" because that's not _exactly_ how it happens but if you read the spec, the result is the same, with the same possible errors.)
 
 ## Putting it Together...
 
 We know we want to call `Function.prototype.call` and we know what function we want to be run. So the next thing to try is:
 
-``` js
+```js
 callbacks.forEach(Function.prototype.call);
 ```
 
 But that doesn't work. It's actually going to throw an error. Remember, `this` is what gets called and we've actually passed `undefined` as this, not an item from our array. It really looks something like this:
 
-``` js
+```js
 Function.prototype.call.call(undefined, callbacks[0]);
 ```
 
 We're almost there. We actually want to pass `Function.prototype.call` as `this` so it gets called — effectively `Function.prototype.call.call`. And that in turn is passed our callback. Basically, we're creating a little JavaScript [Matryoshka doll](https://en.wikipedia.org/wiki/Matryoshka_doll). It's a little crazy but it works.
 
-``` js
+```js
 callbacks.forEach(Function.prototype.call, Function.prototype.call);
 ```
 

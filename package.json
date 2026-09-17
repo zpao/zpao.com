@@ -34,7 +34,7 @@
     "prepare-static": "node scripts/prepare-static.ts",
     "build": "pnpm run prepare-static && next build",
     "dev": "pnpm run prepare-static && next dev",
-    "format": "prettier --write '**/*.{js,mjs,ts,tsx,css}'",
+    "format": "prettier --write '**/*.{js,mjs,ts,tsx,css,md,json}'",
     "lint": "eslint .",
     "deploy": "pnpm run clean && pnpm run build && pnpm run verify && pnpm run rsync",
     "clean": "rm -rf out .next .cache",

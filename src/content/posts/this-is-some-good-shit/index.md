@@ -23,7 +23,7 @@ My response:
 
 > Don't contact me again.
 
-- - -
+---
 
 **Edit:** yes, I misspelled "grammar". And then I learned about [Muphry's Law](https://en.wikipedia.org/wiki/Muphry%27s_law).
 

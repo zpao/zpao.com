@@ -16,16 +16,14 @@ I landed [bug 588482](https://bugzilla.mozilla.org/show_bug.cgi?id=588482) today
 
 This feature will be in Firefox 4 <strike>beta 6</strike> beta 7, due out in the next couple weeks.
 
-
 ## Details
 
-* Restoring your previous session after you've browsed around will merge the sessions. You shouldn't lose any new data by restoring your previous session.
-* We didn't break existing behavior. If you have Firefox set to show your windows and tabs from last time, we'll continue to do so and you won't even notice this feature exists
-* App tabs still behave the same.
-* This doesn't break any existing APIs, but it does add some new ones.
-* [Discoverability is suboptimal](https://bugzilla.mozilla.org/show_bug.cgi?id=593421).
-* [You are still prompted to save your session when quitting](https://bugzilla.mozilla.org/show_bug.cgi?id=592822) (assuming default prefs).
-
+- Restoring your previous session after you've browsed around will merge the sessions. You shouldn't lose any new data by restoring your previous session.
+- We didn't break existing behavior. If you have Firefox set to show your windows and tabs from last time, we'll continue to do so and you won't even notice this feature exists
+- App tabs still behave the same.
+- This doesn't break any existing APIs, but it does add some new ones.
+- [Discoverability is suboptimal](https://bugzilla.mozilla.org/show_bug.cgi?id=593421).
+- [You are still prompted to save your session when quitting](https://bugzilla.mozilla.org/show_bug.cgi?id=592822) (assuming default prefs).
 
 ## Why?
 
@@ -36,7 +34,6 @@ We did this primarily for 2 reasons.
 
 (Keep in mind, if you're reading this post, you aren't the typical user. You're probably a developer of some sort who drags your 400 tabs around to each session. You know it's slow, but you really never got the hang of bookmarks, so you just keep tabs open.)
 
-
 ## Privacy
 
 Obviously, in order for us to restore your session, we need to save it to disk. We save this data in a plain-text JSON file in your [profile](https://support.mozilla.com/kb/Profiles).
@@ -45,12 +42,11 @@ We currently consider sessions a little differently than some other browsers. We
 
 There are 3 levels of privacy:
 
-* **0** = Save private information for HTTP and HTTPS sites.
-* **1** = Save private information for HTTP sites.
-* **2** = Don't save any private information.
+- **0** = Save private information for HTTP and HTTPS sites.
+- **1** = Save private information for HTTP sites.
+- **2** = Don't save any private information.
 
 For deferred sessions, we created a new preference (`browser.sessionstore.privacy_level_deferred`) with a different default value. Since people are not making an informed decision to restore at shutdown, we don't want to expose information that can be used to, for example, log in to GMail. This new preference has the same possible values but **the default value is 2**, so that no session cookies will be restored.
-
 
 ## Safari
 

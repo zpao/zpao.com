@@ -11,9 +11,9 @@ tumblr_permalink: post/16368488549/whats-the-deal-with-v8monkey-spidernode
 
 **tl;dr** Neither are being actively worked on and could use some love.
 
-- - -
+---
 
-After NodeConf, development of [V8Monkey](https://github.com/zpao/v8monkey) & [SpiderNode](https://github.com/zpao/spidernode) slowed. We all got a bit burnt out in the weeks preceding NodeConf and took a little break. Shortly after, Shawn left Mozilla to work at Facebook with Rob on *[redacted]* and the little break became longer. I was in the middle of planning a wedding & helping the (now-)wife with [her company](https://onetruelovevintage.com). Shawn & Rob were busy with work and some other [side](https://github.com/sdwilsh/tree-bot) [projects](https://github.com/mozilla/rust). Mozilla opened an office in SF in August, so I stopped riding the train down the peninsula with Shawn & Rob as often. Long story short, we lost interest.
+After NodeConf, development of [V8Monkey](https://github.com/zpao/v8monkey) & [SpiderNode](https://github.com/zpao/spidernode) slowed. We all got a bit burnt out in the weeks preceding NodeConf and took a little break. Shortly after, Shawn left Mozilla to work at Facebook with Rob on _[redacted]_ and the little break became longer. I was in the middle of planning a wedding & helping the (now-)wife with [her company](https://onetruelovevintage.com). Shawn & Rob were busy with work and some other [side](https://github.com/sdwilsh/tree-bot) [projects](https://github.com/mozilla/rust). Mozilla opened an office in SF in August, so I stopped riding the train down the peninsula with Shawn & Rob as often. Long story short, we lost interest.
 
 In October I pulled current mozilla-central into the V8Monkey tree & tried to update from there. But some core things changed. APIs changed around Typed Arrays in SpiderMonkey. `JSScript` stopped being a `JSObject` which broke some of our assumptions with our implementation. I have [a patch locally](https://gist.github.com/1665805) to try to fix those, but they're incomplete (it immediately segfaults). It's been 3 months and the JS engine doesn't idle, so it's entirely possible the world changed again.
 

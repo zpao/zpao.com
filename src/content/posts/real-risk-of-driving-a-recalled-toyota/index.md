@@ -10,7 +10,7 @@ source_url: "https://www.cmu.edu/news/archive/2010/February/feb25_toyotarisk.sht
 tumblr_permalink: post/443965779/carnegie-mellon-professor-calculates-real-risk-of
 ---
 
->Consumers also may want to reconsider parking their recalled Toyotas until repairs have been made. "Replacing driving by walking really increases the risk of dying," Fischbeck said. "Walking a mile is 19 times or 1,900 percent more dangerous than driving a mile in a recalled Toyota. Driving while using a cell phone would increase risk much more than the chance of having a stuck accelerator."
+> Consumers also may want to reconsider parking their recalled Toyotas until repairs have been made. "Replacing driving by walking really increases the risk of dying," Fischbeck said. "Walking a mile is 19 times or 1,900 percent more dangerous than driving a mile in a recalled Toyota. Driving while using a cell phone would increase risk much more than the chance of having a stuck accelerator."
 
 I'm of the opinion that this whole thing is being blown way out of proportion. There may well be some problem, but I think that user error is at least partially to blame.
 

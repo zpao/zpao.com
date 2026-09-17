@@ -23,10 +23,8 @@ Since the feature is enabled down in the core, it's now easy to support Lion Ful
 
 What I've done so far is really just the baseline support. There are a few followup bugs:
 
-* [support resizing content area](https://bugzilla.mozilla.org/show_bug.cgi?id=703724)
-* [figure out 'background themes' support](https://bugzilla.mozilla.org/show_bug.cgi?id=716450)
-* [update menu with new string/shortcut](https://bugzilla.mozilla.org/show_bug.cgi?id=714172)
-* [add top padding?](https://bugzilla.mozilla.org/show_bug.cgi?id=714186)
-* and surely some other theme related tweaks
-
-
+- [support resizing content area](https://bugzilla.mozilla.org/show_bug.cgi?id=703724)
+- [figure out 'background themes' support](https://bugzilla.mozilla.org/show_bug.cgi?id=716450)
+- [update menu with new string/shortcut](https://bugzilla.mozilla.org/show_bug.cgi?id=714172)
+- [add top padding?](https://bugzilla.mozilla.org/show_bug.cgi?id=714186)
+- and surely some other theme related tweaks

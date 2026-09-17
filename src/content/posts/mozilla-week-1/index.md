@@ -9,7 +9,7 @@ tags:
 old_permalink: "articles/2-mozilla_week_1"
 ---
 
-I've just finished my first week at Mozilla. So far it's been a blast. They've put us up in a really nice temporary living apartment complex ([pictures](https://www.oakwood.com/furnished-apartments/furnished/US/CA/Mountain-View/prop17/showPictures.html) and yes that *is* a 40 person hot tub), the other interns are all really nice, and well, it's California.
+I've just finished my first week at Mozilla. So far it's been a blast. They've put us up in a really nice temporary living apartment complex ([pictures](https://www.oakwood.com/furnished-apartments/furnished/US/CA/Mountain-View/prop17/showPictures.html) and yes that _is_ a 40 person hot tub), the other interns are all really nice, and well, it's California.
 
 This week we had a poker game / movie night. I was in on poker and turned $10 into $30, which should keep from an ATM a little bit longer. They've also been feeding us lunch this week; there's a stock of good snacks & cereal, so I don't have to eat breakfast before work (although I have been).
 

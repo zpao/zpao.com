@@ -16,8 +16,8 @@ I did this thing where we don't load all of your pages at once when we restore y
 
 ## Other Details
 
-* Switching tabs should cause the selected tab to start loading immediately, even if it wasn't loading before
-* This works with Panorama (so changing groups re-prioritizes your load order).
+- Switching tabs should cause the selected tab to start loading immediately, even if it wasn't loading before
+- This works with Panorama (so changing groups re-prioritizes your load order).
 
 ## Preference Controlled
 

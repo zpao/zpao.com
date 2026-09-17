@@ -23,10 +23,10 @@ But all of that was unrelated to …
 
 ### Progress
 
-* Made it a JS module. This was advice from [Dietrich](https://autonome.wordpress.com/) to cut down on overhead. Since it was only being used from JS code, there was no need to use XPCOM.
-* Made it pref enabled. Right now it’s `browser.networkprioritizer.enabled` but that’s easy to change.
-* Got a first pass look from Shawn, fixed a few things up.
+- Made it a JS module. This was advice from [Dietrich](https://autonome.wordpress.com/) to cut down on overhead. Since it was only being used from JS code, there was no need to use XPCOM.
+- Made it pref enabled. Right now it’s `browser.networkprioritizer.enabled` but that’s easy to change.
+- Got a first pass look from Shawn, fixed a few things up.
 
 ### Next Steps
 
-* Reviews. It seems like Boris is the guy for the job. Still need a browser person. Gavin said sometime after Fennec stuff, Connor said 2 weeks. Dolske said “soon”, so he’ll probably be the lucky guy, even if he isn’t a peer.
+- Reviews. It seems like Boris is the guy for the job. Still need a browser person. Gavin said sometime after Fennec stuff, Connor said 2 weeks. Dolske said “soon”, so he’ll probably be the lucky guy, even if he isn’t a peer.

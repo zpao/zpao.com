@@ -19,9 +19,9 @@ Don't expect me to write another post like this. I don't expect any further chan
 
 ## TL;DR
 
-* We enabled the window closing dialog when closing the last window would otherwise just quit (mostly important to Windows and Linux users).
-* If you want the quit dialog back, set `browser.showQuitWarning` to `true` and make sure `browser.warnOnQuit` is also `true`.
+- We enabled the window closing dialog when closing the last window would otherwise just quit (mostly important to Windows and Linux users).
+- If you want the quit dialog back, set `browser.showQuitWarning` to `true` and make sure `browser.warnOnQuit` is also `true`.
 
-- - -
+---
 
 **Update: Feb. 8, 2011:** Yup. I fucked that up a little bit. We aren't showing the quit dialog if you close the last window, even with the prefs mentioned above. That should be fixed in the next nightly.

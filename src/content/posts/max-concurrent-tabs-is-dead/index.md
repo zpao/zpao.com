@@ -16,4 +16,3 @@ Starting with the latest nightly (and soon to be Aurora 8), `browser.sessionstor
 ![](./restore_on_demand.png)
 
 For the details, check out [bug 648683](https://bugzilla.mozilla.org/show_bug.cgi?id=648683).
-

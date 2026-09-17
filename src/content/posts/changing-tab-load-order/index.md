@@ -16,8 +16,8 @@ When you open Firefox using session restore (and through some other paths), you 
 
 ## How does it work?
 
-When we were doing this for just the selected tab, it was extremely simple - we just reordered the array of tab data so that the selected one was first. Now we prioritize a set of tabs (keeping the selected tab first). *That’s it.*
+When we were doing this for just the selected tab, it was extremely simple - we just reordered the array of tab data so that the selected one was first. Now we prioritize a set of tabs (keeping the selected tab first). _That’s it._
 
-**To be clear**, this does not *actually* improve performance. All it does is make the browser feel faster. But hey, isn’t that just as almost as important.
+**To be clear**, this does not _actually_ improve performance. All it does is make the browser feel faster. But hey, isn’t that just as almost as important.
 
 Go ahead and try it out. It’s been in Minefield (mozilla-central) for over a week and landed in Shiretoko (mozilla-1.9.1) yesterday.

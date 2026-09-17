@@ -10,7 +10,7 @@ tumblr_permalink: post/1297327261/the-clipper-card-system-is-a-fucking-mess
 
 Here's (only part of) why:
 
->Please note that when you add value online, it can take up to 3 days for the value to be available to be loaded onto your card, and you must tag your card to a card reader to load the value. Your card balance will not be updated until you have tagged your card and loaded the value.
+> Please note that when you add value online, it can take up to 3 days for the value to be available to be loaded onto your card, and you must tag your card to a card reader to load the value. Your card balance will not be updated until you have tagged your card and loaded the value.
 
 3 days? By then I'll have needed it 3 days ago.
 

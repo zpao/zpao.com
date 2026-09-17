@@ -12,7 +12,6 @@ tags:
 old_permalink: "articles/10-passwordmgr_storage"
 ---
 
-
 The other day [my patch landed](https://hg.mozilla.org//mozilla-central/index.cgi/rev/c2f416981fa3) switching the Password Manager to use [mozStorage](https://developer.mozilla.org/en/docs/Storage) (our wrapper around SQLite). [The bug](https://bugzilla.mozilla.org/show_bug.cgi?id=288040) had been up on Bugzilla for a long time, over 3 years, when I came across it at the end of June. I had been doing some Password Manager related work already by that point, so I decided I would do it. This is the story of that bug: the process, the hardships, the code (at least a bit). Keep in mind I was also doing work on my [DTrace Treemaps](/posts/dtrace-treemaps-part-1) at the time, went to Summit, and encountered more edge cases than I wanted, so this took longer than expected.
 
 ## Quick Features & Change Summary

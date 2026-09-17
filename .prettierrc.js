@@ -4,4 +4,13 @@ module.exports = {
   trailingComma: 'all',
   bracketSameLine: true,
   arrowParens: 'always',
+  overrides: [
+    {
+      files: '*.md',
+      options: {
+        singleQuote: false,
+        embeddedLanguageFormatting: 'off',
+      },
+    },
+  ],
 };

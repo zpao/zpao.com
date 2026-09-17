@@ -44,6 +44,6 @@ I didn’t see any comments about this topic, but I wanted to make it clear that
 
 There will surely be other things that can be upstreamed outside of our use of V8Monkey (and the build system changes required to support that).
 
-***
+---
 
 I hope this clears some things up for people. Let me know if it doesn’t or you have other concerns about SpiderNode’s existence.

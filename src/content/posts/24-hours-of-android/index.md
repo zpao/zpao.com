@@ -10,7 +10,7 @@ Yesterday I picked up an [HTC First](https://www.htc.com/us/smartphones/htc-firs
 
 Since this is an experiment and I haven't switched completely, here's how my current phone setup is working… iPhone 5 with my personal number forwarding to Google Voice. HTC First is my work number, but set up to use my Google Voice number. SMS/iMessage is not forwardable, so I have been carrying my iPhone with me to check those occasionally. I convinced my wife to message me via Facebook and that's 90% of my texting, so that's been good enough for the past day.
 
-* * *
+---
 
 ## The Keyboard
 
@@ -27,6 +27,7 @@ I noticed this a lot in the Play Store, but it seems to be a more systemic issue
 ![What is this? A click target for ants!?](./24-hours-of-android_click-target-for-ants.jpg)
 
 ## Browsers
+
 The First ships with Chrome, but I also installed Firefox (obviously). Being able to choose a browser has been pretty cool. Both of these are synced with my desktop browsers so passwords and history are shared (with their respective desktop counterparts, there's not good cross-browser sync yet that I know of). So overall my experience has been positive, except for one thing…
 
 I have a bunch of tabs open because I clicked a link in Facebook or Twitter and it opened in the browser. And then I went back and opened another. Browser choice is great, but the apparent lack of one-time-use support has been annoying. iOS apps mostly solve this by having an embedded browser (which has it's own drawbacks).
@@ -45,7 +46,7 @@ I spent 5 minutes trying to figure out how to remove a phone number from a conta
 
 ## It's Not All Bad
 
-Most of the apps I needed to use were available. I listend to music with Rdio, bought a movie ticket with Fandango, and rented a Zipcar. There isn't too much more I *need* from a phone that I couldn't get on Android.
+Most of the apps I needed to use were available. I listend to music with Rdio, bought a movie ticket with Fandango, and rented a Zipcar. There isn't too much more I _need_ from a phone that I couldn't get on Android.
 
 I've actually used the notification area on Android to quickly turn wifi on/off. I know iOS's Notification Center was pretty heavily influence by Android's and I would like to see more come from that.
 

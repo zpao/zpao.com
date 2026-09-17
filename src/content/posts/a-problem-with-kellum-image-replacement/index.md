@@ -18,9 +18,8 @@ It does have one issue. When using the browser's "find in page" functionality, t
 
 Like most things, there are quirks here:
 
-* This bug(?) only occurs when using a positive `text-indent` value.
-* Different browsers behave differently. In this case, the text doesn't become visible in Gecko browsers (Firefox). Webkit (Chrome, Safari) and Presto (Opera) both make the text visible. I haven't tested IE.
-
+- This bug(?) only occurs when using a positive `text-indent` value.
+- Different browsers behave differently. In this case, the text doesn't become visible in Gecko browsers (Firefox). Webkit (Chrome, Safari) and Presto (Opera) both make the text visible. I haven't tested IE.
 
 ## Solutions?
 

@@ -35,12 +35,12 @@ I’ve used a modified version of the [RubyTreemap](https://rubytreemap.rubyforg
 
 I can’t hand out the source yet since the original RubyTreemap is GPL’ed and I’m not ready to redistribute. The changes aren’t huge, but are very focused for this task, so might not even be able to be merged back. Also, my code is pretty ugly right now and that would just lead to embarrassment.
 
-So without further ado, here’s the page on playground: *[DTrace Treemaps](https://playground.zpao.com/dtrace_treemaps/)*. Keep in mind that this is not complete and what you see may very well change soon. Here are the direct links to the SVGs if you are a bit impatient: [count](https://playground.zpao.com/dtrace_treemaps/js_functime_count/index.svg), [average](https://playground.zpao.com/dtrace_treemaps/js_functime_avg/index.svg), [sum](https://playground.zpao.com/dtrace_treemaps/js_functime_sum/index.svg).
+So without further ado, here’s the page on playground: _[DTrace Treemaps](https://playground.zpao.com/dtrace_treemaps/)_. Keep in mind that this is not complete and what you see may very well change soon. Here are the direct links to the SVGs if you are a bit impatient: [count](https://playground.zpao.com/dtrace_treemaps/js_functime_count/index.svg), [average](https://playground.zpao.com/dtrace_treemaps/js_functime_avg/index.svg), [sum](https://playground.zpao.com/dtrace_treemaps/js_functime_sum/index.svg).
 
 ## Future Directions
 
 From here I plan on using the output from some of the scripts in the [DTrace Toolkit](https://opensolaris.org/os/community/dtrace/dtracetoolkit/) to create other visuals, likely more treemaps. I also need to do a number of things to package this nicely so it’s easy to adapt and use for different DTrace outputs. Last, but certainly not least, I need to make the code much better - it’s my own personal Frankenstein right now, and needs to suck less.
 
-
 [^1]: [Wikipedia DTrace article](https://en.wikipedia.org/wiki/DTrace)
+
 [^2]: [Wikipedia Treemapping article](https://en.wikipedia.org/wiki/Treemap)

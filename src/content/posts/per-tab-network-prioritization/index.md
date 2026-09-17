@@ -21,10 +21,10 @@ An idea that’s likely been tossed around before has been brought to the forefr
 
 For this pass, we divided tabs into level of importance (shown in descending order):
 
-* Selected Tab in a Focused Window
-* Background Tab in a Focused Window & Selected Tab in a Background Window
-* Background Tab in a Background Window
-* Any Tab in a Minimized Window
+- Selected Tab in a Focused Window
+- Background Tab in a Focused Window & Selected Tab in a Background Window
+- Background Tab in a Background Window
+- Any Tab in a Minimized Window
 
 For the most part that makes sense, except for maybe one thing: the 2^(nd) level of importance has 2 items. We decided that (at least in general terms) background tabs in your current window and the focused tab in a background window should get the same level of network priority.
 
@@ -48,4 +48,4 @@ But I’m just one person. I know this is all the way at the bottom of this arti
 
 So again: **[try server builds](https://build.mozilla.org/tryserver-builds/poshannessy@mozilla.com-try-11a9e78a8cb5/)** and **[the extension](https://addons.mozilla.org/en-US/firefox/addon/14138/)**!
 
-*Updated September 4^(th) with links to the extension*
+_Updated September 4^(th) with links to the extension_

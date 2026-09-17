@@ -17,4 +17,3 @@ So there you have it. And a little bonus for people who like to cut down on typi
 
     [alias]
     amend = commit --amend
-

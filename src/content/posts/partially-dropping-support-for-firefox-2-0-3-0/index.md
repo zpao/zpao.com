@@ -14,10 +14,10 @@ Today [I landed a patch](https://hg.mozilla.org/mozilla-central/rev/55b6bc4c0b92
 
 The data you would lose is limited to the following:
 
-* Form data (2.0 and 3.0)
-* Session Cookies (2.0 only)
-* Tab XUL Attributes (2.0 and 3.0)
-* Session History Post Data (2.0 only)
-* Session History Owner (2.0 only)
+- Form data (2.0 and 3.0)
+- Session Cookies (2.0 only)
+- Tab XUL Attributes (2.0 and 3.0)
+- Session History Post Data (2.0 only)
+- Session History Owner (2.0 only)
 
 If losing any of this data particularly bothers you, then it's as simple as upgrading to [Firefox 3.6](https://www.mozilla.com/en-US/firefox/firefox.html) or [Firefox 3.5](https://www.mozilla.com/firefox/all-older.html) first. Alternatively, some session management add-ons could update your session file for you (for example, the author of [Session Manager](https://addons.mozilla.org/en-US/firefox/addon/2324) is updating his add-on to do that).

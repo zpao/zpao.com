@@ -13,7 +13,7 @@ tumblr_permalink: post/3037902118/the-california-dmv-has-terrible-browser-recomm
 
 It appears as though the California DMV has not updated their website in the past 10 years...
 
->To be able to use this online application, your computer will need to have one of the latest versions of either the Internet Explorer, Netscape Communicator/Navigator, or equivalent web browsers. For Internet Explorer you must have version 4.0 or higher. We suggest you use Netscape Communicator/Navigator version 6.0 or higher to eliminate any possible printer problems.
+> To be able to use this online application, your computer will need to have one of the latest versions of either the Internet Explorer, Netscape Communicator/Navigator, or equivalent web browsers. For Internet Explorer you must have version 4.0 or higher. We suggest you use Netscape Communicator/Navigator version 6.0 or higher to eliminate any possible printer problems.
 
 -- [California DMV Browser Requirements](https://www.dmv.ca.gov/online/dlrbi/faqbrowser.htm)
 

@@ -21,19 +21,24 @@ Yesterday I started working on it again but my current approach wasn't working (
 I wrote a quick and dirty version and iterated. I released a "good enough" version 1.0 last night. "Good enough" meant it was restartless but required restarting to re-process the blacklist preference, which was... dumb. Over lunch today I finished v1.1 to fix that and a couple other small issues.
 
 ## Let me have it
+
 [switch-to-tab Blacklist on AMO](https://addons.mozilla.org/firefox/addon/switch-to-tab-blacklist/)
 
 ## Can I see the code?
+
 [It's on github](https://github.com/zpao/switchToTabBlacklist). I need to clean it up because it's a bit hard to look at, so don't judge me too much.
 
 ## This picture is not worth 1000 words
+
 Previously, that autocomplete result would have been said "Switch to tab:".
 ![](./switch-to-tab-blacklist.png)
 
 ## Customizing the blacklist
+
 I'm storing a JSON array of regular expressions (stored as strings which get turned into regular expressions with `new RegExp(...)`). This is stored in a preference: `extension.switchToTabBlacklist.blacklist`. You need to edit it by hand for now.
 
 ## Where's my GUI
+
 I don't have visual basic on this computer so I couldn't make one.
 
 To be honest, I just didn't care enough to make it. I made this extension for me and I know how to edit a preference. I would gladly take patches though if somebody wants to make one.

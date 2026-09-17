@@ -16,7 +16,7 @@ The new Firefox default home page is seriously sexy. **Seriously.**
 
 A couple weeks ago [Stephen Horlander](https://www.stephenhorlander.com/) designed an updated default home page for Firefox. Over the weekend, we landed most of it. So first off, a huge thanks to him.
 
-Mihai Sucan did an awesome job converting the HTML & CSS Steven prototyped into something we could check in, which involved a lot of fun with media queries  (seriously, resize your window with it open), as well as a lot of work to make sure it worked with RTL locales.
+Mihai Sucan did an awesome job converting the HTML & CSS Steven prototyped into something we could check in, which involved a lot of fun with media queries (seriously, resize your window with it open), as well as a lot of work to make sure it worked with RTL locales.
 
 And then finally, I hooked up the "Restore Previous Session" button. Not the HTML & CSS (that was Stephen & Mihai), just the parts that made it hide when appropriate and work when pressed. Now hopefully a few people realize that feature exists :)
 

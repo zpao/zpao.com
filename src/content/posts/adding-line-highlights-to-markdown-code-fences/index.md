@@ -12,9 +12,9 @@ I didn't find any flavor of Markdown that let me do this, so I figured I would b
 
 I came up with this syntax: `{1,3,8-12}`. It's simple and let's you express individual lines and ranges with ease. It shouldn't conflict with any lexer name you might need to pass to Pygments (or highlighter of choice). Here's what it looks like in more context:
 
-```
+````
 ```javascript {1,3,8-12}
-```
+````
 
 And a full working example:
 

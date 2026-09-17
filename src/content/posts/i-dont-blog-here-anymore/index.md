@@ -17,4 +17,4 @@ Eventually I'll put on a fresh coat of paint here and make this more of a launch
 
 If you're an RSS kind of person & you subscribed to the Feedburner feed, you'll automagically get switched over to the new feed soon.
 
-  [Tumblr]: https://tumblr.com
+[Tumblr]: https://tumblr.com

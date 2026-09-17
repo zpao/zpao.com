@@ -17,6 +17,6 @@ Mostly, it's faster. `evalInSandbox` involved going through XPConnect and a whol
 
 ## What does this mean for me? Not Much.
 
-* If for some reason you're bouncing between nightlies and Firefox 3.0, then you'll want to load your session in Firefox 3.5 or 3.6 before loading it in Firefox 3.0 again. If this describes you, then you should really [just upgrade](https://www.mozilla.com/firefox/firefox.html).
-* The contents of `sessionstore.js` will no longer have wrapping parenthesis. Those were added so that sessions could still be loaded by Firefox 3.0-.
-* The keys that were only ever used internally are now excluded from exported sessions. This includes `_tabStillLoading`, `_hosts`, and `_formDataSaved`.
+- If for some reason you're bouncing between nightlies and Firefox 3.0, then you'll want to load your session in Firefox 3.5 or 3.6 before loading it in Firefox 3.0 again. If this describes you, then you should really [just upgrade](https://www.mozilla.com/firefox/firefox.html).
+- The contents of `sessionstore.js` will no longer have wrapping parenthesis. Those were added so that sessions could still be loaded by Firefox 3.0-.
+- The keys that were only ever used internally are now excluded from exported sessions. This includes `_tabStillLoading`, `_hosts`, and `_formDataSaved`.

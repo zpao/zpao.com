@@ -17,8 +17,8 @@ Well, no longer. Nils Maier (co-author of [DownThemAll](https://www.downthemall.
 
 A super quick summary of the changes (assuming you have enabled session restore):
 
-* If you leave a non-browser window open, just close it. Your session will be saved (assuming you aren’t on OS X anyway).
-* If you’ve gotten down to that last non-browser window & realized your mistake, opening Firefox again (e.g. from the start menu) reopens your last closed window.
+- If you leave a non-browser window open, just close it. Your session will be saved (assuming you aren’t on OS X anyway).
+- If you’ve gotten down to that last non-browser window & realized your mistake, opening Firefox again (e.g. from the start menu) reopens your last closed window.
 
 As a tangential comment, it’s things like this that really make me proud to be a part of the Mozilla community. So much of our browser & platform comes from people like Nils who give their time freely to help make the web a better place.
 

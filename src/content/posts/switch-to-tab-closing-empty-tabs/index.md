@@ -20,4 +20,4 @@ The second one is the one that will make more of a difference for user experienc
 4. Repeat 1-3
 5. WTF? I have 15 blank tabs open?
 
-With [my patch](https://hg.mozilla.org/mozilla-central/rev/2333f6d349d7) *we'll now close that empty tab after we switch focus*. No more step 5. That is all.
+With [my patch](https://hg.mozilla.org/mozilla-central/rev/2333f6d349d7) _we'll now close that empty tab after we switch focus_. No more step 5. That is all.

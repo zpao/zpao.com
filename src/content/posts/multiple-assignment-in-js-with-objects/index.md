@@ -11,7 +11,7 @@ tumblr_permalink: post/3513047019/multiple-assignment-in-js-with-objects
 
 Note: Turns out this only works in Firefox since it is the only browser to include versions of JavaScript beyond 1.5. Perhaps something will show up in ECMAScript N/Harmony/whatever.
 
-- - -
+---
 
 Alright, JavaScript is pretty cool. There are plenty of "tricks" that still boggle my mind. I just found another cool trick in [Mardak code](https://github.com/Mardak/restartless/blob/examples%2Fl10nDialogs/bootstrap.js#L37) (he would do this...).
 

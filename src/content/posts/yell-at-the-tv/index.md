@@ -22,7 +22,7 @@ While this was an idea I had been kicking around for a while, it was the work do
 
 It’s worse than feature poor right now. There’s only the first page right now.
 
-Hopefully I’ll be adding features over the next week or so. The primary thing I want to add is some support for hashtags, allowing you to view tweets for a show, season, or episode. Something like #lost-s05e01. It shouldn’t be *that* much work, so hopefully I’ll find some time to do that.
+Hopefully I’ll be adding features over the next week or so. The primary thing I want to add is some support for hashtags, allowing you to view tweets for a show, season, or episode. Something like #lost-s05e01. It shouldn’t be _that_ much work, so hopefully I’ll find some time to do that.
 
 ## Dreamhost Pains
 

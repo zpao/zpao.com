@@ -3,11 +3,7 @@ import path from 'node:path';
 import sharp from 'sharp';
 import { prepareGists } from '../src/lib/gists.ts';
 import { imageInfo, variantName } from '../src/lib/images.ts';
-import {
-  getPosts,
-  renderPost,
-  postsDirectory,
-} from '../src/lib/posts.ts';
+import { getPosts, renderPost, postsDirectory } from '../src/lib/posts.ts';
 import { createHtaccess } from '../src/lib/htaccess.ts';
 
 // Remove generated post assets so deleted or renamed files cannot linger.

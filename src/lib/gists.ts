@@ -102,13 +102,11 @@ export async function prepareGists(posts: Post[]) {
         await fs.access(cache);
         return;
       } catch (error) {
-        if (
-          !(
-            error instanceof Error &&
-            'code' in error &&
-            error.code === 'ENOENT'
-          )
-        )
+        if (!(
+          error instanceof Error &&
+          'code' in error &&
+          error.code === 'ENOENT'
+        ))
           throw error;
       }
       await fs.writeFile(cache, JSON.stringify(await fetchGist(identifier)));
