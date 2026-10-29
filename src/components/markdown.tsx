@@ -68,6 +68,14 @@ const styles = stylex.create({
     paddingInline: spacing.medium,
   },
   deleted: { color: colors.textMuted },
+  srOnly: {
+    position: 'absolute',
+    width: 1,
+    height: 1,
+    overflow: 'hidden',
+    clipPath: 'inset(50%)',
+    whiteSpace: 'nowrap',
+  },
 });
 
 function childrenFor(node: Element, options: HTMLReactParserOptions) {
@@ -120,6 +128,7 @@ function createOptions({ links }: { links: boolean }): HTMLReactParserOptions {
       const commonStyles = [
         ...syntaxStyles(className),
         className === 'gist' && styles.gist,
+        className.split(' ').includes('sr-only') && styles.srOnly,
         className.includes('code-line') && styles.codeLine,
         className.includes('highlight-line') && styles.highlightedLine,
       ];

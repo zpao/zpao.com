@@ -1,14 +1,18 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
-import { unified } from 'unified';
+import { unified, type Processor } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkSmartypants from 'remark-smartypants';
+import { gfmStrikethrough } from 'micromark-extension-gfm-strikethrough';
+import { gfmStrikethroughFromMarkdown } from 'mdast-util-gfm-strikethrough';
+import { gfmFootnote } from 'micromark-extension-gfm-footnote';
+import { gfmFootnoteFromMarkdown } from 'mdast-util-gfm-footnote';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeRaw from 'rehype-raw';
 import rehypePrism from 'rehype-prism-plus/common';
-import { visit } from 'unist-util-visit';
+import { SKIP, visit } from 'unist-util-visit';
 import type { Root as HastRoot } from 'hast';
 import type { Root as MdastRoot } from 'mdast';
 import { imageInfo, variantName } from './images.ts';
@@ -40,9 +44,25 @@ export type RenderedPost<T extends RenderablePost = RenderablePost> = T & {
   excerpt: string;
 };
 
+// Only the GFM pieces in use, so other GFM syntax can't change existing posts.
+function remarkStrikethrough(this: Processor) {
+  const data = this.data();
+  (data.micromarkExtensions ??= []).push(
+    gfmStrikethrough({ singleTilde: false }),
+  );
+  (data.fromMarkdownExtensions ??= []).push(gfmStrikethroughFromMarkdown());
+}
+
+function remarkFootnotes(this: Processor) {
+  const data = this.data();
+  (data.micromarkExtensions ??= []).push(gfmFootnote());
+  (data.fromMarkdownExtensions ??= []).push(gfmFootnoteFromMarkdown());
+}
+
 export function renderTitle(markdown: string) {
   const processor = unified()
     .use(remarkParse)
+    .use(remarkStrikethrough)
     .use(remarkSmartypants)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
@@ -56,11 +76,13 @@ export function renderTitle(markdown: string) {
 
   let title = '';
   visit(paragraph, (node) => {
+    // Struck-through text is not part of the plain-text title.
+    if (node.type === 'element' && node.tagName === 'del') return SKIP;
     if (node.type === 'text') title += node.value;
     if (node.type === 'element' && node.tagName === 'br') title += ' ';
   });
   return {
-    title,
+    title: title.replace(/\s+/g, ' ').trim(),
     titleHtml: String(
       processor.stringify({ type: 'root', children: paragraph.children }),
     ),
@@ -214,6 +236,8 @@ export async function renderPost<T extends RenderablePost>(
   const html = String(
     await unified()
       .use(remarkParse)
+      .use(remarkStrikethrough)
+      .use(remarkFootnotes)
       .use(remarkSmartypants)
       .use(enhancements, { ...post, gistLoader })
       .use(codeMetadata)
@@ -228,6 +252,8 @@ export async function renderPost<T extends RenderablePost>(
     ...post,
     html,
     excerpt: post.content
+      .replace(/^\[\^[^\]]+\]:.*$/gm, '')
+      .replace(/\[\^[^\]]+\]/g, '')
       .replace(/<[^>]*>/g, '')
       .replace(/[#*_`\[\]]/g, '')
       .replace(/\s+/g, ' ')

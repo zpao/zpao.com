@@ -40,9 +40,13 @@ export async function createFeed(tag: string) {
       custom_elements: [
         {
           'content:encoded': {
-            // RSS readers need absolute URLs; responsive variants are for the website.
+            // RSS readers need absolute URLs and have no site CSS to hide
+            // screen-reader-only labels; responsive variants are for the website.
             _cdata: post.html
               .replace(/ srcset="[^"]*"/g, '')
+              .replace(/<h2 class="sr-only"[^>]*>[^<]*<\/h2>\n?/g, '')
+              .replace(/ aria-describedby="footnote-label"/g, '')
+              .replace(/href="#/g, `href="${site.url}${post.slug}#`)
               .replace(/(src|href)="\/(?!\/)/g, `$1="${site.url}/`),
           },
         },
