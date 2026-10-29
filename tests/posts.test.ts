@@ -69,6 +69,15 @@ test('strikethrough renders in posts and titles', async () => {
   assert.match(renderTitle('a ~~gone~~').titleHtml, /<del>gone<\/del>/);
 });
 
+test('footnotes render in posts', async () => {
+  const { html } = await renderPost({
+    slug: '/posts/test/',
+    content: 'text[^1]\n\n[^1]: note',
+  });
+  assert.match(html, /id="user-content-fn-1"/);
+  assert.match(html, /href="#user-content-fn-1"/);
+});
+
 test('embedded tables are normalized for browser hydration', async () => {
   const { html } = await renderPost({
     slug: '/posts/test/',

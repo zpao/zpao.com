@@ -6,6 +6,8 @@ import remarkParse from 'remark-parse';
 import remarkSmartypants from 'remark-smartypants';
 import { gfmStrikethrough } from 'micromark-extension-gfm-strikethrough';
 import { gfmStrikethroughFromMarkdown } from 'mdast-util-gfm-strikethrough';
+import { gfmFootnote } from 'micromark-extension-gfm-footnote';
+import { gfmFootnoteFromMarkdown } from 'mdast-util-gfm-footnote';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeRaw from 'rehype-raw';
@@ -42,11 +44,17 @@ export type RenderedPost<T extends RenderablePost = RenderablePost> = T & {
   excerpt: string;
 };
 
-// Only strikethrough from GFM, so other GFM syntax can't change existing posts.
+// Only the GFM pieces in use, so other GFM syntax can't change existing posts.
 function remarkStrikethrough(this: Processor) {
   const data = this.data();
   (data.micromarkExtensions ??= []).push(gfmStrikethrough());
   (data.fromMarkdownExtensions ??= []).push(gfmStrikethroughFromMarkdown());
+}
+
+function remarkFootnotes(this: Processor) {
+  const data = this.data();
+  (data.micromarkExtensions ??= []).push(gfmFootnote());
+  (data.fromMarkdownExtensions ??= []).push(gfmFootnoteFromMarkdown());
 }
 
 export function renderTitle(markdown: string) {
@@ -225,6 +233,7 @@ export async function renderPost<T extends RenderablePost>(
     await unified()
       .use(remarkParse)
       .use(remarkStrikethrough)
+      .use(remarkFootnotes)
       .use(remarkSmartypants)
       .use(enhancements, { ...post, gistLoader })
       .use(codeMetadata)
