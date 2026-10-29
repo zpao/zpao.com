@@ -52,7 +52,7 @@ export function renderTitle(markdown: string) {
     (node) => node.type === 'element' && node.tagName === 'p',
   );
   if (!paragraph || paragraph.type !== 'element')
-    return { title: markdown, titleHtml: markdown };
+    return { title: markdown, titleHtml: escapeHtml(markdown) };
 
   let title = '';
   visit(paragraph, (node) => {
