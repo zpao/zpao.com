@@ -1,9 +1,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
-import { unified } from 'unified';
+import { unified, type Processor } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkSmartypants from 'remark-smartypants';
+import { gfmStrikethrough } from 'micromark-extension-gfm-strikethrough';
+import { gfmStrikethroughFromMarkdown } from 'mdast-util-gfm-strikethrough';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeRaw from 'rehype-raw';
@@ -40,9 +42,17 @@ export type RenderedPost<T extends RenderablePost = RenderablePost> = T & {
   excerpt: string;
 };
 
+// Only strikethrough from GFM, so other GFM syntax can't change existing posts.
+function remarkStrikethrough(this: Processor) {
+  const data = this.data();
+  (data.micromarkExtensions ??= []).push(gfmStrikethrough());
+  (data.fromMarkdownExtensions ??= []).push(gfmStrikethroughFromMarkdown());
+}
+
 export function renderTitle(markdown: string) {
   const processor = unified()
     .use(remarkParse)
+    .use(remarkStrikethrough)
     .use(remarkSmartypants)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
@@ -214,6 +224,7 @@ export async function renderPost<T extends RenderablePost>(
   const html = String(
     await unified()
       .use(remarkParse)
+      .use(remarkStrikethrough)
       .use(remarkSmartypants)
       .use(enhancements, { ...post, gistLoader })
       .use(codeMetadata)

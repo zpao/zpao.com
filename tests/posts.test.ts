@@ -60,6 +60,15 @@ test('Markdown retains HTML, local images, typography, gists, and highlighted li
   assert.match(html, /class="token keyword"/);
 });
 
+test('strikethrough renders in posts and titles', async () => {
+  const { html } = await renderPost({
+    slug: '/posts/test/',
+    content: 'a ~~gone~~ b',
+  });
+  assert.match(html, /<del>gone<\/del>/);
+  assert.match(renderTitle('a ~~gone~~').titleHtml, /<del>gone<\/del>/);
+});
+
 test('embedded tables are normalized for browser hydration', async () => {
   const { html } = await renderPost({
     slug: '/posts/test/',
