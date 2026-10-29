@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Link, PageHeader, Paragraph } from '@/components/content';
+import { Markdown } from '@/components/markdown';
 import { site } from '@/lib/site';
 import { getPosts } from '@/lib/posts';
 
@@ -30,7 +31,9 @@ export default async function IndexPage() {
         At this point, I primarily use this site for writing. The last thing I
         wrote was titled{' '}
         <em>
-          <Link href={post.slug}>{post.title}</Link>
+          <Link href={post.slug}>
+            <Markdown html={post.titleHtml} links={false} />
+          </Link>
         </em>
         .
       </Paragraph>

@@ -70,7 +70,7 @@ const styles = stylex.create({
   deleted: { color: colors.textMuted },
 });
 
-function childrenFor(node: Element) {
+function childrenFor(node: Element, options: HTMLReactParserOptions) {
   return node.children?.length
     ? domToReact(node.children as DOMNode[], options)
     : undefined;
@@ -79,77 +79,122 @@ function childrenFor(node: Element) {
 function styledElement(
   node: Element,
   props: ReturnType<typeof attributesToProps>,
+  children: ReturnType<typeof childrenFor>,
   ...nodeStyles: stylex.StyleXStyles[]
 ) {
   const sx = stylex.props(...nodeStyles);
   props.className = [props.className, sx.className].filter(Boolean).join(' ');
-  return React.createElement(node.name, props, childrenFor(node));
+  return React.createElement(node.name, props, children);
 }
 
-const options: HTMLReactParserOptions = {
-  replace(node) {
-    if (node.type !== 'tag') return;
-    if (node.name === 'template') return <React.Fragment />;
+function createOptions({ links }: { links: boolean }): HTMLReactParserOptions {
+  const options: HTMLReactParserOptions = {
+    replace(node) {
+      if (node.type !== 'tag') return;
+      if (node.name === 'template') return <React.Fragment />;
 
-    const props = attributesToProps(node.attribs);
-    const className =
-      typeof props.className === 'string' ? props.className : '';
-    const children = childrenFor(node);
+      const props = attributesToProps(node.attribs);
+      const className =
+        typeof props.className === 'string' ? props.className : '';
+      const children = childrenFor(node, options);
 
-    if (node.name === 'p') return <Paragraph {...props}>{children}</Paragraph>;
-    if (node.name === 'a' && typeof props.href === 'string')
-      return (
-        <Link {...props} href={props.href}>
-          {children}
-        </Link>
-      );
-    if (node.name === 'ul') return <List {...props}>{children}</List>;
-    if (node.name === 'ol')
-      return (
-        <List {...props} ordered>
-          {children}
-        </List>
-      );
-    if (node.name === 'del') return styledElement(node, props, styles.deleted);
+      if (node.name === 'p')
+        return <Paragraph {...props}>{children}</Paragraph>;
+      if (node.name === 'a' && !links) return children;
+      if (node.name === 'a' && typeof props.href === 'string')
+        return (
+          <Link {...props} href={props.href}>
+            {children}
+          </Link>
+        );
+      if (node.name === 'ul') return <List {...props}>{children}</List>;
+      if (node.name === 'ol')
+        return (
+          <List {...props} ordered>
+            {children}
+          </List>
+        );
+      if (node.name === 'del')
+        return styledElement(node, props, children, styles.deleted);
 
-    const commonStyles = [
-      ...syntaxStyles(className),
-      className === 'gist' && styles.gist,
-      className.includes('code-line') && styles.codeLine,
-      className.includes('highlight-line') && styles.highlightedLine,
-    ];
+      const commonStyles = [
+        ...syntaxStyles(className),
+        className === 'gist' && styles.gist,
+        className.includes('code-line') && styles.codeLine,
+        className.includes('highlight-line') && styles.highlightedLine,
+      ];
 
-    if (node.name === 'h1')
-      return styledElement(node, props, styles.heading1, ...commonStyles);
-    if (node.name === 'h2')
-      return styledElement(node, props, styles.heading2, ...commonStyles);
-    if (node.name === 'code')
-      return styledElement(
-        node,
-        props,
-        styles.code,
-        className.includes('language-') && styles.highlightedCode,
-        ...commonStyles,
-      );
-    if (node.name === 'pre')
-      return styledElement(
-        node,
-        props,
-        styles.pre,
-        className.includes('language-') && styles.highlight,
-        ...commonStyles,
-      );
-    if (node.name === 'blockquote')
-      return styledElement(node, props, styles.blockquote, ...commonStyles);
-    if (node.name === 'img')
-      return styledElement(node, props, styles.image, ...commonStyles);
-    if (node.name === 'iframe')
-      return styledElement(node, props, styles.iframe, ...commonStyles);
-    if (commonStyles.some(Boolean))
-      return styledElement(node, props, ...commonStyles);
-  },
-};
+      if (node.name === 'h1')
+        return styledElement(
+          node,
+          props,
+          children,
+          styles.heading1,
+          ...commonStyles,
+        );
+      if (node.name === 'h2')
+        return styledElement(
+          node,
+          props,
+          children,
+          styles.heading2,
+          ...commonStyles,
+        );
+      if (node.name === 'code')
+        return styledElement(
+          node,
+          props,
+          children,
+          styles.code,
+          className.includes('language-') && styles.highlightedCode,
+          ...commonStyles,
+        );
+      if (node.name === 'pre')
+        return styledElement(
+          node,
+          props,
+          children,
+          styles.pre,
+          className.includes('language-') && styles.highlight,
+          ...commonStyles,
+        );
+      if (node.name === 'blockquote')
+        return styledElement(
+          node,
+          props,
+          children,
+          styles.blockquote,
+          ...commonStyles,
+        );
+      if (node.name === 'img')
+        return styledElement(
+          node,
+          props,
+          children,
+          styles.image,
+          ...commonStyles,
+        );
+      if (node.name === 'iframe')
+        return styledElement(
+          node,
+          props,
+          children,
+          styles.iframe,
+          ...commonStyles,
+        );
+      if (commonStyles.some(Boolean))
+        return styledElement(node, props, children, ...commonStyles);
+    },
+  };
+  return options;
+}
 
-export function Markdown({ html }: { html: string }) {
-  return parse(html, options);
+export function Markdown({
+  html,
+  links = true,
+}: {
+  html: string;
+  links?: boolean;
+}) {
+  return parse(html, createOptions({ links }));
 }

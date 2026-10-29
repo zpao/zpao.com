@@ -45,7 +45,7 @@ export default async function Post({ params }: PostPageProps) {
   return (
     <article>
       <PageHeader
-        title={post.title}
+        title={<Markdown html={post.titleHtml} />}
         date={{ dateTime: post.date, label: post.displayDate }}
         description={post.blurb}
       />

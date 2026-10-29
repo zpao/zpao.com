@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { getPosts, renderPost } from '../src/lib/posts.ts';
+import { getPosts, renderPost, renderTitle } from '../src/lib/posts.ts';
 
 test('all posts have stable unique URLs and descending dates', async () => {
   const posts = await getPosts();
@@ -20,6 +20,16 @@ test('all posts have stable unique URLs and descending dates', async () => {
       .sort()
       .reverse(),
   );
+});
+test('Markdown is rendered in post titles and removed from plain titles', () => {
+  const { title, titleHtml } = renderTitle(
+    'A **bold** *title* with `code` and [link](https://example.com)',
+  );
+  assert.equal(title, 'A bold title with code and link');
+  assert.match(titleHtml, /<strong>bold<\/strong>/);
+  assert.match(titleHtml, /<em>title<\/em>/);
+  assert.match(titleHtml, /<code>code<\/code>/);
+  assert.match(titleHtml, /<a href="https:\/\/example.com">link<\/a>/);
 });
 test('Markdown retains HTML, local images, typography, gists, and highlighted lines', async () => {
   const { html } = await renderPost(

@@ -19,6 +19,7 @@ export { site } from './site.ts';
 
 export type Post = {
   title: string;
+  titleHtml: string;
   date: string;
   displayDate: string;
   name: string;
@@ -39,6 +40,33 @@ export type RenderedPost<T extends RenderablePost = RenderablePost> = T & {
   excerpt: string;
 };
 
+export function renderTitle(markdown: string) {
+  const processor = unified()
+    .use(remarkParse)
+    .use(remarkSmartypants)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
+    .use(rehypeStringify, { allowDangerousHtml: true });
+  const tree = processor.runSync(processor.parse(markdown)) as HastRoot;
+  const paragraph = tree.children.find(
+    (node) => node.type === 'element' && node.tagName === 'p',
+  );
+  if (!paragraph || paragraph.type !== 'element')
+    return { title: markdown, titleHtml: markdown };
+
+  let title = '';
+  visit(paragraph, (node) => {
+    if (node.type === 'text') title += node.value;
+    if (node.type === 'element' && node.tagName === 'br') title += ' ';
+  });
+  return {
+    title,
+    titleHtml: String(
+      processor.stringify({ type: 'root', children: paragraph.children }),
+    ),
+  };
+}
+
 export async function getPosts(): Promise<Post[]> {
   const entries = await fs.readdir(postsDirectory, { withFileTypes: true });
   const posts = await Promise.all(
@@ -52,9 +80,10 @@ export async function getPosts(): Promise<Post[]> {
           ),
         );
         const date = new Date(data.date).toISOString();
+        const title = renderTitle(String(data.title ?? name));
         return {
           ...data,
-          title: String(data.title ?? name),
+          ...title,
           date,
           displayDate: date.slice(0, 10),
           name,
