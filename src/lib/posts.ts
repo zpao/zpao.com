@@ -12,7 +12,7 @@ import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeRaw from 'rehype-raw';
 import rehypePrism from 'rehype-prism-plus/common';
-import { visit } from 'unist-util-visit';
+import { SKIP, visit } from 'unist-util-visit';
 import type { Root as HastRoot } from 'hast';
 import type { Root as MdastRoot } from 'mdast';
 import { imageInfo, variantName } from './images.ts';
@@ -47,7 +47,9 @@ export type RenderedPost<T extends RenderablePost = RenderablePost> = T & {
 // Only the GFM pieces in use, so other GFM syntax can't change existing posts.
 function remarkStrikethrough(this: Processor) {
   const data = this.data();
-  (data.micromarkExtensions ??= []).push(gfmStrikethrough());
+  (data.micromarkExtensions ??= []).push(
+    gfmStrikethrough({ singleTilde: false }),
+  );
   (data.fromMarkdownExtensions ??= []).push(gfmStrikethroughFromMarkdown());
 }
 
@@ -74,11 +76,13 @@ export function renderTitle(markdown: string) {
 
   let title = '';
   visit(paragraph, (node) => {
+    // Struck-through text is not part of the plain-text title.
+    if (node.type === 'element' && node.tagName === 'del') return SKIP;
     if (node.type === 'text') title += node.value;
     if (node.type === 'element' && node.tagName === 'br') title += ' ';
   });
   return {
-    title,
+    title: title.replace(/\s+/g, ' ').trim(),
     titleHtml: String(
       processor.stringify({ type: 'root', children: paragraph.children }),
     ),
@@ -248,6 +252,8 @@ export async function renderPost<T extends RenderablePost>(
     ...post,
     html,
     excerpt: post.content
+      .replace(/^\[\^[^\]]+\]:.*$/gm, '')
+      .replace(/\[\^[^\]]+\]/g, '')
       .replace(/<[^>]*>/g, '')
       .replace(/[#*_`\[\]]/g, '')
       .replace(/\s+/g, ' ')

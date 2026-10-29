@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { createFeed } from '../src/lib/feed.ts';
 import { getPosts, renderPost, renderTitle } from '../src/lib/posts.ts';
 
 test('all posts have stable unique URLs and descending dates', async () => {
@@ -67,15 +68,31 @@ test('strikethrough renders in posts and titles', async () => {
   });
   assert.match(html, /<del>gone<\/del>/);
   assert.match(renderTitle('a ~~gone~~').titleHtml, /<del>gone<\/del>/);
+  assert.equal(renderTitle('a ~~gone~~ b').title, 'a b');
+  assert.doesNotMatch(
+    (await renderPost({ slug: '/posts/test/', content: 'a ~single~ b' })).html,
+    /<del>/,
+  );
 });
 
 test('footnotes render in posts', async () => {
-  const { html } = await renderPost({
+  const { html, excerpt } = await renderPost({
     slug: '/posts/test/',
-    content: 'text[^1]\n\n[^1]: note',
+    content: 'a ~~gone~~ text[^1]\n\n[^1]: note',
   });
   assert.match(html, /id="user-content-fn-1"/);
   assert.match(html, /href="#user-content-fn-1"/);
+  assert.equal(excerpt, 'a ~~gone~~ text');
+});
+
+test('feeds use absolute footnote links without the hidden label', async () => {
+  const xml = await createFeed('default');
+  assert.match(
+    xml,
+    /href="https:\/\/zpao\.com\/posts\/dtrace-treemaps-part-1\/#user-content-fn-1"/,
+  );
+  assert.doesNotMatch(xml, /href="#/);
+  assert.doesNotMatch(xml, /footnote-label/);
 });
 
 test('embedded tables are normalized for browser hydration', async () => {
