@@ -3,12 +3,12 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import * as stylex from '@stylexjs/stylex';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import type { ReactNode } from 'react';
 import { config, type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { site } from '@/lib/site';
 import { colors, layout, spacing, typography } from '../styles/tokens.stylex';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import {
   faThreads,
   faXTwitter,
@@ -96,12 +96,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               ))}
             </ul>
           </footer>
-          <Script id="analytics">{`if (navigator.doNotTrack !== '1' && window.doNotTrack !== '1' && navigator.msDoNotTrack !== '1') {
-      window.dataLayer = window.dataLayer || []; window.gtag = function(){dataLayer.push(arguments);};
-      gtag('js', new Date()); gtag('config', 'UA-66375-1', {anonymize_ip: true});
-      var script = document.createElement('script'); script.async = true; script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-66375-1'; document.head.appendChild(script);
-    }`}</Script>
         </div>
+        <GoogleAnalytics gaId="G-1PZ99T1TT5" />
       </body>
     </html>
   );
